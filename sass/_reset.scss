@@ -1,0 +1,33 @@
+html
+{
+  font-size: 12pt;
+}
+
+iframe
+{
+	border: 0;
+}
+
+table.table td
+{
+  padding: 0.05em 0.3em;
+}
+
+table.table
+{
+  border-spacing: 0.2rem;
+  border: 1px solid white;
+}
+
+%heading
+{
+  margin: 0 0 0.6em 0;
+  font-weight: normal;
+}
+
+h1 { @extend %heading; font-size: 200%; }
+h2 { @extend %heading; font-size: 150%; }
+h3 { @extend %heading; font-size: 125%; }
+h4 { @extend %heading; font-size: 112.5%; }
+h5 { @extend %heading; font-size: 100%; }
+h6 { @extend %heading; font-size: 87.5%; }

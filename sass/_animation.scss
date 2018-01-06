@@ -1,0 +1,29 @@
+@keyframes lcars-color-1
+{
+  0%   {background-color: $lcars-color-pi;}
+  24%  {background-color: $lcars-color-pi;}
+  25%  {background-color: $lcars-color-lb;}
+  49%  {background-color: $lcars-color-lb;}
+  50%  {background-color: $lcars-color-rb;}
+  74%  {background-color: $lcars-color-rb;}
+  75%  {background-color: $lcars-color-or;}
+  100% {background-color: $lcars-color-or;}
+}
+
+%loop-animation
+{
+  animation-iteration-count: infinite;
+}
+
+@mixin lcars-blink($duration)
+{
+  @extend %loop-animation;
+  animation-name: lcars-color-1;
+  animation-duration: $duration;
+}
+
+.lcars-blink-3 { @include lcars-blink(3s); }
+.lcars-blink-4 { @include lcars-blink(4s); }
+.lcars-blink-5 { @include lcars-blink(5s); }
+.lcars-blink-6 { @include lcars-blink(6s); }
+.lcars-blink-7 { @include lcars-blink(7s); }

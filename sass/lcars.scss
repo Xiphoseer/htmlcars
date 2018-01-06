@@ -1,0 +1,28 @@
+@import 'colors';
+@import 'font';
+@import 'chrome';
+@import 'grid';
+@import 'layout';
+@import 'reset';
+@import 'button';
+@import 'animation';
+
+.lcars-body
+{
+  background-color: #000;
+  color: #FFF;
+  font-family: helvetica;
+  padding: 1em;
+  margin: 0;
+}
+
+.lcars-fixed
+{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Size definitions */
+$lcars-large-size: 4em;
+$lcars-normal-size: 2em;
+$lcars-small-size: 1em;

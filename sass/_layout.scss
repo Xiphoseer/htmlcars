@@ -1,0 +1,27 @@
+.lcars-button-grid
+{
+  display: grid;
+  grid-template-rows: repeat(auto-fill,2rem);
+  grid-template-columns: repeat(auto-fill,6rem);
+  grid-auto-rows: 2rem;
+  grid-auto-columns: 6rem;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 1rem;
+}
+
+.lcars-container
+{
+	border-radius: 1em;
+	background-color: $lcars-color-ho;
+	padding: 0.6em 0;
+	margin-bottom: 0.7em;
+
+	.lcars-container-inlay
+	{
+		background-color: #000;
+		border-radius: 0.5rem;
+		padding: 0.6rem;
+		border-left: 0.5em solid $lcars-color-lb;
+		border-right: 0.5em solid $lcars-color-lb;
+	}
+}

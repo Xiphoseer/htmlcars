@@ -1,0 +1,145 @@
+$lcars-border-width: 0.3rem;
+$lcars-edge-width: 0.4rem;
+$lcars-basic-border: $lcars-border-width solid #000;
+$lcars-edge-border: $lcars-edge-width solid #000;
+
+.lcars-chrome
+{
+  @extend .lcars-bg-ho;
+  display: flex;
+  border-radius: 1em;
+
+  .lcars-chrome
+  {
+    border-radius: 0;
+  }
+
+  .lcars-chrome-component
+  {
+    margin: 0;
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+  
+  h1, h2, h3, h4, h5, h6
+  {
+    @extend .lcars-chrome-component;
+    @extend .lcars-fg-or;
+    background-color: #000;
+    line-height: 100%;
+    font-size: 260%;
+    border-bottom: 0;
+    margin-top: -0.25rem;
+  }
+  
+  .lcars-bar-space
+  {
+    @extend .lcars-chrome-component;
+    flex: 1 0 auto;
+  }
+
+  .lcars-btn
+  {
+  	@extend .lcars-chrome-component;
+  }
+}
+
+.lcars-chrome-horizontal
+{
+  @extend .lcars-chrome;
+  padding: 0 2em;
+  max-height: 2em;
+  flex-direction: row;
+
+  .lcars-chrome-component:first-child
+  {
+    border-left: $lcars-edge-border;
+  }
+
+  .lcars-chrome-component
+  {
+    vertical-align: bottom;
+    border-right: $lcars-basic-border;
+  }
+
+  .lcars-chrome-component:last-child
+  {
+    border-right: $lcars-edge-border;
+  }
+
+  &.alt-cap-right
+  {
+    border-right: 2.5em solid $lcars-color-or;
+    padding-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &.alt-cap-left
+  {
+    border-left: 2.5em solid $lcars-color-or;
+    padding-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .lcars-bar-space.inlay-up
+  {
+    border-bottom: 0.5rem solid black;
+  }
+
+  .lcars-bar-space.inlay-down
+  {
+    border-top: 0.5rem solid black;
+  }
+}
+
+.lcars-chrome-vertical
+{
+  @extend .lcars-chrome;
+  padding: 2em 0;
+  min-width: 6em;
+  flex-direction: column;
+
+  .lcars-chrome-component:first-child
+  {
+    border-top: $lcars-basic-border;
+  }
+
+  .lcars-chrome-component
+  {
+    text-align: right;
+    border-bottom: $lcars-basic-border;
+  }
+
+  .lcars-chrome-component:last-child
+  {
+    border-bottom: $lcars-edge-border;
+  }
+}
+
+@mixin lcars-chrome-size($max-height, $caption-size, $offset, $btn-padding, $btn-size)
+{
+  border-radius: 2em;
+  &.lcars-chrome-horizontal
+  {
+    max-height: $max-height;
+  }
+
+  h1, h2, h3, h4, h5, h6
+  {
+    font-size: $caption-size;
+    margin-top: $offset;
+  }
+
+  .lcars-btn
+  {
+    padding: $btn-padding;
+    font-size: $btn-size;
+  }
+}
+
+.lcars-chrome-small   { @include lcars-chrome-size(1rem,   130%, -0.12rem, 0    0.2rem,   90%);     }
+.lcars-chrome-smaller { @include lcars-chrome-size(1.5rem, 185%, -0.12rem, 0rem 0.3rem,   inherit); }
+.lcars-chrome-larger  { @include lcars-chrome-size(2.5rem, 330%, -0.3rem,  0.6rem,        16pt); }
+.lcars-chrome-large   { @include lcars-chrome-size(3rem,   400%, -0.4rem,  1.2rem 0.6rem, 16pt); }

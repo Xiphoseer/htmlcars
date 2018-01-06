@@ -1,0 +1,164 @@
+.lcars-grid
+{
+  display: grid;
+  grid-template-rows: [head] 2em [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] 1em [tail];
+  grid-template-columns: [head] 10em [side-end] 1em [content-begin] auto [content-end] 0 [end-begin] 0 [tail];
+  overflow-y: auto;
+  height: 100%;
+
+  .lcars-sidebar { grid-area: content-begin / head / content-end / side-end; }
+  .lcars-topbar { grid-area: head / content-begin / side-end / content-end; }
+  .lcars-bottombar { grid-area: end-begin / content-begin / tail / content-end; }
+}
+
+%horizontal-left-merge
+{
+  padding-left: 1em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+%horizontal-right-merge
+{
+  padding-right: 1em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+%vertical-top-merge
+{
+  padding-top: 1em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+%vertical-bottom-merge
+{
+  padding-bottom: 1em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;  
+}
+
+.lcars-merged-top-left::before
+{
+  display: block;
+  background-color: $lcars-color-ho;
+  content: "";
+  border-top-left-radius: 3em 3em;
+  background-image: radial-gradient(circle at 100% 100%, #000 1em, $lcars-color-ho 1em);
+}
+
+.lcars-merged-bottom-left::after
+{
+  display: block;
+  background-color: $lcars-color-ho;
+  content: "";
+  border-bottom-left-radius: 3em 3em;
+  background-image: radial-gradient(circle at 100% 0, #000 1em, $lcars-color-ho 1em);
+}
+
+.alert
+{
+  .lcars-merged-top-left::before
+  {
+    background-image: radial-gradient(circle at 100% 100%, #000 1em, $lcars-color-ho-alert 1em);
+  }
+  .lcars-merged-bottom-left::after
+  {
+    background-image: radial-gradient(circle at 100% 0, #000 1em, $lcars-color-ho-alert 1em);
+  }
+}
+
+.lcars-grid-merged
+{
+  @extend .lcars-merged-top-left;
+  &::before { grid-area: head / head / content-begin / content-begin; }
+
+  @extend .lcars-merged-bottom-left;
+  &::after { grid-area: content-end / head / tail / content-begin; }
+
+  .lcars-bottombar.lcars-chrome-horizontal,
+  .lcars-topbar.lcars-chrome-horizontal
+  { @extend %horizontal-left-merge }
+
+  .lcars-sidebar.lcars-chrome-vertical { @extend %vertical-top-merge }
+  .lcars-sidebar.lcars-chrome-vertical { @extend %vertical-bottom-merge }
+}
+
+.lcars-grid-content { grid-area: content-begin / content-begin / content-end / content-end; }
+
+.lcars-scrollable
+{
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+/* LCARS page */
+$lcars-bar-height: 2rem;
+$lcars-knob-width: 2rem;
+
+$lcars-page-padding: $lcars-knob-width + $lcars-edge-width;
+$lcars-page-space: 0.5rem;
+
+.lcars-page
+{
+  display: grid;
+  grid-template-columns:
+    [head] $lcars-page-padding
+    [content-begin] auto [content-end]
+    $lcars-page-padding [tail];
+  grid-template-rows:
+    [head] $lcars-bar-height [bar-end] $lcars-page-space
+    [content-begin] auto [content-end]
+    $lcars-page-space [bar-start] $lcars-bar-height [tail];
+
+  .lcars-topbar { grid-area: head / head / bar-end / tail; }
+  .lcars-bottombar { grid-area: bar-start / head / tail / tail; }
+  .lcars-infoline
+  {
+    grid-area: bar-end / content-begin / content-begin / content-end;
+    text-align: right;
+    font-size: 10pt;
+    font-weight: bold;
+  }
+}
+
+/* LCARS analytical */
+.lcars-analytical
+{
+  display: grid;
+  grid-template-columns:
+    [head] 6rem [side-end] 0.4rem [content-begin] 0.6rem
+    [status-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
+  grid-template-rows:
+    [head] 9rem [status-low] 1rem [status-end]
+    1rem [bar-mid-on] 0.2rem [bar-mid-off] 1rem
+    [title-begin] 1rem [content-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
+  height: 100%;
+
+  .lcars-status { grid-area: head / status-begin / status-end / content-end; }
+  .lcars-status-left { grid-area: head / status-begin / status-end / mid-on; }
+  .lcars-status-right { grid-area: head / mid-off / status-end / content-end; }
+  
+  .lcars-topbar { grid-area: status-end / status-begin / bar-mid-on / content-end; }
+  .lcars-bottombar { grid-area: bar-mid-off / status-begin / title-begin / content-end; }
+
+  .lcars-sidebar { grid-area: content-begin / head / content-end / side-end; }
+  .lcars-altbar { grid-area: head / head / status-low / side-end; }
+}
+
+.lcars-analytical-merged
+{
+  @extend .lcars-merged-top-left;
+  &::before { grid-area: bar-mid-off / head / content-begin / status-begin }
+
+  @extend .lcars-merged-bottom-left;
+  &::after { grid-area: status-low / head / bar-mid-on / status-begin }
+  
+  .lcars-altbar, .lcars-sidebar
+  {
+    @extend %vertical-top-merge;
+    @extend %vertical-bottom-merge;
+  }
+  .lcars-topbar, .lcars-bottombar { @extend %horizontal-left-merge; }
+}

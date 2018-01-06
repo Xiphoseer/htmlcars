@@ -1,0 +1,540 @@
+/* LCARS Colors (http://www.gtjlcars.de/LCARSindex/Colorindex1.htm) */
+.lcars-bg-or {
+  background-color: #ff9900; }
+
+.lcars-bg-fl {
+  background-color: #cc99cc; }
+
+.lcars-bg-bg {
+  background-color: #9999cc; }
+
+.lcars-bg-rb {
+  background-color: #cc6666; }
+
+.lcars-bg-be {
+  background-color: #ffcc99; }
+
+.lcars-bg-lb {
+  background-color: #9999ff; }
+
+.lcars-bg-ap {
+  background-color: #ff9966; }
+
+.lcars-bg-pi {
+  background-color: #cc6699; }
+
+.lcars-bg-ho, .lcars-chrome, .lcars-chrome-horizontal, .lcars-chrome-vertical, .lcars-btn, input [type="button"], button {
+  background-color: #f7c64a; }
+
+.lcars-bg-ck {
+  background-color: #000000; }
+
+.lcars-fg-or, .lcars-chrome h1, .lcars-chrome-horizontal h1, .lcars-chrome-vertical h1, .lcars-btn h1, input [type="button"] h1, button h1, .lcars-chrome h2, .lcars-chrome-horizontal h2, .lcars-chrome-vertical h2, .lcars-btn h2, input [type="button"] h2, button h2, .lcars-chrome h3, .lcars-chrome-horizontal h3, .lcars-chrome-vertical h3, .lcars-btn h3, input [type="button"] h3, button h3, .lcars-chrome h4, .lcars-chrome-horizontal h4, .lcars-chrome-vertical h4, .lcars-btn h4, input [type="button"] h4, button h4, .lcars-chrome h5, .lcars-chrome-horizontal h5, .lcars-chrome-vertical h5, .lcars-btn h5, input [type="button"] h5, button h5, .lcars-chrome h6, .lcars-chrome-horizontal h6, .lcars-chrome-vertical h6, .lcars-btn h6, input [type="button"] h6, button h6 {
+  color: #ff9900; }
+
+.lcars-fg-fl {
+  color: #cc99cc; }
+
+.lcars-fg-bg {
+  color: #9999cc; }
+
+.lcars-fg-rb {
+  color: #cc6666; }
+
+.lcars-fg-be {
+  color: #ffcc99; }
+
+.lcars-fg-lb {
+  color: #9999ff; }
+
+.lcars-fg-ap {
+  color: #ff9966; }
+
+.lcars-fg-pi {
+  color: #cc6699; }
+
+.lcars-fg-ho {
+  color: #f7c64a; }
+
+.lcars-fg-ck {
+  color: #000000; }
+
+/* ALERT MODE */
+.alert .lcars-bg-or {
+  background-color: #fdd; }
+.alert .lcars-bg-fl {
+  background-color: #fcc; }
+.alert .lcars-bg-bg {
+  background-color: #fbb; }
+.alert .lcars-bg-rb {
+  background-color: #faa; }
+.alert .lcars-bg-be {
+  background-color: #f99; }
+.alert .lcars-bg-lb {
+  background-color: #f88; }
+.alert .lcars-bg-ap {
+  background-color: #f77; }
+.alert .lcars-bg-pi {
+  background-color: #f66; }
+.alert .lcars-bg-ho, .alert .lcars-chrome, .alert .lcars-chrome-horizontal, .alert .lcars-chrome-vertical, .alert .lcars-btn, .alert input [type="button"], input .alert [type="button"], .alert button {
+  background-color: #f55; }
+.alert .lcars-fg-or, .alert .lcars-chrome h1, .lcars-chrome .alert h1, .alert .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .alert h1, .alert .lcars-chrome-vertical h1, .lcars-chrome-vertical .alert h1, .alert .lcars-btn h1, .lcars-btn .alert h1, .alert input [type="button"] h1, input [type="button"] .alert h1, .alert button h1, button .alert h1, .alert .lcars-chrome h2, .lcars-chrome .alert h2, .alert .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .alert h2, .alert .lcars-chrome-vertical h2, .lcars-chrome-vertical .alert h2, .alert .lcars-btn h2, .lcars-btn .alert h2, .alert input [type="button"] h2, input [type="button"] .alert h2, .alert button h2, button .alert h2, .alert .lcars-chrome h3, .lcars-chrome .alert h3, .alert .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .alert h3, .alert .lcars-chrome-vertical h3, .lcars-chrome-vertical .alert h3, .alert .lcars-btn h3, .lcars-btn .alert h3, .alert input [type="button"] h3, input [type="button"] .alert h3, .alert button h3, button .alert h3, .alert .lcars-chrome h4, .lcars-chrome .alert h4, .alert .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .alert h4, .alert .lcars-chrome-vertical h4, .lcars-chrome-vertical .alert h4, .alert .lcars-btn h4, .lcars-btn .alert h4, .alert input [type="button"] h4, input [type="button"] .alert h4, .alert button h4, button .alert h4, .alert .lcars-chrome h5, .lcars-chrome .alert h5, .alert .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .alert h5, .alert .lcars-chrome-vertical h5, .lcars-chrome-vertical .alert h5, .alert .lcars-btn h5, .lcars-btn .alert h5, .alert input [type="button"] h5, input [type="button"] .alert h5, .alert button h5, button .alert h5, .alert .lcars-chrome h6, .lcars-chrome .alert h6, .alert .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .alert h6, .alert .lcars-chrome-vertical h6, .lcars-chrome-vertical .alert h6, .alert .lcars-btn h6, .lcars-btn .alert h6, .alert input [type="button"] h6, input [type="button"] .alert h6, .alert button h6, button .alert h6 {
+  color: #fdd; }
+.alert .lcars-fg-fl {
+  color: #fcc; }
+.alert .lcars-fg-bg {
+  color: #fbb; }
+.alert .lcars-fg-rb {
+  color: #faa; }
+.alert .lcars-fg-be {
+  color: #f99; }
+.alert .lcars-fg-lb {
+  color: #f88; }
+.alert .lcars-fg-ap {
+  color: #f77; }
+.alert .lcars-fg-pi {
+  color: #f66; }
+.alert .lcars-fg-ho {
+  color: #f55; }
+
+/* http://www.gtjlcars.de/LCARSindex/LCARSFONTS.htm */
+@font-face {
+  font-family: LCARSGTJ3;
+  src: url(../font/LCARSGTJ3.ttf); }
+.lcars-font, .lcars-btn, input [type="button"], button {
+  font-family: LCARSGTJ3;
+  font-size: 12pt; }
+
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 1px dotted #eee;
+  font-family: LCARSGTJ3; }
+
+p {
+  text-align: justify; }
+  p a {
+    text-decoration: none;
+    color: #f00;
+    font-weight: bold; }
+    p a::before {
+      content: "["; }
+    p a::after {
+      content: "]"; }
+    p a:hover {
+      text-decoration: underline; }
+
+.lcars-message {
+  text-align: center; }
+  .lcars-message h1, .lcars-message h2, .lcars-message h3, .lcars-message h4, .lcars-message h5, .lcars-message h6 {
+    border-bottom: none;
+    margin: -0.3em 0 -0.4em 0; }
+  .lcars-message h1 {
+    font-size: 1500%; }
+  .lcars-message h2 {
+    font-size: 1000%; }
+  .lcars-message h3 {
+    font-size: 750%; }
+  .lcars-message h4 {
+    font-size: 500%; }
+  .lcars-message h5 {
+    font-size: 400%; }
+  .lcars-message h6 {
+    font-size: 250%; }
+
+.lcars-chrome, .lcars-chrome-horizontal, .lcars-chrome-vertical, .lcars-btn, input [type="button"], button {
+  display: flex;
+  border-radius: 1em; }
+  .lcars-chrome .lcars-chrome, .lcars-chrome-horizontal .lcars-chrome, .lcars-chrome-vertical .lcars-chrome, .lcars-btn .lcars-chrome, input [type="button"] .lcars-chrome, button .lcars-chrome, .lcars-chrome .lcars-chrome-horizontal, .lcars-chrome-horizontal .lcars-chrome-horizontal, .lcars-chrome-vertical .lcars-chrome-horizontal, .lcars-btn .lcars-chrome-horizontal, input [type="button"] .lcars-chrome-horizontal, button .lcars-chrome-horizontal, .lcars-chrome .lcars-chrome-vertical, .lcars-chrome-horizontal .lcars-chrome-vertical, .lcars-chrome-vertical .lcars-chrome-vertical, .lcars-btn .lcars-chrome-vertical, input [type="button"] .lcars-chrome-vertical, button .lcars-chrome-vertical, .lcars-chrome .lcars-btn, .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-vertical .lcars-btn, .lcars-btn .lcars-btn, input [type="button"] .lcars-btn, button .lcars-btn, .lcars-chrome input [type="button"], input .lcars-chrome [type="button"], .lcars-chrome-horizontal input [type="button"], input .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical input [type="button"], input .lcars-chrome-vertical [type="button"], .lcars-btn input [type="button"], input .lcars-btn [type="button"], input [type="button"] [type="button"], button input [type="button"], input button [type="button"], .lcars-chrome button, .lcars-chrome-horizontal button, .lcars-chrome-vertical button, .lcars-btn button, input [type="button"] button, button button {
+    border-radius: 0; }
+  .lcars-chrome .lcars-chrome-component, .lcars-chrome-horizontal .lcars-chrome-component, .lcars-chrome-vertical .lcars-chrome-component, .lcars-btn .lcars-chrome-component, input [type="button"] .lcars-chrome-component, button .lcars-chrome-component, .lcars-chrome h1, .lcars-chrome-horizontal .lcars-chrome h1, .lcars-chrome .lcars-chrome-horizontal h1, .lcars-chrome-vertical .lcars-chrome h1, .lcars-chrome .lcars-chrome-vertical h1, .lcars-btn .lcars-chrome h1, .lcars-chrome .lcars-btn h1, input [type="button"] .lcars-chrome h1, .lcars-chrome input [type="button"] h1, button .lcars-chrome h1, .lcars-chrome button h1, .lcars-chrome .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .lcars-chrome h1, .lcars-chrome-horizontal h1, .lcars-chrome-vertical .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .lcars-chrome-vertical h1, .lcars-btn .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .lcars-btn h1, input [type="button"] .lcars-chrome-horizontal h1, .lcars-chrome-horizontal input [type="button"] h1, button .lcars-chrome-horizontal h1, .lcars-chrome-horizontal button h1, .lcars-chrome .lcars-chrome-vertical h1, .lcars-chrome-vertical .lcars-chrome h1, .lcars-chrome-horizontal .lcars-chrome-vertical h1, .lcars-chrome-vertical .lcars-chrome-horizontal h1, .lcars-chrome-vertical h1, .lcars-btn .lcars-chrome-vertical h1, .lcars-chrome-vertical .lcars-btn h1, input [type="button"] .lcars-chrome-vertical h1, .lcars-chrome-vertical input [type="button"] h1, button .lcars-chrome-vertical h1, .lcars-chrome-vertical button h1, .lcars-chrome .lcars-btn h1, .lcars-btn .lcars-chrome h1, .lcars-chrome-horizontal .lcars-btn h1, .lcars-btn .lcars-chrome-horizontal h1, .lcars-chrome-vertical .lcars-btn h1, .lcars-btn .lcars-chrome-vertical h1, .lcars-btn h1, input [type="button"] .lcars-btn h1, .lcars-btn input [type="button"] h1, button .lcars-btn h1, .lcars-btn button h1, .lcars-chrome input [type="button"] h1, input [type="button"] .lcars-chrome h1, .lcars-chrome-horizontal input [type="button"] h1, input [type="button"] .lcars-chrome-horizontal h1, .lcars-chrome-vertical input [type="button"] h1, input [type="button"] .lcars-chrome-vertical h1, .lcars-btn input [type="button"] h1, input [type="button"] .lcars-btn h1, input [type="button"] h1, button input [type="button"] h1, input [type="button"] button h1, .lcars-chrome button h1, button .lcars-chrome h1, .lcars-chrome-horizontal button h1, button .lcars-chrome-horizontal h1, .lcars-chrome-vertical button h1, button .lcars-chrome-vertical h1, .lcars-btn button h1, button .lcars-btn h1, input [type="button"] button h1, button input [type="button"] h1, button h1, .lcars-chrome h2, .lcars-chrome-horizontal .lcars-chrome h2, .lcars-chrome .lcars-chrome-horizontal h2, .lcars-chrome-vertical .lcars-chrome h2, .lcars-chrome .lcars-chrome-vertical h2, .lcars-btn .lcars-chrome h2, .lcars-chrome .lcars-btn h2, input [type="button"] .lcars-chrome h2, .lcars-chrome input [type="button"] h2, button .lcars-chrome h2, .lcars-chrome button h2, .lcars-chrome .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .lcars-chrome h2, .lcars-chrome-horizontal h2, .lcars-chrome-vertical .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .lcars-chrome-vertical h2, .lcars-btn .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .lcars-btn h2, input [type="button"] .lcars-chrome-horizontal h2, .lcars-chrome-horizontal input [type="button"] h2, button .lcars-chrome-horizontal h2, .lcars-chrome-horizontal button h2, .lcars-chrome .lcars-chrome-vertical h2, .lcars-chrome-vertical .lcars-chrome h2, .lcars-chrome-horizontal .lcars-chrome-vertical h2, .lcars-chrome-vertical .lcars-chrome-horizontal h2, .lcars-chrome-vertical h2, .lcars-btn .lcars-chrome-vertical h2, .lcars-chrome-vertical .lcars-btn h2, input [type="button"] .lcars-chrome-vertical h2, .lcars-chrome-vertical input [type="button"] h2, button .lcars-chrome-vertical h2, .lcars-chrome-vertical button h2, .lcars-chrome .lcars-btn h2, .lcars-btn .lcars-chrome h2, .lcars-chrome-horizontal .lcars-btn h2, .lcars-btn .lcars-chrome-horizontal h2, .lcars-chrome-vertical .lcars-btn h2, .lcars-btn .lcars-chrome-vertical h2, .lcars-btn h2, input [type="button"] .lcars-btn h2, .lcars-btn input [type="button"] h2, button .lcars-btn h2, .lcars-btn button h2, .lcars-chrome input [type="button"] h2, input [type="button"] .lcars-chrome h2, .lcars-chrome-horizontal input [type="button"] h2, input [type="button"] .lcars-chrome-horizontal h2, .lcars-chrome-vertical input [type="button"] h2, input [type="button"] .lcars-chrome-vertical h2, .lcars-btn input [type="button"] h2, input [type="button"] .lcars-btn h2, input [type="button"] h2, button input [type="button"] h2, input [type="button"] button h2, .lcars-chrome button h2, button .lcars-chrome h2, .lcars-chrome-horizontal button h2, button .lcars-chrome-horizontal h2, .lcars-chrome-vertical button h2, button .lcars-chrome-vertical h2, .lcars-btn button h2, button .lcars-btn h2, input [type="button"] button h2, button input [type="button"] h2, button h2, .lcars-chrome h3, .lcars-chrome-horizontal .lcars-chrome h3, .lcars-chrome .lcars-chrome-horizontal h3, .lcars-chrome-vertical .lcars-chrome h3, .lcars-chrome .lcars-chrome-vertical h3, .lcars-btn .lcars-chrome h3, .lcars-chrome .lcars-btn h3, input [type="button"] .lcars-chrome h3, .lcars-chrome input [type="button"] h3, button .lcars-chrome h3, .lcars-chrome button h3, .lcars-chrome .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .lcars-chrome h3, .lcars-chrome-horizontal h3, .lcars-chrome-vertical .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .lcars-chrome-vertical h3, .lcars-btn .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .lcars-btn h3, input [type="button"] .lcars-chrome-horizontal h3, .lcars-chrome-horizontal input [type="button"] h3, button .lcars-chrome-horizontal h3, .lcars-chrome-horizontal button h3, .lcars-chrome .lcars-chrome-vertical h3, .lcars-chrome-vertical .lcars-chrome h3, .lcars-chrome-horizontal .lcars-chrome-vertical h3, .lcars-chrome-vertical .lcars-chrome-horizontal h3, .lcars-chrome-vertical h3, .lcars-btn .lcars-chrome-vertical h3, .lcars-chrome-vertical .lcars-btn h3, input [type="button"] .lcars-chrome-vertical h3, .lcars-chrome-vertical input [type="button"] h3, button .lcars-chrome-vertical h3, .lcars-chrome-vertical button h3, .lcars-chrome .lcars-btn h3, .lcars-btn .lcars-chrome h3, .lcars-chrome-horizontal .lcars-btn h3, .lcars-btn .lcars-chrome-horizontal h3, .lcars-chrome-vertical .lcars-btn h3, .lcars-btn .lcars-chrome-vertical h3, .lcars-btn h3, input [type="button"] .lcars-btn h3, .lcars-btn input [type="button"] h3, button .lcars-btn h3, .lcars-btn button h3, .lcars-chrome input [type="button"] h3, input [type="button"] .lcars-chrome h3, .lcars-chrome-horizontal input [type="button"] h3, input [type="button"] .lcars-chrome-horizontal h3, .lcars-chrome-vertical input [type="button"] h3, input [type="button"] .lcars-chrome-vertical h3, .lcars-btn input [type="button"] h3, input [type="button"] .lcars-btn h3, input [type="button"] h3, button input [type="button"] h3, input [type="button"] button h3, .lcars-chrome button h3, button .lcars-chrome h3, .lcars-chrome-horizontal button h3, button .lcars-chrome-horizontal h3, .lcars-chrome-vertical button h3, button .lcars-chrome-vertical h3, .lcars-btn button h3, button .lcars-btn h3, input [type="button"] button h3, button input [type="button"] h3, button h3, .lcars-chrome h4, .lcars-chrome-horizontal .lcars-chrome h4, .lcars-chrome .lcars-chrome-horizontal h4, .lcars-chrome-vertical .lcars-chrome h4, .lcars-chrome .lcars-chrome-vertical h4, .lcars-btn .lcars-chrome h4, .lcars-chrome .lcars-btn h4, input [type="button"] .lcars-chrome h4, .lcars-chrome input [type="button"] h4, button .lcars-chrome h4, .lcars-chrome button h4, .lcars-chrome .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .lcars-chrome h4, .lcars-chrome-horizontal h4, .lcars-chrome-vertical .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .lcars-chrome-vertical h4, .lcars-btn .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .lcars-btn h4, input [type="button"] .lcars-chrome-horizontal h4, .lcars-chrome-horizontal input [type="button"] h4, button .lcars-chrome-horizontal h4, .lcars-chrome-horizontal button h4, .lcars-chrome .lcars-chrome-vertical h4, .lcars-chrome-vertical .lcars-chrome h4, .lcars-chrome-horizontal .lcars-chrome-vertical h4, .lcars-chrome-vertical .lcars-chrome-horizontal h4, .lcars-chrome-vertical h4, .lcars-btn .lcars-chrome-vertical h4, .lcars-chrome-vertical .lcars-btn h4, input [type="button"] .lcars-chrome-vertical h4, .lcars-chrome-vertical input [type="button"] h4, button .lcars-chrome-vertical h4, .lcars-chrome-vertical button h4, .lcars-chrome .lcars-btn h4, .lcars-btn .lcars-chrome h4, .lcars-chrome-horizontal .lcars-btn h4, .lcars-btn .lcars-chrome-horizontal h4, .lcars-chrome-vertical .lcars-btn h4, .lcars-btn .lcars-chrome-vertical h4, .lcars-btn h4, input [type="button"] .lcars-btn h4, .lcars-btn input [type="button"] h4, button .lcars-btn h4, .lcars-btn button h4, .lcars-chrome input [type="button"] h4, input [type="button"] .lcars-chrome h4, .lcars-chrome-horizontal input [type="button"] h4, input [type="button"] .lcars-chrome-horizontal h4, .lcars-chrome-vertical input [type="button"] h4, input [type="button"] .lcars-chrome-vertical h4, .lcars-btn input [type="button"] h4, input [type="button"] .lcars-btn h4, input [type="button"] h4, button input [type="button"] h4, input [type="button"] button h4, .lcars-chrome button h4, button .lcars-chrome h4, .lcars-chrome-horizontal button h4, button .lcars-chrome-horizontal h4, .lcars-chrome-vertical button h4, button .lcars-chrome-vertical h4, .lcars-btn button h4, button .lcars-btn h4, input [type="button"] button h4, button input [type="button"] h4, button h4, .lcars-chrome h5, .lcars-chrome-horizontal .lcars-chrome h5, .lcars-chrome .lcars-chrome-horizontal h5, .lcars-chrome-vertical .lcars-chrome h5, .lcars-chrome .lcars-chrome-vertical h5, .lcars-btn .lcars-chrome h5, .lcars-chrome .lcars-btn h5, input [type="button"] .lcars-chrome h5, .lcars-chrome input [type="button"] h5, button .lcars-chrome h5, .lcars-chrome button h5, .lcars-chrome .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .lcars-chrome h5, .lcars-chrome-horizontal h5, .lcars-chrome-vertical .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .lcars-chrome-vertical h5, .lcars-btn .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .lcars-btn h5, input [type="button"] .lcars-chrome-horizontal h5, .lcars-chrome-horizontal input [type="button"] h5, button .lcars-chrome-horizontal h5, .lcars-chrome-horizontal button h5, .lcars-chrome .lcars-chrome-vertical h5, .lcars-chrome-vertical .lcars-chrome h5, .lcars-chrome-horizontal .lcars-chrome-vertical h5, .lcars-chrome-vertical .lcars-chrome-horizontal h5, .lcars-chrome-vertical h5, .lcars-btn .lcars-chrome-vertical h5, .lcars-chrome-vertical .lcars-btn h5, input [type="button"] .lcars-chrome-vertical h5, .lcars-chrome-vertical input [type="button"] h5, button .lcars-chrome-vertical h5, .lcars-chrome-vertical button h5, .lcars-chrome .lcars-btn h5, .lcars-btn .lcars-chrome h5, .lcars-chrome-horizontal .lcars-btn h5, .lcars-btn .lcars-chrome-horizontal h5, .lcars-chrome-vertical .lcars-btn h5, .lcars-btn .lcars-chrome-vertical h5, .lcars-btn h5, input [type="button"] .lcars-btn h5, .lcars-btn input [type="button"] h5, button .lcars-btn h5, .lcars-btn button h5, .lcars-chrome input [type="button"] h5, input [type="button"] .lcars-chrome h5, .lcars-chrome-horizontal input [type="button"] h5, input [type="button"] .lcars-chrome-horizontal h5, .lcars-chrome-vertical input [type="button"] h5, input [type="button"] .lcars-chrome-vertical h5, .lcars-btn input [type="button"] h5, input [type="button"] .lcars-btn h5, input [type="button"] h5, button input [type="button"] h5, input [type="button"] button h5, .lcars-chrome button h5, button .lcars-chrome h5, .lcars-chrome-horizontal button h5, button .lcars-chrome-horizontal h5, .lcars-chrome-vertical button h5, button .lcars-chrome-vertical h5, .lcars-btn button h5, button .lcars-btn h5, input [type="button"] button h5, button input [type="button"] h5, button h5, .lcars-chrome h6, .lcars-chrome-horizontal .lcars-chrome h6, .lcars-chrome .lcars-chrome-horizontal h6, .lcars-chrome-vertical .lcars-chrome h6, .lcars-chrome .lcars-chrome-vertical h6, .lcars-btn .lcars-chrome h6, .lcars-chrome .lcars-btn h6, input [type="button"] .lcars-chrome h6, .lcars-chrome input [type="button"] h6, button .lcars-chrome h6, .lcars-chrome button h6, .lcars-chrome .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .lcars-chrome h6, .lcars-chrome-horizontal h6, .lcars-chrome-vertical .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .lcars-chrome-vertical h6, .lcars-btn .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .lcars-btn h6, input [type="button"] .lcars-chrome-horizontal h6, .lcars-chrome-horizontal input [type="button"] h6, button .lcars-chrome-horizontal h6, .lcars-chrome-horizontal button h6, .lcars-chrome .lcars-chrome-vertical h6, .lcars-chrome-vertical .lcars-chrome h6, .lcars-chrome-horizontal .lcars-chrome-vertical h6, .lcars-chrome-vertical .lcars-chrome-horizontal h6, .lcars-chrome-vertical h6, .lcars-btn .lcars-chrome-vertical h6, .lcars-chrome-vertical .lcars-btn h6, input [type="button"] .lcars-chrome-vertical h6, .lcars-chrome-vertical input [type="button"] h6, button .lcars-chrome-vertical h6, .lcars-chrome-vertical button h6, .lcars-chrome .lcars-btn h6, .lcars-btn .lcars-chrome h6, .lcars-chrome-horizontal .lcars-btn h6, .lcars-btn .lcars-chrome-horizontal h6, .lcars-chrome-vertical .lcars-btn h6, .lcars-btn .lcars-chrome-vertical h6, .lcars-btn h6, input [type="button"] .lcars-btn h6, .lcars-btn input [type="button"] h6, button .lcars-btn h6, .lcars-btn button h6, .lcars-chrome input [type="button"] h6, input [type="button"] .lcars-chrome h6, .lcars-chrome-horizontal input [type="button"] h6, input [type="button"] .lcars-chrome-horizontal h6, .lcars-chrome-vertical input [type="button"] h6, input [type="button"] .lcars-chrome-vertical h6, .lcars-btn input [type="button"] h6, input [type="button"] .lcars-btn h6, input [type="button"] h6, button input [type="button"] h6, input [type="button"] button h6, .lcars-chrome button h6, button .lcars-chrome h6, .lcars-chrome-horizontal button h6, button .lcars-chrome-horizontal h6, .lcars-chrome-vertical button h6, button .lcars-chrome-vertical h6, .lcars-btn button h6, button .lcars-btn h6, input [type="button"] button h6, button input [type="button"] h6, button h6, .lcars-chrome .lcars-bar-space, .lcars-chrome-horizontal .lcars-chrome .lcars-bar-space, .lcars-chrome .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-vertical .lcars-chrome .lcars-bar-space, .lcars-chrome .lcars-chrome-vertical .lcars-bar-space, .lcars-btn .lcars-chrome .lcars-bar-space, .lcars-chrome .lcars-btn .lcars-bar-space, input [type="button"] .lcars-chrome .lcars-bar-space, .lcars-chrome input [type="button"] .lcars-bar-space, button .lcars-chrome .lcars-bar-space, .lcars-chrome button .lcars-bar-space, .lcars-chrome .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-horizontal .lcars-chrome .lcars-bar-space, .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-vertical .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-horizontal .lcars-chrome-vertical .lcars-bar-space, .lcars-btn .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-horizontal .lcars-btn .lcars-bar-space, input [type="button"] .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-horizontal input [type="button"] .lcars-bar-space, button .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-horizontal button .lcars-bar-space, .lcars-chrome .lcars-chrome-vertical .lcars-bar-space, .lcars-chrome-vertical .lcars-chrome .lcars-bar-space, .lcars-chrome-horizontal .lcars-chrome-vertical .lcars-bar-space, .lcars-chrome-vertical .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-vertical .lcars-bar-space, .lcars-btn .lcars-chrome-vertical .lcars-bar-space, .lcars-chrome-vertical .lcars-btn .lcars-bar-space, input [type="button"] .lcars-chrome-vertical .lcars-bar-space, .lcars-chrome-vertical input [type="button"] .lcars-bar-space, button .lcars-chrome-vertical .lcars-bar-space, .lcars-chrome-vertical button .lcars-bar-space, .lcars-chrome .lcars-btn .lcars-bar-space, .lcars-btn .lcars-chrome .lcars-bar-space, .lcars-chrome-horizontal .lcars-btn .lcars-bar-space, .lcars-btn .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-vertical .lcars-btn .lcars-bar-space, .lcars-btn .lcars-chrome-vertical .lcars-bar-space, .lcars-btn .lcars-bar-space, input [type="button"] .lcars-btn .lcars-bar-space, .lcars-btn input [type="button"] .lcars-bar-space, button .lcars-btn .lcars-bar-space, .lcars-btn button .lcars-bar-space, .lcars-chrome input [type="button"] .lcars-bar-space, input [type="button"] .lcars-chrome .lcars-bar-space, .lcars-chrome-horizontal input [type="button"] .lcars-bar-space, input [type="button"] .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-vertical input [type="button"] .lcars-bar-space, input [type="button"] .lcars-chrome-vertical .lcars-bar-space, .lcars-btn input [type="button"] .lcars-bar-space, input [type="button"] .lcars-btn .lcars-bar-space, input [type="button"] .lcars-bar-space, button input [type="button"] .lcars-bar-space, input [type="button"] button .lcars-bar-space, .lcars-chrome button .lcars-bar-space, button .lcars-chrome .lcars-bar-space, .lcars-chrome-horizontal button .lcars-bar-space, button .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-vertical button .lcars-bar-space, button .lcars-chrome-vertical .lcars-bar-space, .lcars-btn button .lcars-bar-space, button .lcars-btn .lcars-bar-space, input [type="button"] button .lcars-bar-space, button input [type="button"] .lcars-bar-space, button .lcars-bar-space, .lcars-chrome .lcars-btn, .lcars-chrome-horizontal .lcars-chrome .lcars-btn, .lcars-chrome .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-vertical .lcars-chrome .lcars-btn, .lcars-chrome .lcars-chrome-vertical .lcars-btn, .lcars-btn .lcars-chrome .lcars-btn, .lcars-chrome .lcars-btn .lcars-btn, input [type="button"] .lcars-chrome .lcars-btn, .lcars-chrome input [type="button"] .lcars-btn, button .lcars-chrome .lcars-btn, .lcars-chrome button .lcars-btn, .lcars-chrome .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-horizontal .lcars-chrome .lcars-btn, .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-vertical .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-horizontal .lcars-chrome-vertical .lcars-btn, .lcars-btn .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-horizontal .lcars-btn .lcars-btn, input [type="button"] .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-horizontal input [type="button"] .lcars-btn, button .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-horizontal button .lcars-btn, .lcars-chrome .lcars-chrome-vertical .lcars-btn, .lcars-chrome-vertical .lcars-chrome .lcars-btn, .lcars-chrome-horizontal .lcars-chrome-vertical .lcars-btn, .lcars-chrome-vertical .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-vertical .lcars-btn, .lcars-btn .lcars-chrome-vertical .lcars-btn, .lcars-chrome-vertical .lcars-btn .lcars-btn, input [type="button"] .lcars-chrome-vertical .lcars-btn, .lcars-chrome-vertical input [type="button"] .lcars-btn, button .lcars-chrome-vertical .lcars-btn, .lcars-chrome-vertical button .lcars-btn, .lcars-chrome .lcars-btn .lcars-btn, .lcars-btn .lcars-chrome .lcars-btn, .lcars-chrome-horizontal .lcars-btn .lcars-btn, .lcars-btn .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-vertical .lcars-btn .lcars-btn, .lcars-btn .lcars-chrome-vertical .lcars-btn, .lcars-btn .lcars-btn, input [type="button"] .lcars-btn .lcars-btn, .lcars-btn input [type="button"] .lcars-btn, button .lcars-btn .lcars-btn, .lcars-btn button .lcars-btn, .lcars-chrome input [type="button"] .lcars-btn, input [type="button"] .lcars-chrome .lcars-btn, .lcars-chrome-horizontal input [type="button"] .lcars-btn, input [type="button"] .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-vertical input [type="button"] .lcars-btn, input [type="button"] .lcars-chrome-vertical .lcars-btn, .lcars-btn input [type="button"] .lcars-btn, input [type="button"] .lcars-btn .lcars-btn, input [type="button"] .lcars-btn, button input [type="button"] .lcars-btn, input [type="button"] button .lcars-btn, .lcars-chrome button .lcars-btn, button .lcars-chrome .lcars-btn, .lcars-chrome-horizontal button .lcars-btn, button .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-vertical button .lcars-btn, button .lcars-chrome-vertical .lcars-btn, .lcars-btn button .lcars-btn, button .lcars-btn .lcars-btn, input [type="button"] button .lcars-btn, button input [type="button"] .lcars-btn, button .lcars-btn, .lcars-chrome input [type="button"], .lcars-chrome-horizontal .lcars-chrome input [type="button"], .lcars-chrome input .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical .lcars-chrome input [type="button"], .lcars-chrome input .lcars-chrome-vertical [type="button"], .lcars-btn .lcars-chrome input [type="button"], .lcars-chrome input .lcars-btn [type="button"], .lcars-chrome input [type="button"] [type="button"], button .lcars-chrome input [type="button"], .lcars-chrome input button [type="button"], input .lcars-chrome [type="button"], .lcars-chrome-horizontal input .lcars-chrome [type="button"], input .lcars-chrome .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical input .lcars-chrome [type="button"], input .lcars-chrome .lcars-chrome-vertical [type="button"], .lcars-btn input .lcars-chrome [type="button"], input .lcars-chrome .lcars-btn [type="button"], input [type="button"] .lcars-chrome [type="button"], input .lcars-chrome [type="button"] [type="button"], button input .lcars-chrome [type="button"], input .lcars-chrome button [type="button"], .lcars-chrome .lcars-chrome-horizontal input [type="button"], .lcars-chrome-horizontal input .lcars-chrome [type="button"], .lcars-chrome-horizontal input [type="button"], .lcars-chrome-vertical .lcars-chrome-horizontal input [type="button"], .lcars-chrome-horizontal input .lcars-chrome-vertical [type="button"], .lcars-btn .lcars-chrome-horizontal input [type="button"], .lcars-chrome-horizontal input .lcars-btn [type="button"], .lcars-chrome-horizontal input [type="button"] [type="button"], button .lcars-chrome-horizontal input [type="button"], .lcars-chrome-horizontal input button [type="button"], .lcars-chrome input .lcars-chrome-horizontal [type="button"], input .lcars-chrome-horizontal .lcars-chrome [type="button"], input .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical input .lcars-chrome-horizontal [type="button"], input .lcars-chrome-horizontal .lcars-chrome-vertical [type="button"], .lcars-btn input .lcars-chrome-horizontal [type="button"], input .lcars-chrome-horizontal .lcars-btn [type="button"], input [type="button"] .lcars-chrome-horizontal [type="button"], input .lcars-chrome-horizontal [type="button"] [type="button"], button input .lcars-chrome-horizontal [type="button"], input .lcars-chrome-horizontal button [type="button"], .lcars-chrome .lcars-chrome-vertical input [type="button"], .lcars-chrome-vertical input .lcars-chrome [type="button"], .lcars-chrome-horizontal .lcars-chrome-vertical input [type="button"], .lcars-chrome-vertical input .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical input [type="button"], .lcars-btn .lcars-chrome-vertical input [type="button"], .lcars-chrome-vertical input .lcars-btn [type="button"], .lcars-chrome-vertical input [type="button"] [type="button"], button .lcars-chrome-vertical input [type="button"], .lcars-chrome-vertical input button [type="button"], .lcars-chrome input .lcars-chrome-vertical [type="button"], input .lcars-chrome-vertical .lcars-chrome [type="button"], .lcars-chrome-horizontal input .lcars-chrome-vertical [type="button"], input .lcars-chrome-vertical .lcars-chrome-horizontal [type="button"], input .lcars-chrome-vertical [type="button"], .lcars-btn input .lcars-chrome-vertical [type="button"], input .lcars-chrome-vertical .lcars-btn [type="button"], input [type="button"] .lcars-chrome-vertical [type="button"], input .lcars-chrome-vertical [type="button"] [type="button"], button input .lcars-chrome-vertical [type="button"], input .lcars-chrome-vertical button [type="button"], .lcars-chrome .lcars-btn input [type="button"], .lcars-btn input .lcars-chrome [type="button"], .lcars-chrome-horizontal .lcars-btn input [type="button"], .lcars-btn input .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical .lcars-btn input [type="button"], .lcars-btn input .lcars-chrome-vertical [type="button"], .lcars-btn input [type="button"], .lcars-btn input [type="button"] [type="button"], button .lcars-btn input [type="button"], .lcars-btn input button [type="button"], .lcars-chrome input .lcars-btn [type="button"], input .lcars-btn .lcars-chrome [type="button"], .lcars-chrome-horizontal input .lcars-btn [type="button"], input .lcars-btn .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical input .lcars-btn [type="button"], input .lcars-btn .lcars-chrome-vertical [type="button"], input .lcars-btn [type="button"], input [type="button"] .lcars-btn [type="button"], input .lcars-btn [type="button"] [type="button"], button input .lcars-btn [type="button"], input .lcars-btn button [type="button"], .lcars-chrome input [type="button"] [type="button"], input [type="button"] .lcars-chrome [type="button"], .lcars-chrome-horizontal input [type="button"] [type="button"], input [type="button"] .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical input [type="button"] [type="button"], input [type="button"] .lcars-chrome-vertical [type="button"], .lcars-btn input [type="button"] [type="button"], input [type="button"] .lcars-btn [type="button"], input [type="button"] [type="button"], button input [type="button"] [type="button"], input [type="button"] button [type="button"], .lcars-chrome button input [type="button"], button input .lcars-chrome [type="button"], .lcars-chrome-horizontal button input [type="button"], button input .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical button input [type="button"], button input .lcars-chrome-vertical [type="button"], .lcars-btn button input [type="button"], button input .lcars-btn [type="button"], button input [type="button"] [type="button"], button input [type="button"], .lcars-chrome input button [type="button"], input button .lcars-chrome [type="button"], .lcars-chrome-horizontal input button [type="button"], input button .lcars-chrome-horizontal [type="button"], .lcars-chrome-vertical input button [type="button"], input button .lcars-chrome-vertical [type="button"], .lcars-btn input button [type="button"], input button .lcars-btn [type="button"], input [type="button"] button [type="button"], input button [type="button"] [type="button"], input button [type="button"], .lcars-chrome button, .lcars-chrome-horizontal .lcars-chrome button, .lcars-chrome .lcars-chrome-horizontal button, .lcars-chrome-vertical .lcars-chrome button, .lcars-chrome .lcars-chrome-vertical button, .lcars-btn .lcars-chrome button, .lcars-chrome .lcars-btn button, input [type="button"] .lcars-chrome button, .lcars-chrome input [type="button"] button, button .lcars-chrome button, .lcars-chrome button button, .lcars-chrome .lcars-chrome-horizontal button, .lcars-chrome-horizontal .lcars-chrome button, .lcars-chrome-horizontal button, .lcars-chrome-vertical .lcars-chrome-horizontal button, .lcars-chrome-horizontal .lcars-chrome-vertical button, .lcars-btn .lcars-chrome-horizontal button, .lcars-chrome-horizontal .lcars-btn button, input [type="button"] .lcars-chrome-horizontal button, .lcars-chrome-horizontal input [type="button"] button, button .lcars-chrome-horizontal button, .lcars-chrome-horizontal button button, .lcars-chrome .lcars-chrome-vertical button, .lcars-chrome-vertical .lcars-chrome button, .lcars-chrome-horizontal .lcars-chrome-vertical button, .lcars-chrome-vertical .lcars-chrome-horizontal button, .lcars-chrome-vertical button, .lcars-btn .lcars-chrome-vertical button, .lcars-chrome-vertical .lcars-btn button, input [type="button"] .lcars-chrome-vertical button, .lcars-chrome-vertical input [type="button"] button, button .lcars-chrome-vertical button, .lcars-chrome-vertical button button, .lcars-chrome .lcars-btn button, .lcars-btn .lcars-chrome button, .lcars-chrome-horizontal .lcars-btn button, .lcars-btn .lcars-chrome-horizontal button, .lcars-chrome-vertical .lcars-btn button, .lcars-btn .lcars-chrome-vertical button, .lcars-btn button, input [type="button"] .lcars-btn button, .lcars-btn input [type="button"] button, button .lcars-btn button, .lcars-btn button button, .lcars-chrome input [type="button"] button, input [type="button"] .lcars-chrome button, .lcars-chrome-horizontal input [type="button"] button, input [type="button"] .lcars-chrome-horizontal button, .lcars-chrome-vertical input [type="button"] button, input [type="button"] .lcars-chrome-vertical button, .lcars-btn input [type="button"] button, input [type="button"] .lcars-btn button, input [type="button"] button, button input [type="button"] button, input [type="button"] button button, .lcars-chrome button button, button .lcars-chrome button, .lcars-chrome-horizontal button button, button .lcars-chrome-horizontal button, .lcars-chrome-vertical button button, button .lcars-chrome-vertical button, .lcars-btn button button, button .lcars-btn button, input [type="button"] button button, button input [type="button"] button, button button {
+    margin: 0;
+    display: inline-block;
+    flex: 0 0 auto; }
+  .lcars-chrome h1, .lcars-chrome-horizontal h1, .lcars-chrome-vertical h1, .lcars-btn h1, input [type="button"] h1, button h1, .lcars-chrome h2, .lcars-chrome-horizontal h2, .lcars-chrome-vertical h2, .lcars-btn h2, input [type="button"] h2, button h2, .lcars-chrome h3, .lcars-chrome-horizontal h3, .lcars-chrome-vertical h3, .lcars-btn h3, input [type="button"] h3, button h3, .lcars-chrome h4, .lcars-chrome-horizontal h4, .lcars-chrome-vertical h4, .lcars-btn h4, input [type="button"] h4, button h4, .lcars-chrome h5, .lcars-chrome-horizontal h5, .lcars-chrome-vertical h5, .lcars-btn h5, input [type="button"] h5, button h5, .lcars-chrome h6, .lcars-chrome-horizontal h6, .lcars-chrome-vertical h6, .lcars-btn h6, input [type="button"] h6, button h6 {
+    background-color: #000;
+    line-height: 100%;
+    font-size: 260%;
+    border-bottom: 0;
+    margin-top: -0.25rem; }
+  .lcars-chrome .lcars-bar-space, .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-vertical .lcars-bar-space, .lcars-btn .lcars-bar-space, input [type="button"] .lcars-bar-space, button .lcars-bar-space {
+    flex: 1 0 auto; }
+
+.lcars-chrome-horizontal {
+  padding: 0 2em;
+  max-height: 2em;
+  flex-direction: row; }
+  .lcars-chrome-horizontal .lcars-chrome-component:first-child, .lcars-chrome-horizontal .lcars-chrome h1:first-child, .lcars-chrome .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal .lcars-btn h1:first-child, .lcars-btn .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal input [type="button"] h1:first-child, input [type="button"] .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal button h1:first-child, button .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal .lcars-chrome h2:first-child, .lcars-chrome .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal .lcars-btn h2:first-child, .lcars-btn .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal input [type="button"] h2:first-child, input [type="button"] .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal button h2:first-child, button .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal .lcars-chrome h3:first-child, .lcars-chrome .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal .lcars-btn h3:first-child, .lcars-btn .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal input [type="button"] h3:first-child, input [type="button"] .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal button h3:first-child, button .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal .lcars-chrome h4:first-child, .lcars-chrome .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal .lcars-btn h4:first-child, .lcars-btn .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal input [type="button"] h4:first-child, input [type="button"] .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal button h4:first-child, button .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal .lcars-chrome h5:first-child, .lcars-chrome .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal .lcars-btn h5:first-child, .lcars-btn .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal input [type="button"] h5:first-child, input [type="button"] .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal button h5:first-child, button .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal .lcars-chrome h6:first-child, .lcars-chrome .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal .lcars-btn h6:first-child, .lcars-btn .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal input [type="button"] h6:first-child, input [type="button"] .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal button h6:first-child, button .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal .lcars-bar-space:first-child, .lcars-chrome-horizontal .lcars-btn:first-child, .lcars-chrome-horizontal input [type="button"]:first-child, input .lcars-chrome-horizontal [type="button"]:first-child, .lcars-chrome-horizontal .lcars-chrome button:first-child, .lcars-chrome .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical button:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal .lcars-btn button:first-child, .lcars-btn .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal input [type="button"] button:first-child, input [type="button"] .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal button button:first-child, button .lcars-chrome-horizontal button:first-child {
+    border-left: 0.4rem solid #000; }
+  .lcars-chrome-horizontal .lcars-chrome-component, .lcars-chrome-horizontal .lcars-chrome h1, .lcars-chrome .lcars-chrome-horizontal h1, .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .lcars-chrome-vertical h1, .lcars-chrome-vertical .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .lcars-btn h1, .lcars-btn .lcars-chrome-horizontal h1, .lcars-chrome-horizontal input [type="button"] h1, input [type="button"] .lcars-chrome-horizontal h1, .lcars-chrome-horizontal button h1, button .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .lcars-chrome h2, .lcars-chrome .lcars-chrome-horizontal h2, .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .lcars-chrome-vertical h2, .lcars-chrome-vertical .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .lcars-btn h2, .lcars-btn .lcars-chrome-horizontal h2, .lcars-chrome-horizontal input [type="button"] h2, input [type="button"] .lcars-chrome-horizontal h2, .lcars-chrome-horizontal button h2, button .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .lcars-chrome h3, .lcars-chrome .lcars-chrome-horizontal h3, .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .lcars-chrome-vertical h3, .lcars-chrome-vertical .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .lcars-btn h3, .lcars-btn .lcars-chrome-horizontal h3, .lcars-chrome-horizontal input [type="button"] h3, input [type="button"] .lcars-chrome-horizontal h3, .lcars-chrome-horizontal button h3, button .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .lcars-chrome h4, .lcars-chrome .lcars-chrome-horizontal h4, .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .lcars-chrome-vertical h4, .lcars-chrome-vertical .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .lcars-btn h4, .lcars-btn .lcars-chrome-horizontal h4, .lcars-chrome-horizontal input [type="button"] h4, input [type="button"] .lcars-chrome-horizontal h4, .lcars-chrome-horizontal button h4, button .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .lcars-chrome h5, .lcars-chrome .lcars-chrome-horizontal h5, .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .lcars-chrome-vertical h5, .lcars-chrome-vertical .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .lcars-btn h5, .lcars-btn .lcars-chrome-horizontal h5, .lcars-chrome-horizontal input [type="button"] h5, input [type="button"] .lcars-chrome-horizontal h5, .lcars-chrome-horizontal button h5, button .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .lcars-chrome h6, .lcars-chrome .lcars-chrome-horizontal h6, .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .lcars-chrome-vertical h6, .lcars-chrome-vertical .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .lcars-btn h6, .lcars-btn .lcars-chrome-horizontal h6, .lcars-chrome-horizontal input [type="button"] h6, input [type="button"] .lcars-chrome-horizontal h6, .lcars-chrome-horizontal button h6, button .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .lcars-bar-space, .lcars-chrome-horizontal .lcars-btn, .lcars-chrome-horizontal input [type="button"], input .lcars-chrome-horizontal [type="button"], .lcars-chrome-horizontal .lcars-chrome button, .lcars-chrome .lcars-chrome-horizontal button, .lcars-chrome-horizontal button, .lcars-chrome-horizontal .lcars-chrome-vertical button, .lcars-chrome-vertical .lcars-chrome-horizontal button, .lcars-chrome-horizontal .lcars-btn button, .lcars-btn .lcars-chrome-horizontal button, .lcars-chrome-horizontal input [type="button"] button, input [type="button"] .lcars-chrome-horizontal button, .lcars-chrome-horizontal button button, button .lcars-chrome-horizontal button {
+    vertical-align: bottom;
+    border-right: 0.3rem solid #000; }
+  .lcars-chrome-horizontal .lcars-chrome-component:last-child, .lcars-chrome-horizontal .lcars-chrome h1:last-child, .lcars-chrome .lcars-chrome-horizontal h1:last-child, .lcars-chrome-horizontal h1:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h1:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h1:last-child, .lcars-chrome-horizontal .lcars-btn h1:last-child, .lcars-btn .lcars-chrome-horizontal h1:last-child, .lcars-chrome-horizontal input [type="button"] h1:last-child, input [type="button"] .lcars-chrome-horizontal h1:last-child, .lcars-chrome-horizontal button h1:last-child, button .lcars-chrome-horizontal h1:last-child, .lcars-chrome-horizontal .lcars-chrome h2:last-child, .lcars-chrome .lcars-chrome-horizontal h2:last-child, .lcars-chrome-horizontal h2:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h2:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h2:last-child, .lcars-chrome-horizontal .lcars-btn h2:last-child, .lcars-btn .lcars-chrome-horizontal h2:last-child, .lcars-chrome-horizontal input [type="button"] h2:last-child, input [type="button"] .lcars-chrome-horizontal h2:last-child, .lcars-chrome-horizontal button h2:last-child, button .lcars-chrome-horizontal h2:last-child, .lcars-chrome-horizontal .lcars-chrome h3:last-child, .lcars-chrome .lcars-chrome-horizontal h3:last-child, .lcars-chrome-horizontal h3:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h3:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h3:last-child, .lcars-chrome-horizontal .lcars-btn h3:last-child, .lcars-btn .lcars-chrome-horizontal h3:last-child, .lcars-chrome-horizontal input [type="button"] h3:last-child, input [type="button"] .lcars-chrome-horizontal h3:last-child, .lcars-chrome-horizontal button h3:last-child, button .lcars-chrome-horizontal h3:last-child, .lcars-chrome-horizontal .lcars-chrome h4:last-child, .lcars-chrome .lcars-chrome-horizontal h4:last-child, .lcars-chrome-horizontal h4:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h4:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h4:last-child, .lcars-chrome-horizontal .lcars-btn h4:last-child, .lcars-btn .lcars-chrome-horizontal h4:last-child, .lcars-chrome-horizontal input [type="button"] h4:last-child, input [type="button"] .lcars-chrome-horizontal h4:last-child, .lcars-chrome-horizontal button h4:last-child, button .lcars-chrome-horizontal h4:last-child, .lcars-chrome-horizontal .lcars-chrome h5:last-child, .lcars-chrome .lcars-chrome-horizontal h5:last-child, .lcars-chrome-horizontal h5:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h5:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h5:last-child, .lcars-chrome-horizontal .lcars-btn h5:last-child, .lcars-btn .lcars-chrome-horizontal h5:last-child, .lcars-chrome-horizontal input [type="button"] h5:last-child, input [type="button"] .lcars-chrome-horizontal h5:last-child, .lcars-chrome-horizontal button h5:last-child, button .lcars-chrome-horizontal h5:last-child, .lcars-chrome-horizontal .lcars-chrome h6:last-child, .lcars-chrome .lcars-chrome-horizontal h6:last-child, .lcars-chrome-horizontal h6:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h6:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h6:last-child, .lcars-chrome-horizontal .lcars-btn h6:last-child, .lcars-btn .lcars-chrome-horizontal h6:last-child, .lcars-chrome-horizontal input [type="button"] h6:last-child, input [type="button"] .lcars-chrome-horizontal h6:last-child, .lcars-chrome-horizontal button h6:last-child, button .lcars-chrome-horizontal h6:last-child, .lcars-chrome-horizontal .lcars-bar-space:last-child, .lcars-chrome-horizontal .lcars-btn:last-child, .lcars-chrome-horizontal input [type="button"]:last-child, input .lcars-chrome-horizontal [type="button"]:last-child, .lcars-chrome-horizontal .lcars-chrome button:last-child, .lcars-chrome .lcars-chrome-horizontal button:last-child, .lcars-chrome-horizontal button:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical button:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal button:last-child, .lcars-chrome-horizontal .lcars-btn button:last-child, .lcars-btn .lcars-chrome-horizontal button:last-child, .lcars-chrome-horizontal input [type="button"] button:last-child, input [type="button"] .lcars-chrome-horizontal button:last-child, .lcars-chrome-horizontal button button:last-child, button .lcars-chrome-horizontal button:last-child {
+    border-right: 0.4rem solid #000; }
+  .lcars-chrome-horizontal.alt-cap-right {
+    border-right: 2.5em solid #ff9900;
+    padding-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .lcars-chrome-horizontal.alt-cap-left {
+    border-left: 2.5em solid #ff9900;
+    padding-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .lcars-chrome-horizontal .lcars-bar-space.inlay-up {
+    border-bottom: 0.5rem solid black; }
+  .lcars-chrome-horizontal .lcars-bar-space.inlay-down {
+    border-top: 0.5rem solid black; }
+
+.lcars-chrome-vertical {
+  padding: 2em 0;
+  min-width: 6em;
+  flex-direction: column; }
+  .lcars-chrome-vertical .lcars-chrome-component:first-child, .lcars-chrome-vertical .lcars-chrome h1:first-child, .lcars-chrome .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical .lcars-btn h1:first-child, .lcars-btn .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical input [type="button"] h1:first-child, input [type="button"] .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical button h1:first-child, button .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical .lcars-chrome h2:first-child, .lcars-chrome .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical .lcars-btn h2:first-child, .lcars-btn .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical input [type="button"] h2:first-child, input [type="button"] .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical button h2:first-child, button .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical .lcars-chrome h3:first-child, .lcars-chrome .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical .lcars-btn h3:first-child, .lcars-btn .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical input [type="button"] h3:first-child, input [type="button"] .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical button h3:first-child, button .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical .lcars-chrome h4:first-child, .lcars-chrome .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical .lcars-btn h4:first-child, .lcars-btn .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical input [type="button"] h4:first-child, input [type="button"] .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical button h4:first-child, button .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical .lcars-chrome h5:first-child, .lcars-chrome .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical .lcars-btn h5:first-child, .lcars-btn .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical input [type="button"] h5:first-child, input [type="button"] .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical button h5:first-child, button .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical .lcars-chrome h6:first-child, .lcars-chrome .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical .lcars-btn h6:first-child, .lcars-btn .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical input [type="button"] h6:first-child, input [type="button"] .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical button h6:first-child, button .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical .lcars-bar-space:first-child, .lcars-chrome-vertical .lcars-btn:first-child, .lcars-chrome-vertical input [type="button"]:first-child, input .lcars-chrome-vertical [type="button"]:first-child, .lcars-chrome-vertical .lcars-chrome button:first-child, .lcars-chrome .lcars-chrome-vertical button:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical button:first-child, .lcars-chrome-vertical button:first-child, .lcars-chrome-vertical .lcars-btn button:first-child, .lcars-btn .lcars-chrome-vertical button:first-child, .lcars-chrome-vertical input [type="button"] button:first-child, input [type="button"] .lcars-chrome-vertical button:first-child, .lcars-chrome-vertical button button:first-child, button .lcars-chrome-vertical button:first-child {
+    border-top: 0.3rem solid #000; }
+  .lcars-chrome-vertical .lcars-chrome-component, .lcars-chrome-vertical .lcars-chrome h1, .lcars-chrome .lcars-chrome-vertical h1, .lcars-chrome-vertical .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .lcars-chrome-vertical h1, .lcars-chrome-vertical h1, .lcars-chrome-vertical .lcars-btn h1, .lcars-btn .lcars-chrome-vertical h1, .lcars-chrome-vertical input [type="button"] h1, input [type="button"] .lcars-chrome-vertical h1, .lcars-chrome-vertical button h1, button .lcars-chrome-vertical h1, .lcars-chrome-vertical .lcars-chrome h2, .lcars-chrome .lcars-chrome-vertical h2, .lcars-chrome-vertical .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .lcars-chrome-vertical h2, .lcars-chrome-vertical h2, .lcars-chrome-vertical .lcars-btn h2, .lcars-btn .lcars-chrome-vertical h2, .lcars-chrome-vertical input [type="button"] h2, input [type="button"] .lcars-chrome-vertical h2, .lcars-chrome-vertical button h2, button .lcars-chrome-vertical h2, .lcars-chrome-vertical .lcars-chrome h3, .lcars-chrome .lcars-chrome-vertical h3, .lcars-chrome-vertical .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .lcars-chrome-vertical h3, .lcars-chrome-vertical h3, .lcars-chrome-vertical .lcars-btn h3, .lcars-btn .lcars-chrome-vertical h3, .lcars-chrome-vertical input [type="button"] h3, input [type="button"] .lcars-chrome-vertical h3, .lcars-chrome-vertical button h3, button .lcars-chrome-vertical h3, .lcars-chrome-vertical .lcars-chrome h4, .lcars-chrome .lcars-chrome-vertical h4, .lcars-chrome-vertical .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .lcars-chrome-vertical h4, .lcars-chrome-vertical h4, .lcars-chrome-vertical .lcars-btn h4, .lcars-btn .lcars-chrome-vertical h4, .lcars-chrome-vertical input [type="button"] h4, input [type="button"] .lcars-chrome-vertical h4, .lcars-chrome-vertical button h4, button .lcars-chrome-vertical h4, .lcars-chrome-vertical .lcars-chrome h5, .lcars-chrome .lcars-chrome-vertical h5, .lcars-chrome-vertical .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .lcars-chrome-vertical h5, .lcars-chrome-vertical h5, .lcars-chrome-vertical .lcars-btn h5, .lcars-btn .lcars-chrome-vertical h5, .lcars-chrome-vertical input [type="button"] h5, input [type="button"] .lcars-chrome-vertical h5, .lcars-chrome-vertical button h5, button .lcars-chrome-vertical h5, .lcars-chrome-vertical .lcars-chrome h6, .lcars-chrome .lcars-chrome-vertical h6, .lcars-chrome-vertical .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .lcars-chrome-vertical h6, .lcars-chrome-vertical h6, .lcars-chrome-vertical .lcars-btn h6, .lcars-btn .lcars-chrome-vertical h6, .lcars-chrome-vertical input [type="button"] h6, input [type="button"] .lcars-chrome-vertical h6, .lcars-chrome-vertical button h6, button .lcars-chrome-vertical h6, .lcars-chrome-vertical .lcars-bar-space, .lcars-chrome-vertical .lcars-btn, .lcars-chrome-vertical input [type="button"], input .lcars-chrome-vertical [type="button"], .lcars-chrome-vertical .lcars-chrome button, .lcars-chrome .lcars-chrome-vertical button, .lcars-chrome-vertical .lcars-chrome-horizontal button, .lcars-chrome-horizontal .lcars-chrome-vertical button, .lcars-chrome-vertical button, .lcars-chrome-vertical .lcars-btn button, .lcars-btn .lcars-chrome-vertical button, .lcars-chrome-vertical input [type="button"] button, input [type="button"] .lcars-chrome-vertical button, .lcars-chrome-vertical button button, button .lcars-chrome-vertical button {
+    text-align: right;
+    border-bottom: 0.3rem solid #000; }
+  .lcars-chrome-vertical .lcars-chrome-component:last-child, .lcars-chrome-vertical .lcars-chrome h1:last-child, .lcars-chrome .lcars-chrome-vertical h1:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h1:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h1:last-child, .lcars-chrome-vertical h1:last-child, .lcars-chrome-vertical .lcars-btn h1:last-child, .lcars-btn .lcars-chrome-vertical h1:last-child, .lcars-chrome-vertical input [type="button"] h1:last-child, input [type="button"] .lcars-chrome-vertical h1:last-child, .lcars-chrome-vertical button h1:last-child, button .lcars-chrome-vertical h1:last-child, .lcars-chrome-vertical .lcars-chrome h2:last-child, .lcars-chrome .lcars-chrome-vertical h2:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h2:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h2:last-child, .lcars-chrome-vertical h2:last-child, .lcars-chrome-vertical .lcars-btn h2:last-child, .lcars-btn .lcars-chrome-vertical h2:last-child, .lcars-chrome-vertical input [type="button"] h2:last-child, input [type="button"] .lcars-chrome-vertical h2:last-child, .lcars-chrome-vertical button h2:last-child, button .lcars-chrome-vertical h2:last-child, .lcars-chrome-vertical .lcars-chrome h3:last-child, .lcars-chrome .lcars-chrome-vertical h3:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h3:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h3:last-child, .lcars-chrome-vertical h3:last-child, .lcars-chrome-vertical .lcars-btn h3:last-child, .lcars-btn .lcars-chrome-vertical h3:last-child, .lcars-chrome-vertical input [type="button"] h3:last-child, input [type="button"] .lcars-chrome-vertical h3:last-child, .lcars-chrome-vertical button h3:last-child, button .lcars-chrome-vertical h3:last-child, .lcars-chrome-vertical .lcars-chrome h4:last-child, .lcars-chrome .lcars-chrome-vertical h4:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h4:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h4:last-child, .lcars-chrome-vertical h4:last-child, .lcars-chrome-vertical .lcars-btn h4:last-child, .lcars-btn .lcars-chrome-vertical h4:last-child, .lcars-chrome-vertical input [type="button"] h4:last-child, input [type="button"] .lcars-chrome-vertical h4:last-child, .lcars-chrome-vertical button h4:last-child, button .lcars-chrome-vertical h4:last-child, .lcars-chrome-vertical .lcars-chrome h5:last-child, .lcars-chrome .lcars-chrome-vertical h5:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h5:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h5:last-child, .lcars-chrome-vertical h5:last-child, .lcars-chrome-vertical .lcars-btn h5:last-child, .lcars-btn .lcars-chrome-vertical h5:last-child, .lcars-chrome-vertical input [type="button"] h5:last-child, input [type="button"] .lcars-chrome-vertical h5:last-child, .lcars-chrome-vertical button h5:last-child, button .lcars-chrome-vertical h5:last-child, .lcars-chrome-vertical .lcars-chrome h6:last-child, .lcars-chrome .lcars-chrome-vertical h6:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal h6:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical h6:last-child, .lcars-chrome-vertical h6:last-child, .lcars-chrome-vertical .lcars-btn h6:last-child, .lcars-btn .lcars-chrome-vertical h6:last-child, .lcars-chrome-vertical input [type="button"] h6:last-child, input [type="button"] .lcars-chrome-vertical h6:last-child, .lcars-chrome-vertical button h6:last-child, button .lcars-chrome-vertical h6:last-child, .lcars-chrome-vertical .lcars-bar-space:last-child, .lcars-chrome-vertical .lcars-btn:last-child, .lcars-chrome-vertical input [type="button"]:last-child, input .lcars-chrome-vertical [type="button"]:last-child, .lcars-chrome-vertical .lcars-chrome button:last-child, .lcars-chrome .lcars-chrome-vertical button:last-child, .lcars-chrome-vertical .lcars-chrome-horizontal button:last-child, .lcars-chrome-horizontal .lcars-chrome-vertical button:last-child, .lcars-chrome-vertical button:last-child, .lcars-chrome-vertical .lcars-btn button:last-child, .lcars-btn .lcars-chrome-vertical button:last-child, .lcars-chrome-vertical input [type="button"] button:last-child, input [type="button"] .lcars-chrome-vertical button:last-child, .lcars-chrome-vertical button button:last-child, button .lcars-chrome-vertical button:last-child {
+    border-bottom: 0.4rem solid #000; }
+
+.lcars-chrome-small {
+  border-radius: 2em; }
+  .lcars-chrome-small.lcars-chrome-horizontal {
+    max-height: 1rem; }
+  .lcars-chrome-small h1, .lcars-chrome-small h2, .lcars-chrome-small h3, .lcars-chrome-small h4, .lcars-chrome-small h5, .lcars-chrome-small h6 {
+    font-size: 130%;
+    margin-top: -0.12rem; }
+  .lcars-chrome-small .lcars-btn, .lcars-chrome-small input [type="button"], input .lcars-chrome-small [type="button"], .lcars-chrome-small button {
+    padding: 0 0.2rem;
+    font-size: 90%; }
+
+.lcars-chrome-smaller {
+  border-radius: 2em; }
+  .lcars-chrome-smaller.lcars-chrome-horizontal {
+    max-height: 1.5rem; }
+  .lcars-chrome-smaller h1, .lcars-chrome-smaller h2, .lcars-chrome-smaller h3, .lcars-chrome-smaller h4, .lcars-chrome-smaller h5, .lcars-chrome-smaller h6 {
+    font-size: 185%;
+    margin-top: -0.12rem; }
+  .lcars-chrome-smaller .lcars-btn, .lcars-chrome-smaller input [type="button"], input .lcars-chrome-smaller [type="button"], .lcars-chrome-smaller button {
+    padding: 0rem 0.3rem;
+    font-size: inherit; }
+
+.lcars-chrome-larger {
+  border-radius: 2em; }
+  .lcars-chrome-larger.lcars-chrome-horizontal {
+    max-height: 2.5rem; }
+  .lcars-chrome-larger h1, .lcars-chrome-larger h2, .lcars-chrome-larger h3, .lcars-chrome-larger h4, .lcars-chrome-larger h5, .lcars-chrome-larger h6 {
+    font-size: 330%;
+    margin-top: -0.3rem; }
+  .lcars-chrome-larger .lcars-btn, .lcars-chrome-larger input [type="button"], input .lcars-chrome-larger [type="button"], .lcars-chrome-larger button {
+    padding: 0.6rem;
+    font-size: 16pt; }
+
+.lcars-chrome-large {
+  border-radius: 2em; }
+  .lcars-chrome-large.lcars-chrome-horizontal {
+    max-height: 3rem; }
+  .lcars-chrome-large h1, .lcars-chrome-large h2, .lcars-chrome-large h3, .lcars-chrome-large h4, .lcars-chrome-large h5, .lcars-chrome-large h6 {
+    font-size: 400%;
+    margin-top: -0.4rem; }
+  .lcars-chrome-large .lcars-btn, .lcars-chrome-large input [type="button"], input .lcars-chrome-large [type="button"], .lcars-chrome-large button {
+    padding: 1.2rem 0.6rem;
+    font-size: 16pt; }
+
+.lcars-grid {
+  display: grid;
+  grid-template-rows: [head] 2em [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] 1em [tail];
+  grid-template-columns: [head] 10em [side-end] 1em [content-begin] auto [content-end] 0 [end-begin] 0 [tail];
+  overflow-y: auto;
+  height: 100%; }
+  .lcars-grid .lcars-sidebar {
+    grid-area: content-begin / head / content-end / side-end; }
+  .lcars-grid .lcars-topbar {
+    grid-area: head / content-begin / side-end / content-end; }
+  .lcars-grid .lcars-bottombar {
+    grid-area: end-begin / content-begin / tail / content-end; }
+
+.lcars-grid-merged .lcars-bottombar.lcars-chrome-horizontal,
+.lcars-grid-merged .lcars-topbar.lcars-chrome-horizontal, .lcars-analytical-merged .lcars-topbar, .lcars-analytical-merged .lcars-bottombar {
+  padding-left: 1em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.lcars-grid-merged .lcars-sidebar.lcars-chrome-vertical, .lcars-analytical-merged .lcars-altbar, .lcars-analytical-merged .lcars-sidebar {
+  padding-top: 1em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.lcars-grid-merged .lcars-sidebar.lcars-chrome-vertical, .lcars-analytical-merged .lcars-altbar, .lcars-analytical-merged .lcars-sidebar {
+  padding-bottom: 1em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.lcars-merged-top-left::before, .lcars-grid-merged::before, .lcars-analytical-merged::before {
+  display: block;
+  background-color: #f7c64a;
+  content: "";
+  border-top-left-radius: 3em 3em;
+  background-image: radial-gradient(circle at 100% 100%, #000 1em, #f7c64a 1em); }
+
+.lcars-merged-bottom-left::after, .lcars-grid-merged::after, .lcars-analytical-merged::after {
+  display: block;
+  background-color: #f7c64a;
+  content: "";
+  border-bottom-left-radius: 3em 3em;
+  background-image: radial-gradient(circle at 100% 0, #000 1em, #f7c64a 1em); }
+
+.alert .lcars-merged-top-left::before, .alert .lcars-grid-merged::before, .alert .lcars-analytical-merged::before {
+  background-image: radial-gradient(circle at 100% 100%, #000 1em, #f55 1em); }
+.alert .lcars-merged-bottom-left::after, .alert .lcars-grid-merged::after, .alert .lcars-analytical-merged::after {
+  background-image: radial-gradient(circle at 100% 0, #000 1em, #f55 1em); }
+
+.lcars-grid-merged::before {
+  grid-area: head / head / content-begin / content-begin; }
+.lcars-grid-merged::after {
+  grid-area: content-end / head / tail / content-begin; }
+
+.lcars-grid-content {
+  grid-area: content-begin / content-begin / content-end / content-end; }
+
+.lcars-scrollable {
+  overflow-y: auto;
+  padding-right: 1rem; }
+
+/* LCARS page */
+.lcars-page {
+  display: grid;
+  grid-template-columns: [head] 2.4rem [content-begin] auto [content-end] 2.4rem [tail];
+  grid-template-rows: [head] 2rem [bar-end] 0.5rem [content-begin] auto [content-end] 0.5rem [bar-start] 2rem [tail]; }
+  .lcars-page .lcars-topbar {
+    grid-area: head / head / bar-end / tail; }
+  .lcars-page .lcars-bottombar {
+    grid-area: bar-start / head / tail / tail; }
+  .lcars-page .lcars-infoline {
+    grid-area: bar-end / content-begin / content-begin / content-end;
+    text-align: right;
+    font-size: 10pt;
+    font-weight: bold; }
+
+/* LCARS analytical */
+.lcars-analytical {
+  display: grid;
+  grid-template-columns: [head] 6rem [side-end] 0.4rem [content-begin] 0.6rem [status-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
+  grid-template-rows: [head] 9rem [status-low] 1rem [status-end] 1rem [bar-mid-on] 0.2rem [bar-mid-off] 1rem [title-begin] 1rem [content-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
+  height: 100%; }
+  .lcars-analytical .lcars-status {
+    grid-area: head / status-begin / status-end / content-end; }
+  .lcars-analytical .lcars-status-left {
+    grid-area: head / status-begin / status-end / mid-on; }
+  .lcars-analytical .lcars-status-right {
+    grid-area: head / mid-off / status-end / content-end; }
+  .lcars-analytical .lcars-topbar {
+    grid-area: status-end / status-begin / bar-mid-on / content-end; }
+  .lcars-analytical .lcars-bottombar {
+    grid-area: bar-mid-off / status-begin / title-begin / content-end; }
+  .lcars-analytical .lcars-sidebar {
+    grid-area: content-begin / head / content-end / side-end; }
+  .lcars-analytical .lcars-altbar {
+    grid-area: head / head / status-low / side-end; }
+
+.lcars-analytical-merged::before {
+  grid-area: bar-mid-off/head/content-begin/status-begin; }
+.lcars-analytical-merged::after {
+  grid-area: status-low/head/bar-mid-on/status-begin; }
+
+.lcars-button-grid {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 2rem);
+  grid-template-columns: repeat(auto-fill, 6rem);
+  grid-auto-rows: 2rem;
+  grid-auto-columns: 6rem;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 1rem; }
+
+.lcars-container {
+  border-radius: 1em;
+  background-color: #f7c64a;
+  padding: 0.6em 0;
+  margin-bottom: 0.7em; }
+  .lcars-container .lcars-container-inlay {
+    background-color: #000;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    border-left: 0.5em solid #9999ff;
+    border-right: 0.5em solid #9999ff; }
+
+html {
+  font-size: 12pt; }
+
+iframe {
+  border: 0; }
+
+table.table td {
+  padding: 0.05em 0.3em; }
+
+table.table {
+  border-spacing: 0.2rem;
+  border: 1px solid white; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.6em 0;
+  font-weight: normal; }
+
+h1 {
+  font-size: 200%; }
+
+h2 {
+  font-size: 150%; }
+
+h3 {
+  font-size: 125%; }
+
+h4 {
+  font-size: 112.5%; }
+
+h5 {
+  font-size: 100%; }
+
+h6 {
+  font-size: 87.5%; }
+
+.lcars-btn, input [type="button"], button {
+  text-decoration: none;
+  min-width: 4em;
+  text-align: right;
+  display: inline-block;
+  padding: 0.3em 0.6em 0 0.6em;
+  box-sizing: border-box;
+  font-size: 16pt;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  /* Button colors */ }
+  .lcars-btn.lcars-btn-fl, input .lcars-btn-fl[type="button"], button.lcars-btn-fl {
+    background-color: #cc99cc;
+    color: #000; }
+    .lcars-btn.lcars-btn-fl:hover, input .lcars-btn-fl[type="button"]:hover, button.lcars-btn-fl:hover, .lcars-btn.lcars-btn-fl:active, input .lcars-btn-fl[type="button"]:active, button.lcars-btn-fl:active {
+      background-color: #ddbbdd; }
+  .lcars-btn.lcars-btn-bg, input .lcars-btn-bg[type="button"], button.lcars-btn-bg {
+    background-color: #9999cc;
+    color: #000; }
+    .lcars-btn.lcars-btn-bg:hover, input .lcars-btn-bg[type="button"]:hover, button.lcars-btn-bg:hover, .lcars-btn.lcars-btn-bg:active, input .lcars-btn-bg[type="button"]:active, button.lcars-btn-bg:active {
+      background-color: #bbbbdd; }
+  .lcars-btn.lcars-btn-rb, input .lcars-btn-rb[type="button"], button.lcars-btn-rb {
+    background-color: #cc6666;
+    color: #000; }
+    .lcars-btn.lcars-btn-rb:hover, input .lcars-btn-rb[type="button"]:hover, button.lcars-btn-rb:hover, .lcars-btn.lcars-btn-rb:active, input .lcars-btn-rb[type="button"]:active, button.lcars-btn-rb:active {
+      background-color: #d98c8c; }
+  .lcars-btn.lcars-btn-be, input .lcars-btn-be[type="button"], button.lcars-btn-be {
+    background-color: #ffcc99;
+    color: #000; }
+    .lcars-btn.lcars-btn-be:hover, input .lcars-btn-be[type="button"]:hover, button.lcars-btn-be:hover, .lcars-btn.lcars-btn-be:active, input .lcars-btn-be[type="button"]:active, button.lcars-btn-be:active {
+      background-color: #ffe6cc; }
+  .lcars-btn.lcars-btn-lb, .lcars-btn, input [type="button"], button {
+    background-color: #9999ff;
+    color: #000; }
+    .lcars-btn.lcars-btn-lb:hover, .lcars-btn:hover, input [type="button"]:hover, button:hover, .lcars-btn.lcars-btn-lb:active, .lcars-btn:active, input [type="button"]:active, button:active {
+      background-color: #ccccff; }
+  .lcars-btn.lcars-btn-ap, input .lcars-btn-ap[type="button"], button.lcars-btn-ap {
+    background-color: #ff9966;
+    color: #000; }
+    .lcars-btn.lcars-btn-ap:hover, input .lcars-btn-ap[type="button"]:hover, button.lcars-btn-ap:hover, .lcars-btn.lcars-btn-ap:active, input .lcars-btn-ap[type="button"]:active, button.lcars-btn-ap:active {
+      background-color: #ffbb99; }
+  .lcars-btn.lcars-btn-pi, input .lcars-btn-pi[type="button"], button.lcars-btn-pi {
+    background-color: #cc6699;
+    color: #000; }
+    .lcars-btn.lcars-btn-pi:hover, input .lcars-btn-pi[type="button"]:hover, button.lcars-btn-pi:hover, .lcars-btn.lcars-btn-pi:active, input .lcars-btn-pi[type="button"]:active, button.lcars-btn-pi:active {
+      background-color: #d98cb3; }
+  .lcars-btn.lcars-btn-block, input .lcars-btn-block[type="button"], button.lcars-btn-block {
+    display: block;
+    width: calc(100% - 0.6em); }
+
+.alert .lcars-btn.lcars-btn-fl, .alert input .lcars-btn-fl[type="button"], input .alert .lcars-btn-fl[type="button"], .alert button.lcars-btn-fl {
+  background-color: #fcc;
+  color: #000; }
+  .alert .lcars-btn.lcars-btn-fl:hover, .alert input .lcars-btn-fl[type="button"]:hover, input .alert .lcars-btn-fl[type="button"]:hover, .alert button.lcars-btn-fl:hover, .alert .lcars-btn.lcars-btn-fl:active, .alert input .lcars-btn-fl[type="button"]:active, input .alert .lcars-btn-fl[type="button"]:active, .alert button.lcars-btn-fl:active {
+    background-color: white; }
+.alert .lcars-btn.lcars-btn-bg, .alert input .lcars-btn-bg[type="button"], input .alert .lcars-btn-bg[type="button"], .alert button.lcars-btn-bg {
+  background-color: #fbb;
+  color: #000; }
+  .alert .lcars-btn.lcars-btn-bg:hover, .alert input .lcars-btn-bg[type="button"]:hover, input .alert .lcars-btn-bg[type="button"]:hover, .alert button.lcars-btn-bg:hover, .alert .lcars-btn.lcars-btn-bg:active, .alert input .lcars-btn-bg[type="button"]:active, input .alert .lcars-btn-bg[type="button"]:active, .alert button.lcars-btn-bg:active {
+    background-color: #ffeeee; }
+.alert .lcars-btn.lcars-btn-rb, .alert input .lcars-btn-rb[type="button"], input .alert .lcars-btn-rb[type="button"], .alert button.lcars-btn-rb {
+  background-color: #faa;
+  color: #000; }
+  .alert .lcars-btn.lcars-btn-rb:hover, .alert input .lcars-btn-rb[type="button"]:hover, input .alert .lcars-btn-rb[type="button"]:hover, .alert button.lcars-btn-rb:hover, .alert .lcars-btn.lcars-btn-rb:active, .alert input .lcars-btn-rb[type="button"]:active, input .alert .lcars-btn-rb[type="button"]:active, .alert button.lcars-btn-rb:active {
+    background-color: #ffdddd; }
+.alert .lcars-btn.lcars-btn-be, .alert input .lcars-btn-be[type="button"], input .alert .lcars-btn-be[type="button"], .alert button.lcars-btn-be {
+  background-color: #f99;
+  color: #000; }
+  .alert .lcars-btn.lcars-btn-be:hover, .alert input .lcars-btn-be[type="button"]:hover, input .alert .lcars-btn-be[type="button"]:hover, .alert button.lcars-btn-be:hover, .alert .lcars-btn.lcars-btn-be:active, .alert input .lcars-btn-be[type="button"]:active, input .alert .lcars-btn-be[type="button"]:active, .alert button.lcars-btn-be:active {
+    background-color: #ffcccc; }
+.alert .lcars-btn.lcars-btn-lb, .alert .lcars-btn, .alert input [type="button"], input .alert [type="button"], .alert button, .alert input .lcars-btn-lb[type="button"], input .alert .lcars-btn-lb[type="button"], .alert input [type="button"].lcars-btn, input .alert [type="button"].lcars-btn, .alert button.lcars-btn-lb, .alert button.lcars-btn {
+  background-color: #f88;
+  color: #000; }
+  .alert .lcars-btn.lcars-btn-lb:hover, .alert .lcars-btn:hover, .alert input [type="button"]:hover, input .alert [type="button"]:hover, .alert button:hover, .alert input .lcars-btn-lb[type="button"]:hover, input .alert .lcars-btn-lb[type="button"]:hover, .alert input [type="button"].lcars-btn:hover, input .alert [type="button"].lcars-btn:hover, .alert button.lcars-btn-lb:hover, .alert button.lcars-btn:hover, .alert .lcars-btn.lcars-btn-lb:active, .alert .lcars-btn:active, .alert input [type="button"]:active, input .alert [type="button"]:active, .alert button:active, .alert input .lcars-btn-lb[type="button"]:active, input .alert .lcars-btn-lb[type="button"]:active, .alert input [type="button"].lcars-btn:active, input .alert [type="button"].lcars-btn:active, .alert button.lcars-btn-lb:active, .alert button.lcars-btn:active {
+    background-color: #ffbbbb; }
+.alert .lcars-btn.lcars-btn-ap, .alert input .lcars-btn-ap[type="button"], input .alert .lcars-btn-ap[type="button"], .alert button.lcars-btn-ap {
+  background-color: #f77;
+  color: #000; }
+  .alert .lcars-btn.lcars-btn-ap:hover, .alert input .lcars-btn-ap[type="button"]:hover, input .alert .lcars-btn-ap[type="button"]:hover, .alert button.lcars-btn-ap:hover, .alert .lcars-btn.lcars-btn-ap:active, .alert input .lcars-btn-ap[type="button"]:active, input .alert .lcars-btn-ap[type="button"]:active, .alert button.lcars-btn-ap:active {
+    background-color: #ffaaaa; }
+.alert .lcars-btn.lcars-btn-pi, .alert input .lcars-btn-pi[type="button"], input .alert .lcars-btn-pi[type="button"], .alert button.lcars-btn-pi {
+  background-color: #f66;
+  color: #000; }
+  .alert .lcars-btn.lcars-btn-pi:hover, .alert input .lcars-btn-pi[type="button"]:hover, input .alert .lcars-btn-pi[type="button"]:hover, .alert button.lcars-btn-pi:hover, .alert .lcars-btn.lcars-btn-pi:active, .alert input .lcars-btn-pi[type="button"]:active, input .alert .lcars-btn-pi[type="button"]:active, .alert button.lcars-btn-pi:active {
+    background-color: #ff9999; }
+
+@keyframes lcars-color-1 {
+  0% {
+    background-color: #cc6699; }
+  24% {
+    background-color: #cc6699; }
+  25% {
+    background-color: #9999ff; }
+  49% {
+    background-color: #9999ff; }
+  50% {
+    background-color: #cc6666; }
+  74% {
+    background-color: #cc6666; }
+  75% {
+    background-color: #ff9900; }
+  100% {
+    background-color: #ff9900; } }
+.lcars-blink-3, .lcars-blink-4, .lcars-blink-5, .lcars-blink-6, .lcars-blink-7 {
+  animation-iteration-count: infinite; }
+
+.lcars-blink-3 {
+  animation-name: lcars-color-1;
+  animation-duration: 3s; }
+
+.lcars-blink-4 {
+  animation-name: lcars-color-1;
+  animation-duration: 4s; }
+
+.lcars-blink-5 {
+  animation-name: lcars-color-1;
+  animation-duration: 5s; }
+
+.lcars-blink-6 {
+  animation-name: lcars-color-1;
+  animation-duration: 6s; }
+
+.lcars-blink-7 {
+  animation-name: lcars-color-1;
+  animation-duration: 7s; }
+
+.lcars-body {
+  background-color: #000;
+  color: #FFF;
+  font-family: helvetica;
+  padding: 1em;
+  margin: 0; }
+
+.lcars-fixed {
+  height: 100%;
+  box-sizing: border-box; }
+
+/* Size definitions */
+
+/*# sourceMappingURL=lcars.css.map */

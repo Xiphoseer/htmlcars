@@ -1,0 +1,74 @@
+/* LCARS Colors (http://www.gtjlcars.de/LCARSindex/Colorindex1.htm) */
+
+$lcars-color-or: #ff9900;
+$lcars-color-fl: #cc99cc;
+$lcars-color-bg: #9999cc;
+$lcars-color-rb: #cc6666;
+$lcars-color-be: #ffcc99;
+$lcars-color-lb: #9999ff;
+$lcars-color-ap: #ff9966;
+$lcars-color-pi: #cc6699;
+
+$lcars-color-ho: #f7c64a;
+$lcars-color-ck: #000000;
+
+.lcars-bg-or { background-color: $lcars-color-or; }
+.lcars-bg-fl { background-color: $lcars-color-fl; }
+.lcars-bg-bg { background-color: $lcars-color-bg; }
+.lcars-bg-rb { background-color: $lcars-color-rb; }
+.lcars-bg-be { background-color: $lcars-color-be; }
+.lcars-bg-lb { background-color: $lcars-color-lb; }
+.lcars-bg-ap { background-color: $lcars-color-ap; }
+.lcars-bg-pi { background-color: $lcars-color-pi; }
+
+.lcars-bg-ho { background-color: $lcars-color-ho; }
+.lcars-bg-ck { background-color: $lcars-color-ck; }
+
+.lcars-fg-or { color: $lcars-color-or; }
+.lcars-fg-fl { color: $lcars-color-fl; }
+.lcars-fg-bg { color: $lcars-color-bg; }
+.lcars-fg-rb { color: $lcars-color-rb; }
+.lcars-fg-be { color: $lcars-color-be; }
+.lcars-fg-lb { color: $lcars-color-lb; }
+.lcars-fg-ap { color: $lcars-color-ap; }
+.lcars-fg-pi { color: $lcars-color-pi; }
+
+.lcars-fg-ho { color: $lcars-color-ho; }
+.lcars-fg-ck { color: $lcars-color-ck; }
+
+/* ALERT MODE */
+$lcars-color-or-alert: #fdd;
+$lcars-color-fl-alert: #fcc;
+$lcars-color-bg-alert: #fbb;
+$lcars-color-rb-alert: #faa;
+$lcars-color-be-alert: #f99;
+$lcars-color-lb-alert: #f88;
+$lcars-color-ap-alert: #f77;
+$lcars-color-pi-alert: #f66;
+
+$lcars-color-ho-alert: #f55;
+
+.alert
+{
+  .lcars-bg-or { background-color: $lcars-color-or-alert; }
+  .lcars-bg-fl { background-color: $lcars-color-fl-alert; }
+  .lcars-bg-bg { background-color: $lcars-color-bg-alert; }
+  .lcars-bg-rb { background-color: $lcars-color-rb-alert; }
+  .lcars-bg-be { background-color: $lcars-color-be-alert; }
+  .lcars-bg-lb { background-color: $lcars-color-lb-alert; }
+  .lcars-bg-ap { background-color: $lcars-color-ap-alert; }
+  .lcars-bg-pi { background-color: $lcars-color-pi-alert; }
+
+  .lcars-bg-ho { background-color: $lcars-color-ho-alert; }
+
+  .lcars-fg-or { color: $lcars-color-or-alert; }
+  .lcars-fg-fl { color: $lcars-color-fl-alert; }
+  .lcars-fg-bg { color: $lcars-color-bg-alert; }
+  .lcars-fg-rb { color: $lcars-color-rb-alert; }
+  .lcars-fg-be { color: $lcars-color-be-alert; }
+  .lcars-fg-lb { color: $lcars-color-lb-alert; }
+  .lcars-fg-ap { color: $lcars-color-ap-alert; }
+  .lcars-fg-pi { color: $lcars-color-pi-alert; }
+
+  .lcars-fg-ho { color: $lcars-color-ho-alert; }
+}
