@@ -1,7 +1,7 @@
 .lcars-grid
 {
   display: grid;
-  grid-template-rows: [head] 2em [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] 1em [tail];
+  grid-template-rows: [head] min-content [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] min-content [tail];
   grid-template-columns: [head] 10em [side-end] 1em [content-begin] auto [content-end] 0 [end-begin] 0 [tail];
   overflow-y: auto;
   height: 100%;
@@ -132,7 +132,7 @@ $lcars-page-space: 0.5rem;
     [status-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
   grid-template-rows:
     [head] 9rem [status-low] 1rem [status-end]
-    1rem [bar-mid-on] 0.2rem [bar-mid-off] 1rem
+    min-content [bar-mid-on] 0.2rem [bar-mid-off] min-content
     [title-begin] 1rem [content-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
   height: 100%;
 

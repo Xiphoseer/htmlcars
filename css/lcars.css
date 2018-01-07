@@ -23,7 +23,7 @@
 .lcars-bg-pi {
   background-color: #cc6699; }
 
-.lcars-bg-ho, .lcars-chrome, .lcars-chrome-horizontal, .lcars-chrome-vertical, .lcars-btn, input [type="button"], button {
+.lcars-bg-ho, .lcars-field, .lcars-chrome, .lcars-chrome-horizontal, .lcars-chrome-vertical, .lcars-btn, input [type="button"], button {
   background-color: #f7c64a; }
 
 .lcars-bg-ck {
@@ -76,7 +76,7 @@
   background-color: #f77; }
 .alert .lcars-bg-pi {
   background-color: #f66; }
-.alert .lcars-bg-ho, .alert .lcars-chrome, .alert .lcars-chrome-horizontal, .alert .lcars-chrome-vertical, .alert .lcars-btn, .alert input [type="button"], input .alert [type="button"], .alert button {
+.alert .lcars-bg-ho, .alert .lcars-field, .alert .lcars-chrome, .alert .lcars-chrome-horizontal, .alert .lcars-chrome-vertical, .alert .lcars-btn, .alert input [type="button"], input .alert [type="button"], .alert button {
   background-color: #f55; }
 .alert .lcars-fg-or, .alert .lcars-chrome h1, .lcars-chrome .alert h1, .alert .lcars-chrome-horizontal h1, .lcars-chrome-horizontal .alert h1, .alert .lcars-chrome-vertical h1, .lcars-chrome-vertical .alert h1, .alert .lcars-btn h1, .lcars-btn .alert h1, .alert input [type="button"] h1, input [type="button"] .alert h1, .alert button h1, button .alert h1, .alert .lcars-chrome h2, .lcars-chrome .alert h2, .alert .lcars-chrome-horizontal h2, .lcars-chrome-horizontal .alert h2, .alert .lcars-chrome-vertical h2, .lcars-chrome-vertical .alert h2, .alert .lcars-btn h2, .lcars-btn .alert h2, .alert input [type="button"] h2, input [type="button"] .alert h2, .alert button h2, button .alert h2, .alert .lcars-chrome h3, .lcars-chrome .alert h3, .alert .lcars-chrome-horizontal h3, .lcars-chrome-horizontal .alert h3, .alert .lcars-chrome-vertical h3, .lcars-chrome-vertical .alert h3, .alert .lcars-btn h3, .lcars-btn .alert h3, .alert input [type="button"] h3, input [type="button"] .alert h3, .alert button h3, button .alert h3, .alert .lcars-chrome h4, .lcars-chrome .alert h4, .alert .lcars-chrome-horizontal h4, .lcars-chrome-horizontal .alert h4, .alert .lcars-chrome-vertical h4, .lcars-chrome-vertical .alert h4, .alert .lcars-btn h4, .lcars-btn .alert h4, .alert input [type="button"] h4, input [type="button"] .alert h4, .alert button h4, button .alert h4, .alert .lcars-chrome h5, .lcars-chrome .alert h5, .alert .lcars-chrome-horizontal h5, .lcars-chrome-horizontal .alert h5, .alert .lcars-chrome-vertical h5, .lcars-chrome-vertical .alert h5, .alert .lcars-btn h5, .lcars-btn .alert h5, .alert input [type="button"] h5, input [type="button"] .alert h5, .alert button h5, button .alert h5, .alert .lcars-chrome h6, .lcars-chrome .alert h6, .alert .lcars-chrome-horizontal h6, .lcars-chrome-horizontal .alert h6, .alert .lcars-chrome-vertical h6, .lcars-chrome-vertical .alert h6, .alert .lcars-btn h6, .lcars-btn .alert h6, .alert input [type="button"] h6, input [type="button"] .alert h6, .alert button h6, button .alert h6 {
   color: #fdd; }
@@ -101,7 +101,8 @@
 @font-face {
   font-family: LCARSGTJ3;
   src: url(../font/LCARSGTJ3.ttf); }
-.lcars-font, .lcars-btn, input [type="button"], button {
+.lcars-font, .lcars-console .lcars-console-line span,
+.lcars-console .lcars-console-line .num, .lcars-btn, input [type="button"], button {
   font-family: LCARSGTJ3;
   font-size: 12pt; }
 
@@ -140,6 +141,10 @@ p {
   .lcars-message h6 {
     font-size: 250%; }
 
+.lcars-field {
+  border-radius: 1rem;
+  padding: 1rem; }
+
 .lcars-chrome, .lcars-chrome-horizontal, .lcars-chrome-vertical, .lcars-btn, input [type="button"], button {
   display: flex;
   border-radius: 1em; }
@@ -159,8 +164,10 @@ p {
     flex: 1 0 auto; }
 
 .lcars-chrome-horizontal {
-  padding: 0 2em;
-  max-height: 2em;
+  padding: 0 2rem;
+  max-height: 2rem;
+  height: 2rem;
+  min-height: 2rem;
   flex-direction: row; }
   .lcars-chrome-horizontal .lcars-chrome-component:first-child, .lcars-chrome-horizontal .lcars-chrome h1:first-child, .lcars-chrome .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h1:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal .lcars-btn h1:first-child, .lcars-btn .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal input [type="button"] h1:first-child, input [type="button"] .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal button h1:first-child, button .lcars-chrome-horizontal h1:first-child, .lcars-chrome-horizontal .lcars-chrome h2:first-child, .lcars-chrome .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h2:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal .lcars-btn h2:first-child, .lcars-btn .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal input [type="button"] h2:first-child, input [type="button"] .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal button h2:first-child, button .lcars-chrome-horizontal h2:first-child, .lcars-chrome-horizontal .lcars-chrome h3:first-child, .lcars-chrome .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h3:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal .lcars-btn h3:first-child, .lcars-btn .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal input [type="button"] h3:first-child, input [type="button"] .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal button h3:first-child, button .lcars-chrome-horizontal h3:first-child, .lcars-chrome-horizontal .lcars-chrome h4:first-child, .lcars-chrome .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h4:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal .lcars-btn h4:first-child, .lcars-btn .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal input [type="button"] h4:first-child, input [type="button"] .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal button h4:first-child, button .lcars-chrome-horizontal h4:first-child, .lcars-chrome-horizontal .lcars-chrome h5:first-child, .lcars-chrome .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h5:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal .lcars-btn h5:first-child, .lcars-btn .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal input [type="button"] h5:first-child, input [type="button"] .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal button h5:first-child, button .lcars-chrome-horizontal h5:first-child, .lcars-chrome-horizontal .lcars-chrome h6:first-child, .lcars-chrome .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical h6:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal .lcars-btn h6:first-child, .lcars-btn .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal input [type="button"] h6:first-child, input [type="button"] .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal button h6:first-child, button .lcars-chrome-horizontal h6:first-child, .lcars-chrome-horizontal .lcars-bar-space:first-child, .lcars-chrome-horizontal .lcars-btn:first-child, .lcars-chrome-horizontal input [type="button"]:first-child, input .lcars-chrome-horizontal [type="button"]:first-child, .lcars-chrome-horizontal .lcars-chrome button:first-child, .lcars-chrome .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal .lcars-chrome-vertical button:first-child, .lcars-chrome-vertical .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal .lcars-btn button:first-child, .lcars-btn .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal input [type="button"] button:first-child, input [type="button"] .lcars-chrome-horizontal button:first-child, .lcars-chrome-horizontal button button:first-child, button .lcars-chrome-horizontal button:first-child {
     border-left: 0.4rem solid #000; }
@@ -199,6 +206,8 @@ p {
 .lcars-chrome-small {
   border-radius: 2em; }
   .lcars-chrome-small.lcars-chrome-horizontal {
+    min-height: 1rem;
+    height: 1rem;
     max-height: 1rem; }
   .lcars-chrome-small h1, .lcars-chrome-small h2, .lcars-chrome-small h3, .lcars-chrome-small h4, .lcars-chrome-small h5, .lcars-chrome-small h6 {
     font-size: 130%;
@@ -210,6 +219,8 @@ p {
 .lcars-chrome-smaller {
   border-radius: 2em; }
   .lcars-chrome-smaller.lcars-chrome-horizontal {
+    min-height: 1.5rem;
+    height: 1.5rem;
     max-height: 1.5rem; }
   .lcars-chrome-smaller h1, .lcars-chrome-smaller h2, .lcars-chrome-smaller h3, .lcars-chrome-smaller h4, .lcars-chrome-smaller h5, .lcars-chrome-smaller h6 {
     font-size: 185%;
@@ -221,6 +232,8 @@ p {
 .lcars-chrome-larger {
   border-radius: 2em; }
   .lcars-chrome-larger.lcars-chrome-horizontal {
+    min-height: 2.5rem;
+    height: 2.5rem;
     max-height: 2.5rem; }
   .lcars-chrome-larger h1, .lcars-chrome-larger h2, .lcars-chrome-larger h3, .lcars-chrome-larger h4, .lcars-chrome-larger h5, .lcars-chrome-larger h6 {
     font-size: 330%;
@@ -232,6 +245,8 @@ p {
 .lcars-chrome-large {
   border-radius: 2em; }
   .lcars-chrome-large.lcars-chrome-horizontal {
+    min-height: 3rem;
+    height: 3rem;
     max-height: 3rem; }
   .lcars-chrome-large h1, .lcars-chrome-large h2, .lcars-chrome-large h3, .lcars-chrome-large h4, .lcars-chrome-large h5, .lcars-chrome-large h6 {
     font-size: 400%;
@@ -242,7 +257,7 @@ p {
 
 .lcars-grid {
   display: grid;
-  grid-template-rows: [head] 2em [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] 1em [tail];
+  grid-template-rows: [head] min-content [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] min-content [tail];
   grid-template-columns: [head] 10em [side-end] 1em [content-begin] auto [content-end] 0 [end-begin] 0 [tail];
   overflow-y: auto;
   height: 100%; }
@@ -319,7 +334,7 @@ p {
 .lcars-analytical {
   display: grid;
   grid-template-columns: [head] 6rem [side-end] 0.4rem [content-begin] 0.6rem [status-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
-  grid-template-rows: [head] 9rem [status-low] 1rem [status-end] 1rem [bar-mid-on] 0.2rem [bar-mid-off] 1rem [title-begin] 1rem [content-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
+  grid-template-rows: [head] 9rem [status-low] 1rem [status-end] min-content [bar-mid-on] 0.2rem [bar-mid-off] min-content [title-begin] 1rem [content-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
   height: 100%; }
   .lcars-analytical .lcars-status {
     grid-area: head / status-begin / status-end / content-end; }
@@ -350,6 +365,43 @@ p {
   grid-row-gap: 0.5rem;
   grid-column-gap: 1rem; }
 
+.lcars-console .lcars-console-line .left, .lcars-console .lcars-console-line .block {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.lcars-console .lcars-console-line .block, .lcars-console .lcars-console-line .right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.lcars-button-panel {
+  display: grid;
+  grid-template-columns: [left] 1fr [mid] 1fr [right];
+  grid-auto-rows: min-content;
+  grid-auto-columns: 1fr;
+  grid-gap: 0.5rem;
+  /*.lcars-btn:nth-of-type(2n+1)
+  {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .lcars-btn:nth-of-type(2n)
+  {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: left;
+  }*/ }
+  .lcars-button-panel .lcars-button-panel-group {
+    display: contents; }
+    .lcars-button-panel .lcars-button-panel-group .lcars-btn:nth-child(2n+1):nth-last-child(n+2), .lcars-button-panel .lcars-button-panel-group input [type="button"]:nth-child(2n+1):nth-last-child(n+2), input .lcars-button-panel .lcars-button-panel-group [type="button"]:nth-child(2n+1):nth-last-child(n+2), .lcars-button-panel .lcars-button-panel-group button:nth-child(2n+1):nth-last-child(n+2) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      grid-column: 1 / 2; }
+    .lcars-button-panel .lcars-button-panel-group .lcars-btn:nth-child(2n):nth-last-child(n+1), .lcars-button-panel .lcars-button-panel-group input [type="button"]:nth-child(2n):nth-last-child(n+1), input .lcars-button-panel .lcars-button-panel-group [type="button"]:nth-child(2n):nth-last-child(n+1), .lcars-button-panel .lcars-button-panel-group button:nth-child(2n):nth-last-child(n+1) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      grid-column: 2 / 3; }
+
 .lcars-container {
   border-radius: 1em;
   background-color: #f7c64a;
@@ -361,6 +413,35 @@ p {
     padding: 0.6rem;
     border-left: 0.5em solid #9999ff;
     border-right: 0.5em solid #9999ff; }
+
+.lcars-console {
+  display: grid;
+  grid-gap: 0.4rem;
+  grid-template-columns: [start] 0 [before left] min-content [num] min-content [blk] min-content [wrap] min-content [right left] min-content [num] min-content [blk] min-content [wrap] min-content [right after] 0 [end];
+  grid-template-rows: min-content;
+  grid-auto-flow: row; }
+  .lcars-console .lcars-console-line {
+    display: contents; }
+    .lcars-console .lcars-console-line::before {
+      content: "";
+      grid-column: start / before;
+      background-color: red; }
+    .lcars-console .lcars-console-line::after {
+      content: "";
+      grid-column: after / end;
+      background-color: red; }
+    .lcars-console .lcars-console-line .left {
+      grid-column: left / num; }
+    .lcars-console .lcars-console-line .block {
+      grid-column: blk / wrap; }
+    .lcars-console .lcars-console-line .right {
+      grid-column: wrap / right; }
+    .lcars-console .lcars-console-line span,
+    .lcars-console .lcars-console-line .num {
+      grid-column: num / blk;
+      font-size: 300%;
+      line-height: 0.8em;
+      padding: 0 0.3rem; }
 
 html {
   font-size: 12pt; }
@@ -483,6 +564,71 @@ h6 {
   color: #000; }
   .alert .lcars-btn.lcars-btn-pi:hover, .alert input .lcars-btn-pi[type="button"]:hover, input .alert .lcars-btn-pi[type="button"]:hover, .alert button.lcars-btn-pi:hover, .alert .lcars-btn.lcars-btn-pi:active, .alert input .lcars-btn-pi[type="button"]:active, input .alert .lcars-btn-pi[type="button"]:active, .alert button.lcars-btn-pi:active {
     background-color: #ff9999; }
+
+.badge-a {
+  display: inline-block;
+  border-top-left-radius: 1rem 2rem;
+  border-top-right-radius: 1rem 2rem;
+  border-bottom-left-radius: 1rem 2rem;
+  border-bottom-right-radius: 1rem 2rem;
+  padding: 0 1rem;
+  background-color: #c80000; }
+  .badge-a h1, .badge-a h2, .badge-a h3, .badge-a h4, .badge-a h5, .badge-a h6 {
+    margin: 0.1em 0 -0.1em 0;
+    border-bottom: none; }
+  .badge-a span {
+    font-family: LCARSGTJ3, Helvetica; }
+  .badge-a::before {
+    content: attr(key);
+    float: left;
+    font-size: 400%;
+    font-family: LCARSGTJ3, Helvetica;
+    padding-right: 1rem;
+    border-right: 0.3rem solid #fff;
+    margin-right: 1rem; }
+
+.badge {
+  display: inline-grid;
+  grid-template-rows: [head] max-content [mid] max-content [tail];
+  grid-template-columns: [head] max-content [bar] max-content [from] minmax(min-content, 20rem) [tail];
+  border-top-left-radius: 1rem 2rem;
+  border-top-right-radius: 1rem 2rem;
+  border-bottom-left-radius: 1rem 2rem;
+  border-bottom-right-radius: 1rem 2rem;
+  padding: 0 1rem;
+  margin: 0.3rem; }
+  .badge.badge-red {
+    background-color: #c80000; }
+  .badge.badge-brown {
+    background-color: #965032; }
+  .badge.badge-blue {
+    background-color: #336699; }
+  .badge h1, .badge h2, .badge h3, .badge h4, .badge h5, .badge h6 {
+    margin: 0 0 -0.2em 0;
+    line-height: 2rem;
+    vertical-align: bottom;
+    border-bottom: none;
+    grid-area: head / from / mid / tail;
+    align-self: end; }
+  .badge span {
+    font-family: LCARSGTJ3, Helvetica;
+    grid-area: mid / from / tail / tail;
+    display: inline-block;
+    line-height: 1.1em; }
+  .badge::before {
+    content: attr(key);
+    grid-area: head / head / tail / bar;
+    font-size: 400%;
+    font-family: LCARSGTJ3, Helvetica;
+    padding-right: 1rem; }
+  .badge::after {
+    content: "";
+    grid-area: head / bar / tail / from;
+    border-right: 0.1rem solid #fff;
+    border-left: 0.2rem solid #fff;
+    display: block;
+    width: 0.4rem;
+    margin-right: 1rem; }
 
 @keyframes lcars-color-1 {
   0% {
