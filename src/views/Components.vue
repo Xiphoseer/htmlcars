@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Page 2</title>
-    <link rel="stylesheet" type="text/css" href="../css/lcars.css" />
-  </head>
-  <body class="lcars-body lcars-font">
+<template>
+  <div>
     <h1>Components</h1>
     <p>
       This is a library of components which can be used in a LCARS themed site. They are intended to be reusable in most cases. but it is not guaranteed that all components will work together seamlessly. Components are inspired from a variety of sources.
@@ -74,7 +69,7 @@
       <div class="lcars-container-inlay">
         <div class="lcars-button-panel" style="max-width: 5rem">
           <div class="lcars-message lcars-bg-fl lcars-field" style="grid-area: 2 / 1 / 4 / 3;">
-            <h3 class="">&#0133;</h3>
+            <h3><!--&#0133;--></h3>
           </div>
           <a href="#" class="lcars-btn lcars-btn-pi">PQR</a>
           <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
@@ -167,5 +162,12 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
+    <h2>Custom buttons</h2>
+    <div class="lcars-container">
+      <div class="lcars-container-example">
+        <button style="width: 20rem;" class="lcars-btn-flat"><span>Alien Database</span></button><br>
+        <button style="width: 20rem;" class="lcars-btn-flat"><span>Behind the scenes</span></button>
+      </div>
+    </div>
+  </div>
+</template>

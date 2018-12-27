@@ -2,13 +2,18 @@
 {
   display: grid;
   grid-template-rows: [head] min-content [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] min-content [tail];
-  grid-template-columns: [head] 10em [side-end] 1em [content-begin] auto [content-end] 0 [end-begin] 0 [tail];
+  grid-template-columns: [head] min-content [side-end] 1em [content-begin] auto [content-end] 0 [end-begin] 0 [tail];
+  grid-template-areas: "top-left-corner    top-left-corner    topbar     topbar     topbar"
+                       "top-left-corner    top-left-corner    topline    topline    topline"
+                       "sidebar            sideline           content    content    ."
+                       "bottom-left-corner bottom-left-corner bottomline bottomline bottomline"
+                       "bottom-left-corner bottom-left-corner bottombar  bottombar  bottombar";
   overflow-y: auto;
   height: 100%;
 
-  .lcars-sidebar { grid-area: content-begin / head / content-end / side-end; }
-  .lcars-topbar { grid-area: head / content-begin / side-end / content-end; }
-  .lcars-bottombar { grid-area: end-begin / content-begin / tail / content-end; }
+  .lcars-sidebar { grid-area: sidebar; }
+  .lcars-topbar { grid-area: topbar; }
+  .lcars-bottombar { grid-area: bottombar; }
 }
 
 %horizontal-left-merge
@@ -36,36 +41,48 @@
 {
   padding-bottom: 1em;
   border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;  
+  border-bottom-right-radius: 0;
+}
+
+@mixin lcars-merged-top-left($color)
+{
+  background-color: $color;
+  background-image: radial-gradient(circle at 100% 100%, #000 1em, $color 1em);
+}
+
+@mixin lcars-merged-bottom-left($color)
+{
+  background-color: $color;
+  background-image: radial-gradient(circle at 100% 0, #000 1em, $color 1em);
+}
+
+.lcars-merged-top-left::before, .lcars-merged-bottom-left::after
+{
+  display: block;
+  content: "";
 }
 
 .lcars-merged-top-left::before
 {
-  display: block;
-  background-color: $lcars-color-ho;
-  content: "";
+  @include lcars-merged-top-left(#fff);
   border-top-left-radius: 3em 3em;
-  background-image: radial-gradient(circle at 100% 100%, #000 1em, $lcars-color-ho 1em);
 }
 
 .lcars-merged-bottom-left::after
 {
-  display: block;
-  background-color: $lcars-color-ho;
-  content: "";
+  @include lcars-merged-bottom-left(#fff);
   border-bottom-left-radius: 3em 3em;
-  background-image: radial-gradient(circle at 100% 0, #000 1em, $lcars-color-ho 1em);
 }
 
 .alert
 {
   .lcars-merged-top-left::before
   {
-    background-image: radial-gradient(circle at 100% 100%, #000 1em, $lcars-color-ho-alert 1em);
+    @include lcars-merged-top-left($lcars-color-ho-alert);
   }
   .lcars-merged-bottom-left::after
   {
-    background-image: radial-gradient(circle at 100% 0, #000 1em, $lcars-color-ho-alert 1em);
+    @include lcars-merged-bottom-left($lcars-color-ho-alert);
   }
 }
 
@@ -77,12 +94,12 @@
   @extend .lcars-merged-bottom-left;
   &::after { grid-area: content-end / head / tail / content-begin; }
 
-  .lcars-bottombar.lcars-chrome-horizontal,
-  .lcars-topbar.lcars-chrome-horizontal
+  > .lcars-bottombar.lcars-chrome-horizontal,
+  > .lcars-topbar.lcars-chrome-horizontal
   { @extend %horizontal-left-merge }
 
-  .lcars-sidebar.lcars-chrome-vertical { @extend %vertical-top-merge }
-  .lcars-sidebar.lcars-chrome-vertical { @extend %vertical-bottom-merge }
+  > .lcars-sidebar.lcars-chrome-vertical { @extend %vertical-top-merge }
+  > .lcars-sidebar.lcars-chrome-vertical { @extend %vertical-bottom-merge }
 }
 
 .lcars-grid-content { grid-area: content-begin / content-begin / content-end / content-end; }
@@ -108,9 +125,9 @@ $lcars-page-space: 0.5rem;
     [content-begin] auto [content-end]
     $lcars-page-padding [tail];
   grid-template-rows:
-    [head] $lcars-bar-height [bar-end] $lcars-page-space
+    [head] min-content [bar-end] $lcars-page-space
     [content-begin] auto [content-end]
-    $lcars-page-space [bar-start] $lcars-bar-height [tail];
+    $lcars-page-space [bar-start] min-content [tail];
 
   .lcars-topbar { grid-area: head / head / bar-end / tail; }
   .lcars-bottombar { grid-area: bar-start / head / tail / tail; }
@@ -139,7 +156,7 @@ $lcars-page-space: 0.5rem;
   .lcars-status { grid-area: head / status-begin / status-end / content-end; }
   .lcars-status-left { grid-area: head / status-begin / status-end / mid-on; }
   .lcars-status-right { grid-area: head / mid-off / status-end / content-end; }
-  
+
   .lcars-topbar { grid-area: status-end / status-begin / bar-mid-on / content-end; }
   .lcars-bottombar { grid-area: bar-mid-off / status-begin / title-begin / content-end; }
 
@@ -154,7 +171,7 @@ $lcars-page-space: 0.5rem;
 
   @extend .lcars-merged-bottom-left;
   &::after { grid-area: status-low / head / bar-mid-on / status-begin }
-  
+
   .lcars-altbar, .lcars-sidebar
   {
     @extend %vertical-top-merge;

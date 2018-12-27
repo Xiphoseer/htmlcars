@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: LCARSGTJ3;
-  src: url(../font/LCARSGTJ3.ttf);
+  src: url(assets/font/LCARSGTJ3.ttf);
 }
 
 .lcars-font
@@ -60,4 +60,10 @@ p
   h4 { @extend %message-heading; font-size: 500%; }
   h5 { @extend %message-heading; font-size: 400%; }
   h6 { @extend %message-heading; font-size: 250%; }
+}
+
+.lcars-img-header
+{
+  border-bottom: none;
+  color: $lcars-color-or;
 }

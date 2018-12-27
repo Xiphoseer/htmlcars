@@ -10,6 +10,14 @@
   100% {background-color: $lcars-color-or;}
 }
 
+@keyframes lcars-on-off
+{
+  0%   {color: $lcars-color-or;}
+  49%  {color: $lcars-color-or;}
+  50%  {color: $lcars-color-ck;}
+  100% {color: $lcars-color-ck;}
+}
+
 %loop-animation
 {
   animation-iteration-count: infinite;
@@ -27,3 +35,10 @@
 .lcars-blink-5 { @include lcars-blink(5s); }
 .lcars-blink-6 { @include lcars-blink(6s); }
 .lcars-blink-7 { @include lcars-blink(7s); }
+
+.lcars-on-off
+{
+  animation-iteration-count: infinite;
+  animation-name: lcars-on-off;
+  animation-duration: 3s;
+}

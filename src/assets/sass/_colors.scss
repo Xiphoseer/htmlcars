@@ -8,6 +8,7 @@ $lcars-color-be: #ffcc99;
 $lcars-color-lb: #9999ff;
 $lcars-color-ap: #ff9966;
 $lcars-color-pi: #cc6699;
+$lcars-color-lp: #ff99cc;
 
 $lcars-color-ho: #f7c64a;
 $lcars-color-ck: #000000;
@@ -20,9 +21,9 @@ $lcars-color-ck: #000000;
 .lcars-bg-lb { background-color: $lcars-color-lb; }
 .lcars-bg-ap { background-color: $lcars-color-ap; }
 .lcars-bg-pi { background-color: $lcars-color-pi; }
-
 .lcars-bg-ho { background-color: $lcars-color-ho; }
 .lcars-bg-ck { background-color: $lcars-color-ck; }
+.lcars-bg-lp { background-color: $lcars-color-lp; }
 
 .lcars-fg-or { color: $lcars-color-or; }
 .lcars-fg-fl { color: $lcars-color-fl; }
@@ -31,6 +32,7 @@ $lcars-color-ck: #000000;
 .lcars-fg-be { color: $lcars-color-be; }
 .lcars-fg-lb { color: $lcars-color-lb; }
 .lcars-fg-ap { color: $lcars-color-ap; }
+.lcars-fg-lp { color: $lcars-color-lp; }
 .lcars-fg-pi { color: $lcars-color-pi; }
 
 .lcars-fg-ho { color: $lcars-color-ho; }

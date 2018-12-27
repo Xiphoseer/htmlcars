@@ -78,6 +78,14 @@
     border-left: 0.5em solid $lcars-color-lb;
     border-right: 0.5em solid $lcars-color-lb;
   }
+
+  .lcars-container-example
+  {
+    background-color: #111;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .lcars-console
@@ -141,5 +149,18 @@
       line-height: 0.8em;
       padding: 0 0.3rem;
     }
+  }
+}
+
+.lcars-table
+{
+  @extend .lcars-font;
+  font-size: 170%;
+  border-spacing: 0;
+  line-height: 1em;
+
+  th
+  {
+    @extend .lcars-fg-or;
   }
 }

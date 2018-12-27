@@ -1,8 +1,25 @@
+.DS_Store
+node_modules
+/dist
+/docs
 
-# Created by https://www.gitignore.io/api/sass
+# local env files
+.env.local
+.env.*.local
 
-### Sass ###
-.sass-cache/
-*.css.map
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# End of https://www.gitignore.io/api/sass
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Python
+venv

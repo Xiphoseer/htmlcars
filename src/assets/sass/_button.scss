@@ -1,0 +1,154 @@
+@mixin lcars-btn-color($color)
+{
+  background-color: $color;
+  color: #000;
+
+  &:hover, &:active
+  {
+    background-color: lighten($color, 10%);
+  }
+}
+
+.lcars-btn-nav
+{
+  padding-left: 0.75rem;
+
+  %lcars-btn-base
+  {
+    margin: 0.75rem 0;
+    box-sizing: border-box;
+  }  
+}
+
+%lcars-btn-base
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lcars-btn
+{
+  @extend %lcars-btn-base;
+  @extend .lcars-font;
+  @extend .lcars-chrome;
+  @extend .lcars-btn-lb;
+  min-width: 4em;
+  text-align: right;
+  display: inline-block;
+  padding: 0.3em 0.6em 0 0.6em;
+  box-sizing: border-box;
+  font-size: 16pt;
+  border: 0;
+  box-shadow: none;
+
+  /* Button colors */
+  &.lcars-btn-fl { @include lcars-btn-color($lcars-color-fl); }
+  &.lcars-btn-bg { @include lcars-btn-color($lcars-color-bg); }
+  &.lcars-btn-rb { @include lcars-btn-color($lcars-color-rb); }
+  &.lcars-btn-be { @include lcars-btn-color($lcars-color-be); }
+  &.lcars-btn-lb { @include lcars-btn-color($lcars-color-lb); }
+  &.lcars-btn-ap { @include lcars-btn-color($lcars-color-ap); }
+  &.lcars-btn-pi { @include lcars-btn-color($lcars-color-pi); }
+
+  &.lcars-btn-block
+  {
+    display: block;
+    width: calc(100% - 0.6em);
+  }
+}
+
+@mixin lcars-btn-flat-color($color)
+{
+  border-left-color: $color;
+  &::after
+  {
+    background-color: $color;
+  }
+}
+
+.lcars-btn-flat
+{
+  @extend %lcars-btn-base;
+  @extend .lcars-font;
+
+  border-left: 0.5em solid #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-align: left;
+  background-color: initial;
+  display: flex;
+  padding: 0;
+  width: 100%;
+
+  /* Button colors */
+  &.lcars-btn-or { @include lcars-btn-flat-color($lcars-color-or); }
+  &.lcars-btn-fl { @include lcars-btn-flat-color($lcars-color-fl); }
+  &.lcars-btn-bg { @include lcars-btn-flat-color($lcars-color-bg); }
+  &.lcars-btn-rb { @include lcars-btn-flat-color($lcars-color-rb); }
+  &.lcars-btn-be { @include lcars-btn-flat-color($lcars-color-be); }
+  &.lcars-btn-lb { @include lcars-btn-flat-color($lcars-color-lb); }
+  &.lcars-btn-ap { @include lcars-btn-flat-color($lcars-color-ap); }
+  &.lcars-btn-pi { @include lcars-btn-flat-color($lcars-color-pi); }
+
+  &.lcars-hover-or:hover { @include lcars-btn-flat-color($lcars-color-or); }
+  &.lcars-hover-fl:hover { @include lcars-btn-flat-color($lcars-color-fl); }
+  &.lcars-hover-bg:hover { @include lcars-btn-flat-color($lcars-color-bg); }
+  &.lcars-hover-rb:hover { @include lcars-btn-flat-color($lcars-color-rb); }
+  &.lcars-hover-be:hover { @include lcars-btn-flat-color($lcars-color-be); }
+  &.lcars-hover-lb:hover { @include lcars-btn-flat-color($lcars-color-lb); }
+  &.lcars-hover-ap:hover { @include lcars-btn-flat-color($lcars-color-ap); }
+  &.lcars-hover-pi:hover { @include lcars-btn-flat-color($lcars-color-pi); }
+
+  &::after
+  {
+    display: inline-block;
+    content: " ";
+    background-color: #fff;
+    height: inherit;
+    flex: 0 0 0.8em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+  }
+
+  span
+  {
+    flex-grow: 1;
+    padding: 0 0.2em;
+    line-height: 100%;
+    font-size: 120%;
+  }
+
+  &:hover
+  {
+    &::after
+    {
+      flex-grow: 1;
+    }
+
+    span
+    {
+      flex-grow: 0;
+    }
+
+    background-color: initial;
+  }
+}
+
+.alert
+{
+  .lcars-btn, .lcars-btn-flat
+  {
+    &.lcars-btn-fl { @include lcars-btn-color($lcars-color-fl-alert); }
+    &.lcars-btn-bg { @include lcars-btn-color($lcars-color-bg-alert); }
+    &.lcars-btn-rb { @include lcars-btn-color($lcars-color-rb-alert); }
+    &.lcars-btn-be { @include lcars-btn-color($lcars-color-be-alert); }
+    &.lcars-btn-lb { @include lcars-btn-color($lcars-color-lb-alert); }
+    &.lcars-btn-ap { @include lcars-btn-color($lcars-color-ap-alert); }
+    &.lcars-btn-pi { @include lcars-btn-color($lcars-color-pi-alert); }
+  }
+}
+
+input [type="button"], button
+{
+  @extend .lcars-btn;
+}

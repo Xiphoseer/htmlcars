@@ -12,7 +12,19 @@ $lcars-edge-border: $lcars-edge-width solid #000;
 
 .lcars-chrome
 {
-  @extend .lcars-bg-ho;
+  background-color: #fff;
+
+  &.lcars-chrome-or { @extend .lcars-bg-or; }
+  &.lcars-chrome-fl { @extend .lcars-bg-fl; }
+  &.lcars-chrome-bg { @extend .lcars-bg-bg; }
+  &.lcars-chrome-rb { @extend .lcars-bg-rb; }
+  &.lcars-chrome-be { @extend .lcars-bg-be; }
+  &.lcars-chrome-lb { @extend .lcars-bg-lb; }
+  &.lcars-chrome-ap { @extend .lcars-bg-ap; }
+  &.lcars-chrome-pi { @extend .lcars-bg-pi; }
+  &.lcars-chrome-ho { @extend .lcars-bg-ho; }
+  &.lcars-chrome-ck { @extend .lcars-bg-ck; }
+
   display: flex;
   border-radius: 1em;
 
@@ -154,3 +166,34 @@ $lcars-edge-border: $lcars-edge-width solid #000;
 .lcars-chrome-smaller { @include lcars-chrome-size(1.5rem, 185%, -0.12rem, 0rem 0.3rem,   inherit); }
 .lcars-chrome-larger  { @include lcars-chrome-size(2.5rem, 330%, -0.3rem,  0.6rem,        16pt); }
 .lcars-chrome-large   { @include lcars-chrome-size(3rem,   400%, -0.4rem,  1.2rem 0.6rem, 16pt); }
+
+.lcars-chrome-field
+{
+  @extend .lcars-font;
+  padding: 0 0.3rem;
+  color: #000;
+}
+
+.text-bottom-left, .text-top-left
+{
+  text-align: left;
+}
+
+.text-top-right, .text-bottom-right
+{
+  text-align: right;
+}
+
+.text-bottom-right::before, .text-bottom-left::before
+{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.lcars-round-right
+{
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
