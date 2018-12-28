@@ -18,16 +18,7 @@
       </template>
       <template slot="markup">
         <hr>
-        <hr class="lcars-color-or">
-        <hr class="lcars-color-fl">
-        <hr class="lcars-color-bg">
-        <hr class="lcars-color-rb">
-        <hr class="lcars-color-be">
-        <hr class="lcars-color-lb">
-        <hr class="lcars-color-ap">
-        <hr class="lcars-color-pi">
-        <hr class="lcars-color-ho">
-        <hr class="lcars-color-ck">
+        <hr v-for="key in colors" :key="key" :class="'lcars-color-' + key">
       </template>
     </example>
 
@@ -141,6 +132,11 @@ export default {
   name: 'elements',
   components: {
     Example
+  },
+  data: function () {
+    return {
+      colors: ['or', 'fl', 'bg', 'rb', 'be', 'lb', 'ap', 'pi', 'ho', 'ck']
+    }
   }
 }
 </script>

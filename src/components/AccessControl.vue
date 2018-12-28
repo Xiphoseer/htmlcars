@@ -1,0 +1,107 @@
+<template>
+  <div class="lcars-page lcars-fixed">
+    <div class="lcars-topbar lcars-chrome-horizontal">
+      <h2>Access Control Matrix</h2>
+      <span class="lcars-bar-space"></span>
+      <h2>CSS: 5</h2>
+    </div>
+    <div class="lcars-grid-content">
+      <table class="table lcars-table">
+        <tr>
+          <th></th>
+          <th>C</th>
+          <th>FO</th>
+          <th>SO</th>
+          <th>TO</th>
+          <th>HO</th>
+          <th>E</th>
+          <th>NC</th>
+          <th>SC</th>
+          <th>TC</th>
+          <th>DC</th>
+        </tr>
+        <tr>
+          <th>C</th>
+          <td></td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+        </tr>
+        <tr>
+          <th>FO</th>
+          <td></td>
+          <td></td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>rwx</td>
+        </tr>
+        <tr>
+          <th>SO</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>rwx</td>
+          <td></td>
+          <td>rwx</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>TO</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td></td>
+          <td>r</td>
+          <td>rwx</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>HO</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>rwx</td>
+          <td>rwx</td>
+          <td>r</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>E</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="lcars-bottombar lcars-chrome-horizontal">
+
+    </div>
+  </div>
+</template>

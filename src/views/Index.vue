@@ -28,5 +28,13 @@
       multiple components and layouts available to quickly generate LCARS consoles
       for any webapp.
     </p>
+    <h2>Examples</h2>
+    <ul>
+      <li><router-link to="/examples/403">403 Page</router-link></li>
+      <li><router-link to="/examples/calculator">Calculator</router-link></li>
+      <li><router-link to="/examples/lcarscom">LCARScom Database</router-link></li>
+      <li><router-link to="/examples/panel">Panel</router-link></li>
+      <li><router-link to="/examples/access">Access Control Matrix</router-link></li>
+    </ul>
   </div>
 </template>
