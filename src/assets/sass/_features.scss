@@ -68,7 +68,7 @@
 
   &::before
   {
-    content: attr(key);
+    content: attr(data-key);
     grid-area: head / head / tail / bar;
     font-size: 400%;
     font-family: LCARSGTJ3, Helvetica;

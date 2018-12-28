@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import base from 'js-beautify';
+
 export default {
   name: 'Example',
   props: ['title', 'element'],
@@ -21,7 +23,9 @@ export default {
     };
   },
   mounted: function() {
-    this.markup = this.$slots.markup.map(x => x.elm.outerHTML).join("\n");
+    let ht = this.$slots.markup.map(x => x.elm.outerHTML).join("\n");
+    let ba = base.html(ht, {'wrap-line-length': 100, 'inline': ['small']});
+    this.markup = ba;
   }
 }
 </script>

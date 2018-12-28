@@ -1,15 +1,18 @@
 <template>
-  <div>
+  <section>
     <h1>Components</h1>
     <p>
       This is a library of components which can be used in a LCARS themed site. They are intended to be reusable in most cases. but it is not guaranteed that all components will work together seamlessly. Components are inspired from a variety of sources.
     </p>
-    <h2>Message Titles</h2>
-    <p>
-      When a system message appears in LCARS it tends not to be a toast or color-coded alert, but rather a full page with bold font of different sizes describing the situation. This may be achieved through the <code>message</code> class.
-    <p>
-    <div class="lcars-container">
-      <div class="lcars-container-inlay">
+
+    <example title="Message Titles">
+      <template slot="description">
+        When a system message appears in LCARS it tends not to be a toast or
+        color-coded alert, but rather a full page with bold font of different
+        sizes describing the situation. This may be achieved through the
+        <code>message</code> class.
+      </template>
+      <template slot="markup">
         <div class="lcars-message">
           <h1>Authorized</h1>
           <h2>Please stand by!</h2>
@@ -18,36 +21,38 @@
           <h5>Management Console</h5>
           <h6>Library Computer Access and Retrieval System</h6>
         </div>
-      </div>
-    </div>
-    <h2>Badges</h2>
-    <p>
-      These panel identification labels have been used on the backside of padds or storage crates.
-      They consist of a number and multiline description
-    </p>
-    <div class="lcars-container">
-      <div class="lcars-container-inlay">
-        <div class="badge" key="123">
+      </template>
+    </example>
+
+    <example title="Badges">
+      <template slot="description">
+        These panel identification labels have been used on the backside of
+        PADDS or storage crates. They consist of a number and multiline description.
+      </template>
+      <template slot="markup">
+        <div class="badge" data-key="123">
           <h2>ENGINEERING ACCESS ONLY</h2>
           <span>Three hundred thousand kilometers per second: It's not just a good idea. It's the law, your actual mileage may vary, of course</span>
         </div>
-        <div class="badge badge-red" key="123">
+        <div class="badge badge-red" data-key="123">
           <h2>WEBSITE UNDER CONSTRUCTION</h2>
           <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
         </div>
-        <div class="badge badge-blue" key="123">
+        <div class="badge badge-blue" data-key="123">
           <h2>ENGINEERING ACCESS ONLY</h2>
           <span>Three hundred thousand kilometers per second: It's not just a good idea. It's the law, your actual mileage may vary, of course</span>
         </div>
-        <div class="badge badge-brown" key="123">
+        <div class="badge badge-brown" data-key="123">
           <h2>WEBSITE UNDER CONSTRUCTION</h2>
           <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</span>
         </div>
-      </div>
-    </div>
+      </template>
+    </example>
+
     <h2>Button Groups</h2>
-    <div class="lcars-container">
-      <div class="lcars-container-inlay">
+
+    <example title="Button Grid">
+      <template slot="markup">
         <div class="lcars-button-grid">
           <a href="#" class="lcars-btn lcars-btn-pi">ABC</a>
           <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
@@ -63,10 +68,11 @@
           <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
           <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
         </div>
-      </div>
-    </div>
-    <div class="lcars-container">
-      <div class="lcars-container-inlay">
+      </template>
+    </example>
+
+    <example title="Button Panel">
+      <template slot="markup">
         <div class="lcars-button-panel" style="max-width: 5rem">
           <div class="lcars-message lcars-bg-fl lcars-field" style="grid-area: 2 / 1 / 4 / 3;">
             <h3><!--&#0133;--></h3>
@@ -89,10 +95,11 @@
             <a href="#" class="lcars-btn lcars-btn-or">7YZ</a>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="lcars-container">
-      <div class="lcars-container-inlay">
+      </template>
+    </example>
+
+    <example title="Console">
+      <template slot="markup">
         <div class="lcars-console">
           <div class="lcars-console-line">
             <a href="#" class="lcars-btn lcars-btn-pi left">2BC</a>
@@ -120,11 +127,11 @@
             <a href="#" class="lcars-btn lcars-btn-or right">6YZ</a>
           </div>
         </div>
-      </div>
-    </div>
-    <h2>Chrome</h2>
-    <div class="lcars-container">
-      <div class="lcars-container-inlay">
+      </template>
+    </example>
+
+    <example title="chrome">
+      <template slot="markup">
         <div class="lcars-chrome-horizontal lcars-chrome-large">
           <h1>LARGE</h1>
           <a href="#" class="lcars-btn">123</a>
@@ -160,14 +167,25 @@
           <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
           <span class="lcars-bar-space"></span>
         </div>
-      </div>
-    </div>
-    <h2>Custom buttons</h2>
-    <div class="lcars-container">
-      <div class="lcars-container-example">
+      </template>
+    </example>
+
+    <example title="Custom buttons">
+      <template slot="markup">
         <button style="width: 20rem;" class="lcars-btn-flat"><span>Alien Database</span></button><br>
         <button style="width: 20rem;" class="lcars-btn-flat"><span>Behind the scenes</span></button>
-      </div>
-    </div>
-  </div>
+      </template>
+    </example>
+  </section>
 </template>
+
+<script>
+import Example from '@/components/Example.vue'
+
+export default {
+  name: 'components',
+  components: {
+    Example
+  }
+}
+</script>
