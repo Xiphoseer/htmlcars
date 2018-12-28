@@ -1,21 +1,21 @@
 @keyframes lcars-color-1
 {
-  0%   {background-color: $lcars-color-pi;}
-  24%  {background-color: $lcars-color-pi;}
-  25%  {background-color: $lcars-color-lb;}
-  49%  {background-color: $lcars-color-lb;}
-  50%  {background-color: $lcars-color-rb;}
-  74%  {background-color: $lcars-color-rb;}
-  75%  {background-color: $lcars-color-or;}
-  100% {background-color: $lcars-color-or;}
+  0%   {background-color: map-get($lcars-colors, pi);}
+  24%  {background-color: map-get($lcars-colors, pi);}
+  25%  {background-color: map-get($lcars-colors, lb);}
+  49%  {background-color: map-get($lcars-colors, lb);}
+  50%  {background-color: map-get($lcars-colors, rb);}
+  74%  {background-color: map-get($lcars-colors, rb);}
+  75%  {background-color: map-get($lcars-colors, or);}
+  100% {background-color: map-get($lcars-colors, or);}
 }
 
 @keyframes lcars-on-off
 {
-  0%   {color: $lcars-color-or;}
-  49%  {color: $lcars-color-or;}
-  50%  {color: $lcars-color-ck;}
-  100% {color: $lcars-color-ck;}
+  0%   {color: map-get($lcars-colors, or);}
+  49%  {color: map-get($lcars-colors, or);}
+  50%  {color: map-get($lcars-colors, ck);}
+  100% {color: map-get($lcars-colors, ck);}
 }
 
 %loop-animation

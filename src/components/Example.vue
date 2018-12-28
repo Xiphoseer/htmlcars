@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .hljs-name { color: $lcars-color-or; }
-  .hljs-attr { color: $lcars-color-rb; }
-  .hljs-string { color: $lcars-color-lb; }
+  .hljs-name { color: map-get($lcars-colors, or); }
+  .hljs-attr { color: map-get($lcars-colors, rb); }
+  .hljs-string { color: map-get($lcars-colors, lb); }
 </style>

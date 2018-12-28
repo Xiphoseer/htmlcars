@@ -66,17 +66,17 @@
 .lcars-container
 {
   border-radius: 1em;
-  background-color: $lcars-color-ho;
+  background-color: map-get($lcars-colors, ho);
   padding: 0.6em 0;
   margin-bottom: 0.7em;
-  
+
   .lcars-container-inlay
   {
     background-color: #000;
     border-radius: 0.5rem;
     padding: 0.6rem;
-    border-left: 0.5em solid $lcars-color-lb;
-    border-right: 0.5em solid $lcars-color-lb;
+    border-left: 0.5em solid map-get($lcars-colors, lb);
+    border-right: 0.5em solid map-get($lcars-colors, lb);
   }
 
   .lcars-container-example
@@ -118,7 +118,7 @@
       background-color: red;
     }
 
-    //.lcars-btn:nth-of-type(3n+1):not(.right):not(.num):not(.block), 
+    //.lcars-btn:nth-of-type(3n+1):not(.right):not(.num):not(.block),
     .left
     {
       grid-column: left / num;

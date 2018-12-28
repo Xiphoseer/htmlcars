@@ -64,13 +64,13 @@
 
 .lcars-merged-top-left::before
 {
-  @include lcars-merged-top-left(#fff);
+  @include lcars-merged-top-left(var(--lcars-chrome-bg));
   border-top-left-radius: 3em 3em;
 }
 
 .lcars-merged-bottom-left::after
 {
-  @include lcars-merged-bottom-left(#fff);
+  @include lcars-merged-bottom-left(var(--lcars-chrome-bg));
   border-bottom-left-radius: 3em 3em;
 }
 
@@ -78,11 +78,11 @@
 {
   .lcars-merged-top-left::before
   {
-    @include lcars-merged-top-left($lcars-color-ho-alert);
+    @include lcars-merged-top-left(map-get($lcarsalertcolors, ho));
   }
   .lcars-merged-bottom-left::after
   {
-    @include lcars-merged-bottom-left($lcars-color-ho-alert);
+    @include lcars-merged-bottom-left(map-get($lcarsalertcolors, ho));
   }
 }
 

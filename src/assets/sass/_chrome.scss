@@ -2,6 +2,9 @@ $lcars-border-width: 0.3rem;
 $lcars-edge-width: 0.4rem;
 $lcars-basic-border: $lcars-border-width solid #000;
 $lcars-edge-border: $lcars-edge-width solid #000;
+$lcars-border-radius: 1rem;
+
+$lcars-chrome-bg: #fff;
 
 .lcars-field
 {
@@ -10,21 +13,17 @@ $lcars-edge-border: $lcars-edge-width solid #000;
   padding: 1rem;
 }
 
+:root {
+  #{"--lcars-chrome-bg"}: $lcars-chrome-bg;
+}
+
+@each $name, $color in $lcars-colors {
+  .lcars-chrome-#{$name} { #{"--lcars-chrome-bg"}: $color; }
+}
+
 .lcars-chrome
 {
-  background-color: #fff;
-
-  &.lcars-chrome-or { @extend .lcars-bg-or; }
-  &.lcars-chrome-fl { @extend .lcars-bg-fl; }
-  &.lcars-chrome-bg { @extend .lcars-bg-bg; }
-  &.lcars-chrome-rb { @extend .lcars-bg-rb; }
-  &.lcars-chrome-be { @extend .lcars-bg-be; }
-  &.lcars-chrome-lb { @extend .lcars-bg-lb; }
-  &.lcars-chrome-ap { @extend .lcars-bg-ap; }
-  &.lcars-chrome-pi { @extend .lcars-bg-pi; }
-  &.lcars-chrome-ho { @extend .lcars-bg-ho; }
-  &.lcars-chrome-ck { @extend .lcars-bg-ck; }
-
+  background-color: var(--lcars-chrome-bg);
   display: flex;
   border-radius: 1em;
 
@@ -39,7 +38,7 @@ $lcars-edge-border: $lcars-edge-width solid #000;
     display: inline-block;
     flex: 0 0 auto;
   }
-  
+
   h1, h2, h3, h4, h5, h6
   {
     @extend .lcars-chrome-component;
@@ -50,7 +49,7 @@ $lcars-edge-border: $lcars-edge-width solid #000;
     border-bottom: 0;
     margin-top: -0.25rem;
   }
-  
+
   .lcars-bar-space
   {
     @extend .lcars-chrome-component;
@@ -90,7 +89,7 @@ $lcars-edge-border: $lcars-edge-width solid #000;
 
   &.alt-cap-right
   {
-    border-right: 2.5em solid $lcars-color-or;
+    border-right: 2.5em solid map-get($lcars-colors, or);
     padding-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -98,7 +97,7 @@ $lcars-edge-border: $lcars-edge-width solid #000;
 
   &.alt-cap-left
   {
-    border-left: 2.5em solid $lcars-color-or;
+    border-left: 2.5em solid map-get($lcars-colors, or);
     padding-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;

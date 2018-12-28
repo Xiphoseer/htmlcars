@@ -6,16 +6,10 @@ hr
   border-bottom: 0.2rem solid #FFF;
 }
 
-hr.lcars-color-or { border-bottom-color: $lcars-color-or; }
-hr.lcars-color-fl { border-bottom-color: $lcars-color-fl; }
-hr.lcars-color-bg { border-bottom-color: $lcars-color-bg; }
-hr.lcars-color-rb { border-bottom-color: $lcars-color-rb; }
-hr.lcars-color-be { border-bottom-color: $lcars-color-be; }
-hr.lcars-color-lb { border-bottom-color: $lcars-color-lb; }
-hr.lcars-color-ap { border-bottom-color: $lcars-color-ap; }
-hr.lcars-color-pi { border-bottom-color: $lcars-color-pi; }
-hr.lcars-color-ho { border-bottom-color: $lcars-color-ho; }
-hr.lcars-color-ck { border-bottom-color: $lcars-color-ck; }
+@each $name, $color in $lcars-colors {
+  hr.lcars-color-#{$name} { border-bottom-color: $color; }
+  blockquote.lcars-color-#{$name} { border-color: $color; }
+}
 
 pre
 {
@@ -52,17 +46,6 @@ blockquote
   	border-right-width: 0;
   }
 }
-
-blockquote.lcars-color-or { border-color: $lcars-color-or; }
-blockquote.lcars-color-fl { border-color: $lcars-color-fl; }
-blockquote.lcars-color-bg { border-color: $lcars-color-bg; }
-blockquote.lcars-color-rb { border-color: $lcars-color-rb; }
-blockquote.lcars-color-be { border-color: $lcars-color-be; }
-blockquote.lcars-color-lb { border-color: $lcars-color-lb; }
-blockquote.lcars-color-ap { border-color: $lcars-color-ap; }
-blockquote.lcars-color-pi { border-color: $lcars-color-pi; }
-blockquote.lcars-color-ho { border-color: $lcars-color-ho; }
-blockquote.lcars-color-ck { border-color: $lcars-color-ck; }
 
 dl dt
 {

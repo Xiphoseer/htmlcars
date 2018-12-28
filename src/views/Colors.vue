@@ -1,6 +1,6 @@
 <template>
   <center>
-    <div class="lcars-page" style="max-width: 600px; width: 100%">
+    <div class="lcars-page lcars-chrome-ho" style="max-width: 600px; width: 100%">
       <div class="lcars-chrome-horizontal lcars-topbar">
         <h2>Colorindex Voyager</h2>
         <span class="lcars-bar-space lcars-bg-ap"></span>

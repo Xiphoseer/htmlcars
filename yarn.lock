@@ -7955,6 +7955,11 @@ vue-eslint-parser@^4.0.2:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
+vue-fullscreen@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/vue-fullscreen/-/vue-fullscreen-2.1.3.tgz#831f6c2f89771e80f7189b1c8b863d4d66677fcf"
+  integrity sha512-roXjzvFj5rKzTjsjZix4LYIPiLaOU12p0J3/UDHd7cwJmD6VMik4tnuj3aXbiu7D9IG2qCGVQXV60rnqr96cuw==
+
 vue-highlightjs@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/vue-highlightjs/-/vue-highlightjs-1.3.3.tgz#29a0d57132fc1ce15cfa61e896918f5b718c5d52"
