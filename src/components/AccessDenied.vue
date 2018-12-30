@@ -1,5 +1,5 @@
 <template>
-  <div class="lcars-body lcars-page lcars-chrome-ho lcars-fixed">
+  <div class="lcars-body lcars-page lcars-chrome-voyager lcars-fixed">
     <div class="lcars-chrome-horizontal lcars-topbar">
       <h1>LCARS</h1>
       <router-link to="/" class="lcars-btn">Home</router-link>
@@ -15,8 +15,8 @@
     </div>
     <div class="lcars-chrome-horizontal lcars-bottombar">
       <a class="lcars-btn">123</a>
-      <a class="lcars-btn lcars-btn-pi">ABC</a>
-      <a class="lcars-btn lcars-btn-rb">XYZ</a>
+      <a class="lcars-btn">ABC</a>
+      <a class="lcars-btn">XYZ</a>
       <span class="lcars-bar-space"></span>
       <h1>Console 1337</h1>
     </div>

@@ -74,19 +74,6 @@
   border-bottom-left-radius: 3em 3em;
 }
 
-.alert
-{
-  .lcars-merged-top-left::before
-  {
-    @include lcars-merged-top-left(var(--lcars-chrome-bg-alert), var(--lcars-screen-bg));
-  }
-
-  .lcars-merged-bottom-left::after
-  {
-    @include lcars-merged-bottom-left(var(--lcars-chrome-bg-alert), var(--lcars-screen-bg));
-  }
-}
-
 .lcars-grid-merged
 {
   @extend .lcars-merged-top-left;
@@ -179,4 +166,16 @@ $lcars-page-space: 0.5rem;
     @extend %vertical-bottom-merge;
   }
   .lcars-topbar, .lcars-bottombar { @extend %horizontal-left-merge; }
+}
+
+.lcars-topbar, .lcars-bottombar
+{
+  & > *:first-child { border-left: 0.3rem solid var(--lcars-screen-bg); }
+  & > *:last-child { border-right: 0.3rem solid var(--lcars-screen-bg); }
+}
+
+.lcars-sidebar, .lcars-altbar
+{
+  & > *:first-child { border-top: 0.3rem solid var(--lcars-screen-bg); }
+  & > *:last-child { border-bottom: 0.3rem solid var(--lcars-screen-bg); }
 }

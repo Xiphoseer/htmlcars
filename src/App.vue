@@ -4,6 +4,13 @@
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'app',
+    components: {}
+  };
+</script>
+
 <style lang="scss" src="./assets/sass/lcars.scss"></style>
 
 <style lang="scss">

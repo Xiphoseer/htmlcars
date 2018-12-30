@@ -24,16 +24,51 @@
   .lcars-chrome-#{$name} { #{"--lcars-chrome-bg"}: $color; }
 }
 
-.lcars-chrome
+.lcars-round-right
 {
-  background-color: var(--lcars-chrome-bg);
-  display: flex;
-  border-radius: 1em;
+  border-top-right-radius: var(--lcars-chrome-height);
+  border-bottom-right-radius: var(--lcars-chrome-height);
+}
 
-  .lcars-chrome
-  {
-    border-radius: 0;
-  }
+.lcars-round-left
+{
+  border-top-left-radius: var(--lcars-chrome-height);
+  border-bottom-left-radius: var(--lcars-chrome-height);
+}
+
+.lcars-round
+{
+  border-radius: var(--lcars-chrome-height);
+}
+
+%lcars-chrome-cap-base
+{
+  width: var(--lcars-chrome-height);
+  height: var(--lcars-chrome-height);
+  background-color: var(--lcars-chrome-bg);
+  @extend .lcars-chrome-component;
+}
+
+.lcars-chrome-cap-right
+{
+  @extend %lcars-chrome-cap-base;
+  @extend .lcars-round-right;
+}
+
+.lcars-chrome-cap-left
+{
+  @extend %lcars-chrome-cap-base;
+  @extend .lcars-round-right;
+}
+
+.lcars-chrome-component + .lcars-chrome-component
+{
+  border-left: 0.3rem solid var(--lcars-screen-bg);
+}
+
+.lcars-chrome-base
+{
+  display: flex;
 
   .lcars-chrome-component
   {
@@ -45,12 +80,16 @@
   h1, h2, h3, h4, h5, h6
   {
     @extend .lcars-chrome-component;
-    color: var(--lcars-theme-title);
+
+    color:            var(--lcars-theme-title);
     background-color: var(--lcars-screen-bg);
-    line-height: 100%;
-    font-size: 260%;
+    font-size:        var(--lcars-chrome-caption-size);
+    margin-top:       var(--lcars-chrome-offset);
+    line-height:      calc(1.3 * var(--lcars-chrome-height));
+
+    margin-bottom: 0;
     border-bottom: 0;
-    margin-top: -0.25rem;
+    /*padding: 0 0.1em;*/
   }
 
   .lcars-bar-space
@@ -63,32 +102,35 @@
   {
   	@extend .lcars-chrome-component;
   }
+
+  .lcars-fill
+  {
+    flex: 1 0 auto;
+  }
+
+  .lcars-chrome-set
+  {
+    @extend .lcars-chrome-component;
+    background-color: var(--lcars-chrome-bg);
+    color: var(--lcars-chrome-fg);
+  }
+}
+
+.lcars-chrome
+{
+  @extend .lcars-chrome-base;
+  background-color: var(--lcars-chrome-bg);
+  border-radius: 2em;
 }
 
 .lcars-chrome-horizontal
 {
   @extend .lcars-chrome;
   padding: 0 2rem;
-  max-height: 2rem;
-  height: 2rem;
-  min-height: 2rem;
+  max-height: var(--lcars-chrome-height);
+  height:     var(--lcars-chrome-height);
+  min-height: var(--lcars-chrome-height);
   flex-direction: row;
-
-  .lcars-chrome-component:first-child
-  {
-    border-left: $lcars-edge-border;
-  }
-
-  .lcars-chrome-component
-  {
-    vertical-align: bottom;
-    border-right: $lcars-basic-border;
-  }
-
-  .lcars-chrome-component:last-child
-  {
-    border-right: $lcars-edge-border;
-  }
 
   &.alt-cap-right
   {
@@ -124,50 +166,37 @@
   min-width: 6em;
   flex-direction: column;
 
-  .lcars-chrome-component:first-child
+  .lcars-chrome-component + .lcars-chrome-component
   {
-    border-top: $lcars-basic-border;
+    border-top: 0.3rem solid var(--lcars-screen-bg);
+    border-left: 0;
   }
 
   .lcars-chrome-component
   {
     text-align: right;
-    border-bottom: $lcars-basic-border;
-  }
-
-  .lcars-chrome-component:last-child
-  {
-    border-bottom: $lcars-edge-border;
   }
 }
 
 @mixin lcars-chrome-size($height, $caption-size, $offset, $btn-padding, $btn-size)
 {
-  border-radius: 2em;
-  &.lcars-chrome-horizontal
-  {
-    min-height: $height;
-    height: $height;
-    max-height: $height;
-  }
-
-  h1, h2, h3, h4, h5, h6
-  {
-    font-size: $caption-size;
-    margin-top: $offset;
-  }
-
-  .lcars-btn
-  {
-    padding: $btn-padding;
-    font-size: $btn-size;
-  }
+  #{"--lcars-chrome-height"}: $height;
+  #{"--lcars-chrome-caption-size"}: $caption-size;
+  #{"--lcars-chrome-offset"}: $offset;
+  #{"--lcars-chrome-btn-padding"}: $btn-padding;
+  #{"--lcars-chrome-btn-size"}: $btn-size;
 }
 
-.lcars-chrome-small   { @include lcars-chrome-size(1rem,   130%, -0.12rem, 0    0.2rem,   90%);     }
-.lcars-chrome-smaller { @include lcars-chrome-size(1.5rem, 185%, -0.12rem, 0rem 0.3rem,   inherit); }
-.lcars-chrome-larger  { @include lcars-chrome-size(2.5rem, 330%, -0.3rem,  0.6rem,        16pt); }
-.lcars-chrome-large   { @include lcars-chrome-size(3rem,   400%, -0.4rem,  1.2rem 0.6rem, 16pt); }
+.lcars-chrome-small   { @include lcars-chrome-size(1rem,   130%, -0.12rem, 0     0.2rem,        90%);     }
+.lcars-chrome-smaller { @include lcars-chrome-size(1.5rem, 185%, -0.12rem, 0     0.3rem,        inherit); }
+.lcars-chrome-normal  { @include lcars-chrome-size(2rem,   260%, -0.25rem, 0.3em 0.6em 0 0.6em, 16pt); }
+.lcars-chrome-larger  { @include lcars-chrome-size(2.5rem, 330%, -0.3rem,  0.6rem,              16pt); }
+.lcars-chrome-large   { @include lcars-chrome-size(3rem,   400%, -0.4rem,  1.2rem 0.6rem,       16pt); }
+
+:root
+{
+  @extend .lcars-chrome-normal;
+}
 
 .lcars-chrome-field
 {
@@ -192,10 +221,4 @@
   display: inline-block;
   height: 100%;
   vertical-align: bottom;
-}
-
-.lcars-round-right
-{
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }

@@ -14,6 +14,7 @@
       <router-link class="lcars-btn lcars-chrome-primary-alt-1" to="/">Index</router-link>
       <router-link class="lcars-btn lcars-chrome-secondary-alt-2" to="/colors">Colors</router-link>
       <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/elements">Elements</router-link>
+      <router-link class="lcars-btn lcars-chrome-secondary-alt-3" to="/chrome">Chrome</router-link>
       <router-link class="lcars-btn lcars-chrome-primary-alt-3" to="/components">Components</router-link>
       <router-link class="lcars-btn lcars-chrome-secondary-alt-1" to="/layouts">Layouts</router-link>
 
@@ -91,12 +92,12 @@
     content: "";
     position: absolute;
     display: block;
-    right: -1rem;
-    width: 1rem;
+    right: -0.5rem;
+    width: 0.3rem;
     top: 0;
     height: 100%;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    /*border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;*/
     background-color: var(--lcars-chrome-bg);
   }
 

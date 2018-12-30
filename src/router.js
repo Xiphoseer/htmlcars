@@ -32,6 +32,11 @@ export default new Router({
           component: () => import(/* webpackChunkName: "elements" */ './views/Elements.vue')
         },
         {
+          path: '/chrome',
+          name: 'chrome',
+          component: () => import(/* webpackChunkName: "chrome" */ './views/ChromeDocs.vue')
+        },
+        {
           path: '/components',
           name: 'components',
           component: () => import(/* webpackChunkName: "components" */ './views/Components.vue')

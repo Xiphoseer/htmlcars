@@ -1,5 +1,5 @@
 <template>
-  <div class="lcars-body lcars-page lcars-chrome-ho lcars-fixed">
+  <div class="lcars-body lcars-page lcars-chrome-voyager lcars-fixed">
     <div class="lcars-chrome-horizontal lcars-topbar">
       <h1>LCARS</h1>
       <router-link to="/" class="lcars-btn">Home</router-link>
