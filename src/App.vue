@@ -4,6 +4,8 @@
   </div>
 </template>
 
+<style lang="scss" src="./assets/sass/lcars.scss"></style>
+
 <style lang="scss">
   body, html {
     height: 100%;
@@ -11,12 +13,7 @@
   }
 
   body {
-    @extend %lcars-body;
-  }
-
-  .lcars-scroll {
-    overflow-y: scroll;
-    padding-right: 1.5rem;
+    @extend %lcars-body-ref;
   }
 
   #app {

@@ -1,14 +1,3 @@
-@mixin lcars-btn-color($color)
-{
-  background-color: $color;
-  color: #000;
-
-  &:hover, &:active
-  {
-    background-color: lighten($color, 10%);
-  }
-}
-
 .lcars-btn-nav
 {
   padding-left: 0.75rem;
@@ -31,7 +20,11 @@
   @extend %lcars-btn-base;
   @extend .lcars-font;
   @extend .lcars-chrome;
-  @extend .lcars-btn-lb;
+
+  @extend .lcars-chrome-primary-alt-1;
+  background-color: var(--lcars-chrome-bg);
+  color: var(--lcars-chrome-fg);
+
   min-width: 4em;
   text-align: right;
   display: inline-block;
@@ -41,9 +34,8 @@
   border: 0;
   box-shadow: none;
 
-  /* Button colors */
-  @each $name, $color in $lcars-colors {
-    &.lcars-btn-#{$name} { @include lcars-btn-color($color); }
+  &:hover, &:focus {
+    background-color: var(--lcars-chrome-bg-light);
   }
 
   &.lcars-btn-block
@@ -121,9 +113,7 @@
 {
   .lcars-btn, .lcars-btn-flat
   {
-    @each $name, $color in $lcarsalertcolors {
-      &.lcars-btn-#{$name} { @include lcars-btn-color($color); }
-    }
+
   }
 }
 

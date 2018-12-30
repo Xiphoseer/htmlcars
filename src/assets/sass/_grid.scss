@@ -44,16 +44,16 @@
   border-bottom-right-radius: 0;
 }
 
-@mixin lcars-merged-top-left($color)
+@mixin lcars-merged-top-left($chrome-bg, $screen-bg)
 {
-  background-color: $color;
-  background-image: radial-gradient(circle at 100% 100%, #000 1em, $color 1em);
+  background-color: $chrome-bg;
+  background-image: radial-gradient(circle at 100% 100%, $screen-bg 1em, $chrome-bg 1em);
 }
 
-@mixin lcars-merged-bottom-left($color)
+@mixin lcars-merged-bottom-left($chrome-bg, $screen-bg)
 {
-  background-color: $color;
-  background-image: radial-gradient(circle at 100% 0, #000 1em, $color 1em);
+  background-color: $chrome-bg;
+  background-image: radial-gradient(circle at 100% 0, $screen-bg 1em, $chrome-bg 1em);
 }
 
 .lcars-merged-top-left::before, .lcars-merged-bottom-left::after
@@ -64,13 +64,13 @@
 
 .lcars-merged-top-left::before
 {
-  @include lcars-merged-top-left(var(--lcars-chrome-bg));
+  @include lcars-merged-top-left(var(--lcars-chrome-bg), var(--lcars-screen-bg));
   border-top-left-radius: 3em 3em;
 }
 
 .lcars-merged-bottom-left::after
 {
-  @include lcars-merged-bottom-left(var(--lcars-chrome-bg));
+  @include lcars-merged-bottom-left(var(--lcars-chrome-bg), var(--lcars-screen-bg));
   border-bottom-left-radius: 3em 3em;
 }
 
@@ -78,11 +78,12 @@
 {
   .lcars-merged-top-left::before
   {
-    @include lcars-merged-top-left(map-get($lcarsalertcolors, ho));
+    @include lcars-merged-top-left(var(--lcars-chrome-bg-alert), var(--lcars-screen-bg));
   }
+
   .lcars-merged-bottom-left::after
   {
-    @include lcars-merged-bottom-left(map-get($lcarsalertcolors, ho));
+    @include lcars-merged-bottom-left(var(--lcars-chrome-bg-alert), var(--lcars-screen-bg));
   }
 }
 

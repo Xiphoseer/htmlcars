@@ -67,6 +67,11 @@ export default new Router({
       path: "/examples/access",
       name: 'access',
       component: () => import(/* webpackChunkName: "access" */ './components/AccessControl.vue')
+    },
+    {
+      path: "/examples/2048",
+      name: 'game2048',
+      component: () => import(/* webpackChunkName: "game2048" */ './components/Game2048.vue')
     }
   ]
 })

@@ -78,7 +78,7 @@
   .calculator-wrapper
   {
     box-sizing: border-box;
-    height: 100vh;
+    height: calc(100vh - 5rem);
     display: flex;
   }
 

@@ -8,15 +8,21 @@ iframe
 	border: 0;
 }
 
-table.table td
+table td, table th
 {
-  padding: 0.05em 0.3em;
+  padding: 0.1rem 0.3rem;
 }
 
-table.table
+table
 {
-  border-spacing: 0.2rem;
+  border-spacing: 0.3rem;
   border: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+p code
+{
+  color: var(--lcars-theme-secondary);
 }
 
 %heading

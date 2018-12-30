@@ -6,7 +6,7 @@
       <div class="lcars-container-example">
         <slot name="markup"/>
       </div>
-      <pre v-highlightjs="markup"><code class="html"></code></pre>
+      <pre v-highlightjs="markup"><code class="html lcars-block lcars-h-scroll"></code></pre>
     </div>
   </section>
 </template>

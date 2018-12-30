@@ -1,0 +1,44 @@
+$lcars-themes: (
+  voyager: (
+    title: map-get($lcars-voyager-colors, orange),
+    color: #000000,
+
+    primary: map-get($lcars-voyager-colors, light-orange),
+    primary-alt-1: map-get($lcars-voyager-colors, light-blue),
+    primary-alt-2: map-get($lcars-voyager-colors, blue-gray),
+    primary-alt-3: map-get($lcars-voyager-colors, lilac),
+
+    secondary: map-get($lcars-voyager-colors, russet),
+    secondary-alt-1: map-get($lcars-voyager-colors, apricot),
+    secondary-alt-2: map-get($lcars-voyager-colors, pink),
+    secondary-alt-3: map-get($lcars-voyager-colors, beige),
+  ),
+  uss-na: (
+    title: #ffffff,
+    color: #000000,
+
+    primary: map-get($lcars-uss-na-colors, blue-4),
+    primary-alt-1: map-get($lcars-uss-na-colors, blue-1),
+    primary-alt-2: map-get($lcars-uss-na-colors, blue-2),
+    primary-alt-3: map-get($lcars-uss-na-colors, blue-3),
+
+    secondary: map-get($lcars-uss-na-colors, green-4),
+    secondary-alt-1: map-get($lcars-uss-na-colors, green-1),
+    secondary-alt-2: map-get($lcars-uss-na-colors, green-2),
+    secondary-alt-3: map-get($lcars-uss-na-colors, green-3),
+  ),
+  red-alert: (
+    title: #ffffff,
+    color: #000000,
+
+    primary: map-get($lcars-uss-na-alert-colors, blue-4),
+    primary-alt-1: map-get($lcars-uss-na-alert-colors, blue-1),
+    primary-alt-2: map-get($lcars-uss-na-alert-colors, blue-2),
+    primary-alt-3: map-get($lcars-uss-na-alert-colors, blue-3),
+
+    secondary: map-get($lcars-uss-na-alert-colors, green-4),
+    secondary-alt-1: map-get($lcars-uss-na-alert-colors, green-1),
+    secondary-alt-2: map-get($lcars-uss-na-alert-colors, green-2),
+    secondary-alt-3: map-get($lcars-uss-na-alert-colors, green-3),
+  )
+);

@@ -15,7 +15,7 @@
         <code>content</code> and <code>statusline</code>.
       </template>
       <template slot="markup">
-        <div class="lcars-page" style="height: 30rem">
+        <div class="lcars-page" style="height: 20rem">
           <div class="lcars-chrome-horizontal lcars-topbar">
             <h1>Topbar</h1>
             <a href="#" class="lcars-btn">123</a>
@@ -42,7 +42,7 @@
         as a <code>content</code> and <code>sidebar</code>.
       </template>
       <template slot="markup">
-        <div class="lcars-grid lcars-grid-merged" style="height: 30rem">
+        <div class="lcars-grid lcars-grid-merged" style="height: 20rem">
           <div class="lcars-topbar lcars-chrome-horizontal">
             <h1>Topbar</h1>
             <span class="lcars-bar-space"></span>

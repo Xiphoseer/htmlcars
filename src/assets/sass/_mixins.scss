@@ -1,0 +1,73 @@
+// Produce the CSS variables for chrome color
+@mixin lcars-chrome-def($bg, $fg)
+{
+  #{"--lcars-chrome-bg"}: $bg;
+  #{"--lcars-chrome-fg"}: $fg;
+}
+
+// Produce the CSS variables for light chrome color
+@mixin lcars-chrome-def-light($bg, $fg)
+{
+  #{"--lcars-chrome-bg-light"}: $bg;
+  #{"--lcars-chrome-fg-light"}: $fg;
+}
+
+// Produce the CSS variables for chrome color in alerts
+@mixin lcars-chrome-def-alert($bg, $fg)
+{
+  #{"--lcars-chrome-bg-alert"}: $bg;
+  #{"--lcars-chrome-fg-alert"}: $fg;
+}
+
+// Produce the CSS variables for screen color
+@mixin lcars-screen-def($bg, $fg)
+{
+  #{"--lcars-screen-bg"}: $bg;
+  #{"--lcars-screen-fg"}: $fg;
+}
+
+// Produce the CSS variables for text font
+@mixin lcars-basic-font-def($font-family)
+{
+  #{"--lcars-basic-font"}: $font-family;
+}
+
+// Produce the CSS variables for title font
+@mixin lcars-title-font-def($font-family)
+{
+  #{"--lcars-title-font"}: $font-family;
+}
+
+// Use the CSS variables to set screen colors
+%lcars-screen-ref
+{
+  background-color: var(--lcars-screen-bg);
+  color:            var(--lcars-screen-fg);
+}
+
+// Use the CSS variables to set chrome colors
+%lcars-chrome-ref
+{
+  background-color: var(--lcars-chrome-bg);
+  color:            var(--lcars-chrome-fg);
+}
+
+// Use the CSS variables to set title font
+%lcars-title-font-ref
+{
+  font-family: var(--lcars-title-font);
+}
+
+// Use the CSS variables to set basic font
+%lcars-basic-font-ref
+{
+  font-family: var(--lcars-basic-font);
+}
+
+%lcars-body-ref
+{
+  @extend %lcars-screen-ref;
+  @extend %lcars-basic-font-ref;
+  padding: $lcars-body-padding;
+  margin: 0;
+}

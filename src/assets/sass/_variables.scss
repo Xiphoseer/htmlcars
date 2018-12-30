@@ -1,0 +1,114 @@
+
+// Voyager LCARS colors (http://www.gtjlcars.de/LCARSindex/Colorindex1.htm)
+$lcars-voyager-colors: (
+  orange:       #ff9900,
+  lilac:        #cc99cc,
+  blue-gray:    #9999cc,
+  russet:       #cc6666,
+  beige:        #ffcc99,
+  light-blue:   #9999ff,
+  apricot:      #ff9966,
+  pink:         #cc6699,
+  light-pink:   #ff99cc,
+  light-orange: #f7c64a
+);
+
+// USS not affiliated (http://lcarssdk.org/ => Visual Guide => Colors)
+$lcars-uss-na-colors: (
+  blue-1: #99ccff,
+  blue-2: #3399cc,
+  blue-3: #006699,
+  blue-4: #003366,
+
+  green-1: #ccddbb,
+  green-2: #00cc99,
+  green-3: #009999,
+  green-4: #006666
+);
+
+$lcars-uss-na-alert-colors: (
+  blue-1: #cccccc,
+  blue-2: #999999,
+  blue-3: #cc0000,
+  blue-4: #660000,
+
+  green-1: #ffff66,
+  green-2: #ff0000,
+  green-3: #990000,
+  green-4: #330000
+);
+
+// LCARS SDK colors
+$lcars-sdk-colors: (
+  chrome-bg: #999999,
+  chrome-fg: #000000,
+
+  red-1: #ff0000,
+  red-2: #cc0000,
+  red-3: #990000,
+
+  gray-1: #eeeeee,
+  gray-2: #cccccc,
+  gray-3: #666666
+);
+
+// Full color palette
+$lcars-colors: (
+  or: map-get($lcars-voyager-colors, orange),
+  fl: map-get($lcars-voyager-colors, lilac),
+  bg: map-get($lcars-voyager-colors, blue-gray),
+  rb: map-get($lcars-voyager-colors, russet),
+  be: map-get($lcars-voyager-colors, beige),
+  lb: map-get($lcars-voyager-colors, light-blue),
+  ap: map-get($lcars-voyager-colors, apricot),
+  pi: map-get($lcars-voyager-colors, pink),
+  lp: map-get($lcars-voyager-colors, light-pink),
+  ho: map-get($lcars-voyager-colors, light-orange),
+
+  ck: #000000,
+  gr: #999999,
+
+  b1: map-get($lcars-uss-na-colors, blue-1),
+  b2: map-get($lcars-uss-na-colors, blue-2),
+  b3: map-get($lcars-uss-na-colors, blue-3),
+  b4: map-get($lcars-uss-na-colors, blue-4),
+
+  g1: map-get($lcars-uss-na-colors, green-1),
+  g2: map-get($lcars-uss-na-colors, green-2),
+  g3: map-get($lcars-uss-na-colors, green-3),
+  g4: map-get($lcars-uss-na-colors, green-4)
+);
+
+$lcars-alert-colors: (
+  or: #fdd,
+  fl: #fcc,
+  bg: #fbb,
+  rb: #faa,
+  be: #f99,
+  lb: #f88,
+  ap: #f77,
+  pi: #f66,
+  ho: #f55
+);
+
+// Global color definitions
+$lcars-screen-bg: #000 !default;
+$lcars-screen-fg: #fff !default;
+
+// Global chrome definitions
+$lcars-chrome-bg: map-get($lcars-sdk-colors, chrome-bg);
+$lcars-chrome-fg: map-get($lcars-sdk-colors, chrome-fg);
+$lcars-chrome-bg-alert: #900;
+$lcars-chrome-fg-alert: #fff;
+
+// Global font definitions
+$lcars-title-font: LCARSGTJ3, Helvetica, sans-serif;
+$lcars-basic-font: Helvetica, sans-serif;
+
+// Global size definitions
+$lcars-border-width: 0.3rem;
+$lcars-edge-width: 0.4rem;
+$lcars-basic-border: $lcars-border-width solid var(--lcars-screen-bg);
+$lcars-edge-border: $lcars-edge-width solid var(--lcars-screen-bg);
+$lcars-border-radius: 1rem;
+$lcars-body-padding: 1rem;

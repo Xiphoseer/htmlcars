@@ -1,67 +1,105 @@
 <template>
-  <center>
-    <div class="lcars-page lcars-chrome-ho" style="max-width: 600px; width: 100%">
-      <div class="lcars-chrome-horizontal lcars-topbar">
-        <h2>Colorindex Voyager</h2>
-        <span class="lcars-bar-space lcars-bg-ap"></span>
-      </div>
-      <table class="table lcars-fg-ck lcars-font lcars-grid-content" style="font-size: 16pt;">
-        <tr class="lcars-bg-or">
-          <td style="text-align: right;">Orange (OR)</td>
-          <td>$lcars-color-or</td>
-          <td>#ff9900</td>
+  <section>
+    <h1>Colors</h1>
+    <p>
+      A basic, empty LCARS console is black. We call this a
+      <code>screen</code>.
+      A screen can be filled with text, displayed in white, green or orange, as
+      it has been for old CRT computer screens.
+    </p>
+    <p>
+      On a screen, the recognizable features of a LCARS console are the buttons,
+      controls, schematics, toggles, headings and more. We call them collectively
+      the <code>chrome</code> of the console. The chrome is
+      mostly orange or beige in TNG, very colorful in Voyager and blue-green in
+      the newer films.
+    </p>
+    <p>
+      This framework is intended to be mostly color independent, but provides
+      some predefined colors as well as utility classes to use a specific theme
+      or color.
+    </p>
+    <h2>CSS custom properties</h2>
+    <p>
+      By default, the framework uses CSS custom variables to cascade the
+      currently selected chrome and screen color through an application. The
+      <code>:root</code> pseudo-class is used to set some
+      generic defaults.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th class="text-left">Name</th>
+          <th class="text-left">CSS property</th>
+          <th>Default Value</th>
         </tr>
-        <tr class="lcars-bg-fl">
-          <td style="text-align: right;">Flieder (FL)</td>
-          <td>$lcars-color-fl</td>
-          <td>#cc99cc</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>chrome background</td>
+          <td><code>--lcars-chrome-bg</code></td>
+          <td class="text-center lcars-bg-default-chrome-bg" style="color: #000;"><code>#999999</code></td>
         </tr>
-        <tr class="lcars-bg-bg">
-          <td style="text-align: right;">BlueGray (BG)</td>
-          <td>$lcars-color-bg</td>
-          <td>#9999cc</td>
+        <tr>
+          <td>chrome text color</td>
+          <td><code>--lcars-chrome-fg</code></td>
+          <td class="text-center lcars-bg-default-chrome-fg" style="color: #fff;"><code>#000000</code></td>
         </tr>
-        <tr class="lcars-bg-rb">
-          <td style="text-align: right;">RedBlue (RB)</td>
-          <td>$lcars-color-rb</td>
-          <td>#cc6666</td>
+        <tr>
+          <td>screen background</td>
+          <td><code>--lcars-screen-bg</code></td>
+          <td class="text-center lcars-bg-default-screen-bg" style="color: #fff;"><code>#000000</code></td>
         </tr>
-        <tr class="lcars-bg-be">
-          <td style="text-align: right;">Beige (BE)</td>
-          <td>$lcars-color-be</td>
-          <td>#ffcc99</td>
+        <tr>
+          <td>screen text color</td>
+          <td><code>--lcars-screen-fg</code></td>
+          <td class="text-center lcars-bg-default-screen-fg" style="color: #000;"><code>#ffffff</code></td>
         </tr>
-        <tr class="lcars-bg-lb">
-          <td style="text-align: right;">Lightblue (LB)</td>
-          <td>$lcars-color-lb</td>
-          <td>#9999ff</td>
-        </tr>
-        <tr class="lcars-bg-ap">
-          <td style="text-align: right;">Apricot (AP)</td>
-          <td>$lcars-color-ap</td>
-          <td>#ff9966</td>
-        </tr>
-        <tr class="lcars-bg-pi">
-          <td style="text-align: right;">Pink (PI)</td>
-          <td>$lcars-color-pi</td>
-          <td>#cc6699</td>
-        </tr>
-        <tr class="lcars-bg-lp">
-          <td style="text-align: right;">Light Pink (PI)</td>
-          <td>$lcars-color-lp</td>
-          <td>#ff99cc</td>
-        </tr>
-        <tr></tr>
-        <tr class="lcars-bg-ho">
-          <td style="text-align: right;">LightOrange (HO)</td>
-          <td>$lcars-color-ho</td>
-          <td>#f7c64a</td>
-        </tr>
-      </table>
-      <div class="lcars-chrome-horizontal lcars-bottombar">
-        <span class="lcars-bar-space lcars-bg-rb"></span>
-        <h2>gtjlcars.de</h2>
-      </div>
-    </div>
-  </center>
+      </tbody>
+    </table>
+    <h2>Reference</h2>
+    <color-display title="Colorindex Voyager" source="gtjlcars.de" :colors="voyagerColors" />
+    <color-display title="Colorindex USS" source="lcarssdk.org" :colors="ussColors" />
+  </section>
 </template>
+
+<script>
+  import ColorDisplay from '@/components/ColorDisplay.vue';
+
+  export default {
+    name: 'docs-colors',
+    components: {
+      ColorDisplay
+    },
+    data: function() {
+      return {
+        voyagerColors: [
+          {name: 'Blue-Gray', key: 'BG', code: '#9999cc'},
+          {name: 'Lightblue', key: 'LB', code: '#9999ff'},
+          {name: 'Lilac', key: 'FL', code: '#cc99cc'},
+
+          {name: 'Pink', key: 'PI', code: '#cc6699'},
+          {name: 'Russet', key: 'RB', code: '#cc6666'},
+          {name: 'Light-Pink', key: 'LP', code: '#ff99cc'},
+
+          {name: 'Apricot', key: 'AP', code: '#ff9966'},
+          {name: 'Beige', key: 'BE', code: '#ffcc99'},
+          {name: 'Orange', key: 'OR', code: '#ff9900'},
+
+          {name: 'Light-Orange', key: 'HO', code: '#f7c64a'}
+        ],
+        ussColors: [
+          {name: 'Blue-1', key: 'b1', code: '#99ccff'},
+          {name: 'Blue-2', key: 'b2', code: '#3399cc'},
+          {name: 'Blue-3', key: 'b3', code: '#006699'},
+          {name: 'Blue-4', key: 'b4', code: '#003366'},
+
+          {name: 'Green-1', key: 'g1', code: '#ccddbb'},
+          {name: 'Green-2', key: 'g2', code: '#00cc99'},
+          {name: 'Green-3', key: 'g3', code: '#009999'},
+          {name: 'Green-4', key: 'g4', code: '#006666'}
+        ]
+      };
+    }
+  }
+</script>

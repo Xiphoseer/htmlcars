@@ -1,11 +1,3 @@
-$lcars-border-width: 0.3rem;
-$lcars-edge-width: 0.4rem;
-$lcars-basic-border: $lcars-border-width solid #000;
-$lcars-edge-border: $lcars-edge-width solid #000;
-$lcars-border-radius: 1rem;
-
-$lcars-chrome-bg: #fff;
-
 .lcars-field
 {
   @extend .lcars-bg-ho;
@@ -13,8 +5,19 @@ $lcars-chrome-bg: #fff;
   padding: 1rem;
 }
 
-:root {
-  #{"--lcars-chrome-bg"}: $lcars-chrome-bg;
+:root
+{
+  @include lcars-chrome-def($lcars-chrome-bg, $lcars-chrome-fg);
+  @include lcars-chrome-def-alert($lcars-chrome-bg-alert, $lcars-chrome-fg-alert);
+  @include lcars-screen-def($lcars-screen-bg, $lcars-screen-fg);
+  @include lcars-basic-font-def($lcars-basic-font);
+  @include lcars-title-font-def($lcars-title-font);
+}
+
+.alert
+{
+  --lcars-chrome-bg: var(--lcars-chrome-bg-alert) !important;
+  --lcars-chrome-fg: var(--lcars-chrome-fg-alert) !important;
 }
 
 @each $name, $color in $lcars-colors {
@@ -42,8 +45,8 @@ $lcars-chrome-bg: #fff;
   h1, h2, h3, h4, h5, h6
   {
     @extend .lcars-chrome-component;
-    @extend .lcars-fg-or;
-    background-color: #000;
+    color: var(--lcars-theme-title);
+    background-color: var(--lcars-screen-bg);
     line-height: 100%;
     font-size: 260%;
     border-bottom: 0;
@@ -105,12 +108,12 @@ $lcars-chrome-bg: #fff;
 
   .lcars-bar-space.inlay-up
   {
-    border-bottom: 0.5rem solid black;
+    border-bottom: 0.5rem solid var(--lcars-screen-bg);
   }
 
   .lcars-bar-space.inlay-down
   {
-    border-top: 0.5rem solid black;
+    border-top: 0.5rem solid var(--lcars-screen-bg);
   }
 }
 

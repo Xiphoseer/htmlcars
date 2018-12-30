@@ -29,12 +29,12 @@
       </div>
     </div>
     <div id="right">
-      Hey
+      <div id="right-test" data-label="Hello"></div>
     </div>
   </div>
 </template>
 
-<style type="text/css">
+<style lang="scss">
   #panel
   {
     display: grid;
@@ -159,7 +159,52 @@
 
   #right
   {
-    background-color: #0f0;
+    background-color: #000;
     grid-area: 1 / 2 / 2 / 3;
+  }
+
+  #right-test
+  {
+    background-color: transparent;
+    height: 6rem;
+    width: 10rem;
+    overflow: hidden;
+    position: relative;
+    font-family: $lcars-title-font;
+  }
+
+  #right-test::before
+  {
+    content: "";
+    background-color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    transform: skew(18deg);
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    pointer-events: none;
+    transform-origin: bottom;
+    right: 0px;
+  }
+
+  #right-test::after
+  {
+    content: attr(data-label);
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    line-height: 1.25;
+    overflow: hidden;
+    max-height: 100%;
+    color: #000;
   }
 </style>
