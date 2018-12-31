@@ -13,7 +13,7 @@
       <slot name="bottombar"/>
     </div>
   </div>
-  <div v-else-if="state == 'menu'" class="lcars-page">
+  <div v-else-if="state == 'menu'" class="lcars-page" :class="[pageClass]">
     <div class="lcars-topbar lcars-chrome-horizontal">
       <h1>Menu</h1>
     </div>
@@ -26,7 +26,7 @@
       <span @click="setState('reduced')" class="lcars-btn">Back</span>
     </div>
   </div>
-  <div v-else-if="state == 'reduced'" class="lcars-page">
+  <div v-else-if="state == 'reduced'" class="lcars-page" :class="[pageClass]">
     <div class="lcars-topbar lcars-chrome-horizontal">
       <h1>htmLCARS</h1>
       <span class="lcars-bar-space"/>
@@ -59,6 +59,13 @@
     beforeDestroy: function () {
       window.removeEventListener('resize', this.onResize);
     },
+    computed: {
+      pageClass: function () {
+        var cls = {};
+        cls["lcars-page-layout-reduced"] = (this.size.x < 600);
+        return cls;
+      }
+    },
     methods: {
       setState: function(newState) {
         this.state = newState;
@@ -79,5 +86,19 @@
 </script>
 
 <style lang="scss">
+  .lcars-page{
+    &.lcars-page-layout-reduced, .lcars-page-layout-reduced
+    {
+      .lcars-grid-content
+      {
+        grid-column: 1 / 4;
+      }
 
+      & > .lcars-grid-content
+      {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
 </style>

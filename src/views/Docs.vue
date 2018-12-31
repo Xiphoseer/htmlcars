@@ -19,9 +19,7 @@
       <span class="lcars-bar-space"></span>
       <router-link class="lcars-btn lcars-chrome-secondary" to="/about">Imprint</router-link>
     </template>
-    <div class="lcars-v-scroll">
-      <router-view id="lcars-docs-content"/>
-    </div>
+    <router-view id="lcars-docs-content"/>
   </lcars-grid-layout>
 </template>
 
