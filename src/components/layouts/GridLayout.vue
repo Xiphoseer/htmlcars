@@ -81,6 +81,14 @@
           this.state = 'default';
         }
       }
+    },
+    watch: {
+      $route: function() {
+        if (this.state == 'menu')
+        {
+          this.state = 'reduced';
+        }
+      }
     }
   }
 </script>
