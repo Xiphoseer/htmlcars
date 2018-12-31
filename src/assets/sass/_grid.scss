@@ -8,8 +8,6 @@
                        "sidebar            sideline           content    content    ."
                        "bottom-left-corner bottom-left-corner bottomline bottomline bottomline"
                        "bottom-left-corner bottom-left-corner bottombar  bottombar  bottombar";
-  overflow-y: auto;
-  height: 100%;
 
   .lcars-sidebar { grid-area: sidebar; }
   .lcars-topbar { grid-area: topbar; }
@@ -139,7 +137,6 @@ $lcars-page-space: 0.5rem;
     [head] 9rem [status-low] 1rem [status-end]
     min-content [bar-mid-on] 0.2rem [bar-mid-off] min-content
     [title-begin] 1rem [content-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
-  height: 100%;
 
   .lcars-status { grid-area: head / status-begin / status-end / content-end; }
   .lcars-status-left { grid-area: head / status-begin / status-end / mid-on; }

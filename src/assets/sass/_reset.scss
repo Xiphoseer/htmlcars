@@ -37,3 +37,13 @@ h3 { @extend %heading; font-size: 125%; }
 h4 { @extend %heading; font-size: 112.5%; }
 h5 { @extend %heading; font-size: 100%; }
 h6 { @extend %heading; font-size: 87.5%; }
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner
+{
+  border: 1px dotted transparent;
+  padding: 0 0;
+}

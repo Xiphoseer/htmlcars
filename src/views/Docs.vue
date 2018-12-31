@@ -1,16 +1,14 @@
 <template>
-  <div class="lcars-grid lcars-grid-merged" :class="themeClass">
-    <div class="lcars-topbar lcars-chrome-horizontal lcars-chrome-larger">
-      <h1>HTMLCARS</h1>
-      <button type="button" @click="toggleFullscreen" class="lcars-btn lcars-chrome-primary-alt-1">Fullscreen</button>
-      <button type="button" @click="toggleTheme" class="lcars-btn lcars-chrome-primary-alt-2">{{theme}}</button>
-      <button type="button" @click="toggleAlert" class="lcars-btn lcars-chrome-primary-alt-3">Alert</button>
+  <lcars-grid-layout class="lcars-fixed" :class="themeClass" title="HTMLCARS" sidebar-title="DOCS">
+    <template slot="topbar" class="lcars-chrome-larger"> <!---->
+      <span @click="toggleFullscreen" class="lcars-btn lcars-chrome-primary-alt-1">Fullscreen</span>
+      <span @click="toggleTheme" class="lcars-btn lcars-chrome-primary-alt-2">{{theme}}</span>
+      <span @click="toggleAlert" class="lcars-btn lcars-chrome-primary-alt-3">Alert</span>
       <span class="lcars-bar-space"></span>
       <a target="_blank" href="https://github.com/Xiphoseer/HTMLCARS" class="lcars-btn lcars-chrome-secondary">Github</a>
       <a target="_blank" href="https://twitter.com/Xiphoseer" class="lcars-btn lcars-chrome-secondary-alt-1">@Xiphoseer</a>
-    </div>
-    <div class="lcars-sidebar lcars-chrome-vertical">
-      <h2>Docs</h2>
+    </template>
+    <template slot="sidebar">
       <router-link class="lcars-btn lcars-chrome-primary-alt-1" to="/">Index</router-link>
       <router-link class="lcars-btn lcars-chrome-secondary-alt-2" to="/colors">Colors</router-link>
       <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/elements">Elements</router-link>
@@ -20,12 +18,11 @@
 
       <span class="lcars-bar-space"></span>
       <router-link class="lcars-btn lcars-chrome-secondary" to="/about">Imprint</router-link>
-    </div>
-    <div class="lcars-grid-content lcars-v-scroll">
+    </template>
+    <div class="lcars-v-scroll">
       <router-view id="lcars-docs-content"/>
     </div>
-    <div class="lcars-bottombar lcars-chrome-horizontal"></div>
-  </div>
+  </lcars-grid-layout>
 </template>
 
 <script>
