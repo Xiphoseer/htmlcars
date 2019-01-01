@@ -1,0 +1,51 @@
+.lcars-grid
+{
+  display: grid;
+  grid-template-rows: [head] min-content [side-end] 1em [content-begin] auto [content-end] 1em [end-begin] min-content [tail];
+  grid-template-columns: [head] min-content [side-end] 1em [content-begin] auto [content-end] 0 [end-begin] 0 [tail];
+  grid-template-areas: "top-left-corner    top-left-corner    topbar     topbar     topbar"
+                       "top-left-corner    top-left-corner    topline    topline    topline"
+                       "sidebar            sideline           content    content    ."
+                       "bottom-left-corner bottom-left-corner bottomline bottomline bottomline"
+                       "bottom-left-corner bottom-left-corner bottombar  bottombar  bottombar";
+}
+
+%merge-h-left   { padding-left:   1em; @include border-radius-left(0);   }
+%merge-h-right  { padding-right:  1em; @include border-radius-right(0);  }
+%merge-v-top    { padding-top:    1em; @include border-radius-top(0);    }
+%merge-v-bottom { padding-bottom: 1em; @include border-radius-bottom(0); }
+
+.lcars-merged-top-left::before, .lcars-merged-bottom-left::after
+{
+  background-color: var(--lcars-chrome-bg);
+  display: block;
+  content: "";
+}
+
+.lcars-merged-top-left::before
+{
+  background-image: radial-gradient(circle at 100% 100%, var(--lcars-screen-bg) 1em, var(--lcars-chrome-bg) 1em);
+  border-top-left-radius: 3em 3em;
+}
+
+.lcars-merged-bottom-left::after
+{
+  background-image: radial-gradient(circle at 100% 0, var(--lcars-screen-bg) 1em, var(--lcars-chrome-bg) 1em);
+  border-bottom-left-radius: 3em 3em;
+}
+
+.lcars-grid-merged
+{
+  @extend .lcars-merged-top-left;
+  &::before { grid-area: head / head / content-begin / content-begin; }
+
+  @extend .lcars-merged-bottom-left;
+  &::after { grid-area: content-end / head / tail / content-begin; }
+
+  > .lcars-bottombar.lcars-chrome-horizontal,
+  > .lcars-topbar.lcars-chrome-horizontal
+  { @extend %merge-h-left; }
+
+  > .lcars-sidebar.lcars-chrome-vertical { @extend %merge-v-top; }
+  > .lcars-sidebar.lcars-chrome-vertical { @extend %merge-v-bottom; }
+}

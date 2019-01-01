@@ -1,0 +1,29 @@
+/* LCARS page */
+$lcars-bar-height: 2rem;
+$lcars-knob-width: 2rem;
+
+$lcars-page-padding: $lcars-knob-width + $lcars-edge-width;
+$lcars-page-space: 0.5rem;
+
+.lcars-page
+{
+  display: grid;
+  grid-template-columns:
+    [head] $lcars-page-padding
+    [content-begin] auto [content-end]
+    $lcars-page-padding [tail];
+  grid-template-rows:
+    [head] min-content [bar-end] $lcars-page-space
+    [content-begin] auto [content-end]
+    $lcars-page-space [bar-start] min-content [tail];
+
+  & > .lcars-topbar { grid-area: head / head / bar-end / tail; }
+  & > .lcars-bottombar { grid-area: bar-start / head / tail / tail; }
+  & > .lcars-infoline
+  {
+    grid-area: bar-end / content-begin / content-begin / content-end;
+    text-align: right;
+    font-size: 10pt;
+    font-weight: bold;
+  }
+}

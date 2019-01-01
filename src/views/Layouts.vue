@@ -19,8 +19,6 @@
           <div class="lcars-chrome-horizontal lcars-topbar">
             <h1>Topbar</h1>
             <a href="#" class="lcars-btn">123</a>
-            <a href="#" class="lcars-btn lcars-btn-pi">ABC</a>
-            <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
             <span class="lcars-bar-space"></span>
           </div>
           <span class="lcars-infoline">statusline</span>
@@ -90,12 +88,6 @@
             <div class="lcars-button-grid">
               <a href="#" class="lcars-btn lcars-btn-pi">status-right</a>
               <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
-              <a href="#" class="lcars-btn lcars-btn-pi">ABC</a>
-              <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
-              <a href="#" class="lcars-btn lcars-btn-pi">ABC</a>
-              <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
-              <a href="#" class="lcars-btn lcars-btn-or">XYZ</a>
-              <a href="#" class="lcars-btn lcars-btn-pi">ABC</a>
             </div>
           </div>
           <div class="lcars-chrome-vertical lcars-sidebar">

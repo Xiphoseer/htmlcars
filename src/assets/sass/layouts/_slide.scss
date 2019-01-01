@@ -1,0 +1,17 @@
+.lcars-slide
+{
+  display: grid;
+  grid-template-rows: [head side-begin] min-content [topbar-end] 1em [content-begin] auto [side-end] 1em [end-begin] min-content [content-end tail];
+  grid-template-columns: [head side-begin] min-content [side-end] 1em [bar-begin] 1em [bar-end] 1em [content-begin] auto [content-end tail];
+  grid-template-areas: "side       midleftline top-middle    topbar       topbar"
+                       "side       midleftline midline       midrightline topline"
+                       "side       midleftline midline       midrightline content"
+                       "bottomline midleftline midline       midrightline contentbot"
+                       "bottombar  bottombar   bottom-middle midrightline contentbot";
+
+  & > .lcars-side
+  {
+    min-width: 12rem;
+    grid-area: side;
+  }
+}

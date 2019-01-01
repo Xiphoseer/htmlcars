@@ -40,6 +40,22 @@
       <span class="lcars-btn lcars-chrome-secondary">{{size.x}} {{size.y}} {{state}}</span>
     </div>
   </div>
+  <div v-else-if="state == 'tiled'" class="lcars-slide">
+    <div class="lcars-chrome-horizontal lcars-topbar">
+
+    </div>
+    <div class="lcars-chrome-horizontal lcars-bottombar">
+
+    </div>
+    <div class="lcars-button-grid lcars-hide-bar-space lcars-side">
+      <slot name="topbar"/>
+      <slot name="sidebar"/>
+      <slot name="bottombar"/>
+    </div>
+    <div class="lcars-content lcars-v-scroll">
+      <slot/>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -48,7 +64,7 @@
     props: [],
     data: function() {
       return {
-        state: 'reduced',
+        state: 'default',
         size: 'unknown'
       }
     },
@@ -71,14 +87,39 @@
         this.state = newState;
       },
       onResize: function() {
-        this.size = {x: this.$el.clientWidth, y: this.$el.clientWidth};
-        if (['default'].includes(this.state) && this.size.x < 700)
+        this.size = {x: this.$el.clientWidth, y: this.$el.clientHeight};
+        if (['default'].includes(this.state))
         {
-          this.state = 'reduced';
+          if (this.size.x < 700)
+          {
+            this.state = 'reduced';
+          }
+          else if (this.size.y < 400)
+          {
+            this.state = 'tiled';
+          }
         }
-        else if (['reduced', 'menu'].includes(this.state) && this.size.x >= 700)
+        else if (['reduced', 'menu'].includes(this.state))
         {
-          this.state = 'default';
+          if (this.size.x >= 700)
+          {
+            this.state = 'default';
+            if (this.size.y < 400)
+            {
+              this.state = 'tiled';
+            }
+          }
+        }
+        else if (['tiled'].includes(this.state))
+        {
+          if (this.size.x < 700)
+          {
+            this.state = 'reduced';
+          }
+          else if (this.size.y >= 400)
+          {
+            this.state = 'default';
+          }
         }
       }
     },
@@ -94,15 +135,14 @@
 </script>
 
 <style lang="scss">
-  .lcars-page{
-    &.lcars-page-layout-reduced, .lcars-page-layout-reduced
+  .lcars-page.lcars-page-layout-reduced,
+  .lcars-page-layout-reduced .lcars-page
+  {
+    & > .lcars-grid-content
     {
-      .lcars-grid-content
-      {
-        grid-column: 1 / 4;
-      }
+      grid-column: 1 / 4;
 
-      & > .lcars-grid-content
+      &:not(table)
       {
         padding-left: 0.5rem;
         padding-right: 0.5rem;

@@ -1,0 +1,39 @@
+/* LCARS analytical */
+.lcars-analytical
+{
+  display: grid;
+  grid-template-columns:
+    [head] 6rem [side-end] 0.4rem [content-begin] 0.6rem
+    [status-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
+  grid-template-rows:
+    [head] 9rem [status-low] 1rem [status-end]
+    min-content [bar-mid-on] 0.2rem [bar-mid-off] min-content
+    [title-begin] 1rem [content-begin] 1fr [mid-on] 1rem [mid-off] 1fr [content-end];
+
+  .lcars-status { grid-area: head / status-begin / status-end / content-end; }
+  .lcars-status-left { grid-area: head / status-begin / status-end / mid-on; }
+  .lcars-status-right { grid-area: head / mid-off / status-end / content-end; }
+
+  .lcars-topbar { grid-area: status-end / status-begin / bar-mid-on / content-end; }
+  .lcars-bottombar { grid-area: bar-mid-off / status-begin / title-begin / content-end; }
+
+  .lcars-sidebar { grid-area: content-begin / head / content-end / side-end; }
+  .lcars-altbar { grid-area: head / head / status-low / side-end; }
+}
+
+.lcars-analytical-merged
+{
+  @extend .lcars-merged-top-left;
+  &::before { grid-area: bar-mid-off / head / content-begin / status-begin }
+
+  @extend .lcars-merged-bottom-left;
+  &::after { grid-area: status-low / head / bar-mid-on / status-begin }
+
+  .lcars-altbar, .lcars-sidebar
+  {
+    @extend %merge-v-top;
+    @extend %merge-v-bottom;
+  }
+
+  .lcars-topbar, .lcars-bottombar { @extend %merge-h-left; }
+}

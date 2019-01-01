@@ -4,7 +4,7 @@
 @import 'colors';
 @import 'font';
 @import 'chrome';
-@import 'grid';
+@import 'layouts/all';
 @import 'layout';
 @import 'reset';
 @import 'util';
@@ -16,7 +16,6 @@
 .lcars-fixed
 {
   height: 100%;
-  /*overflow-y: auto;*/
   box-sizing: border-box;
 }
 
