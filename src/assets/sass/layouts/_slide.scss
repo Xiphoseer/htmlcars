@@ -11,7 +11,12 @@
 
   & > .lcars-side
   {
-    min-width: 12rem;
+    min-width: 10rem;
     grid-area: side;
+  }
+
+  & > .lcars-midline
+  {
+    grid-area: midline;
   }
 }

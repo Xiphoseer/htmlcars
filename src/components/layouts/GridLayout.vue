@@ -40,14 +40,17 @@
       <span class="lcars-btn lcars-chrome-secondary">{{size.x}} {{size.y}} {{state}}</span>
     </div>
   </div>
-  <div v-else-if="state == 'tiled'" class="lcars-slide">
+  <div v-else-if="state == 'tiled'" class="lcars-slide lcars-chrome-small">
     <div class="lcars-chrome-horizontal lcars-topbar">
 
     </div>
     <div class="lcars-chrome-horizontal lcars-bottombar">
 
     </div>
-    <div class="lcars-button-grid lcars-hide-bar-space lcars-side">
+    <div class="lcars-chrome-vertical lcars-midline">
+
+    </div>
+    <div class="lcars-button-grid lcars-hide-bar-space lcars-side lcars-chrome-normal">
       <slot name="topbar"/>
       <slot name="sidebar"/>
       <slot name="bottombar"/>
@@ -94,7 +97,7 @@
           {
             this.state = 'reduced';
           }
-          else if (this.size.y < 400)
+          else if (this.size.y < 500)
           {
             this.state = 'tiled';
           }
@@ -116,7 +119,7 @@
           {
             this.state = 'reduced';
           }
-          else if (this.size.y >= 400)
+          else if (this.size.y >= 500)
           {
             this.state = 'default';
           }

@@ -163,7 +163,8 @@
 {
   @extend .lcars-chrome;
   padding: 2em 0;
-  min-width: 6em;
+  /*width:     var(--lcars-chrome-height);*/
+  min-width: var(--lcars-chrome-height);
   flex-direction: column;
 
   .lcars-chrome-component + .lcars-chrome-component
