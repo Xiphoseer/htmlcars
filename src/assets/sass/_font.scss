@@ -51,7 +51,10 @@ p
   %message-heading
   {
     border-bottom: none;
-    margin: -0.3em 0 -0.4em 0;
+    margin-bottom: 0;
+    line-height: 0.9em;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   h1 { @extend %message-heading; font-size: 1500%; }
