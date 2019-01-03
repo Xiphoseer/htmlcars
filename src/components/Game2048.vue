@@ -9,11 +9,6 @@
     </div>
     <div id="wrapper-2048" class="lcars-grid-content">
       <div id="game-2048">
-        <template v-for="y in [0,1,2,3]">
-          <template v-for="x in [0,1,2,3]">
-            <game-2048-tile v-if="tiles[y][x] > 0" :num="tiles[y][x]" :pos="{x: x, y: y}"/>
-          </template>
-        </template>
       </div>
     </div>
     <div class="lcars-bottombar lcars-chrome-horizontal">
@@ -23,12 +18,12 @@
 </template>
 
 <script>
-import Game2048Tile from '@/components/Game2048Tile.vue'
+//import Game2048Tile from '@/components/Game2048Tile.vue'
 
 export default {
   name: 'game-2048',
   components: {
-    Game2048Tile
+    /*Game2048Tile*/
   },
   created: function () {
     window.addEventListener('keydown', this.onKeyDown);

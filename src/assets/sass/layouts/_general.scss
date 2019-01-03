@@ -14,14 +14,20 @@
 
 .lcars-topbar, .lcars-bottombar
 {
-  & > *:first-child { border-left: 0.3rem solid var(--lcars-screen-bg); }
-  & > *:last-child { border-right: 0.3rem solid var(--lcars-screen-bg); }
+  & > *
+  {
+    &:not(.p-absolute):first-child, &.lcars-chrome-first { border-left: 0.3rem solid var(--lcars-screen-bg); }
+    &:not(.p-absolute):last-child, &.lcars-chrome-last { border-right: 0.3rem solid var(--lcars-screen-bg); }
+  }
 }
 
 .lcars-sidebar, .lcars-altbar
 {
-  & > *:first-child { border-top: 0.3rem solid var(--lcars-screen-bg); }
-  & > *:last-child { border-bottom: 0.3rem solid var(--lcars-screen-bg); }
+  & > *
+  {
+    &:not(.p-absolute):first-child, &.lcars-chrome-first { border-top: 0.3rem solid var(--lcars-screen-bg); }
+    &:not(.p-absolute):last-child, &.lcars-chrome-last { border-bottom: 0.3rem solid var(--lcars-screen-bg); }
+  }
 }
 
 @mixin border-radius-top($n)    { border-top-left-radius:    $n; border-top-right-radius:    $n; }

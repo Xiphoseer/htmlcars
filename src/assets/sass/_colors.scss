@@ -39,7 +39,7 @@ $--lcars-def-keys: (
 }
 
 $--lcars-theme-keys: (
-  "color", "title",
+  "color", "title", "link",
   "primary", "primary-alt-1", "primary-alt-2", "primary-alt-3",
   "secondary", "secondary-alt-1", "secondary-alt-2", "secondary-alt-3"
 );
@@ -57,4 +57,9 @@ $--lcars-theme-keys: (
     @include lcars-chrome-def(var(--lcars-theme-#{$key}), var(--lcars-theme-color))
     @include lcars-chrome-def-light(var(--lcars-theme-#{$key}-light), var(--lcars-theme-color))
   }
+}
+
+:root
+{
+  @extend .lcars-chrome-default;
 }

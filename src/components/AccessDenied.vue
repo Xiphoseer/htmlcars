@@ -4,7 +4,6 @@
       <h1>LCARS</h1>
       <router-link to="/" class="lcars-btn">Home</router-link>
       <a class="lcars-btn lcars-btn-pi">Reset</a>
-      <a class="lcars-btn lcars-btn-rb">Help</a>
       <span class="lcars-bar-space"></span>
     </div>
     <div id="error" class="lcars-grid-content">
@@ -16,7 +15,6 @@
     <div class="lcars-chrome-horizontal lcars-bottombar">
       <a class="lcars-btn">123</a>
       <a class="lcars-btn">ABC</a>
-      <a class="lcars-btn">XYZ</a>
       <span class="lcars-bar-space"></span>
       <h1>Console 1337</h1>
     </div>

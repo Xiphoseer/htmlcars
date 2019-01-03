@@ -17,14 +17,14 @@ h1, h2, h3, h4, h5, h6
   font-family: LCARSGTJ3;
 }
 
-p
+p, ul, ol
 {
   text-align: justify;
 
   a
   {
     text-decoration: none;
-    color: #f00;
+    color: var(--lcars-theme-link);
     font-weight: bold;
 
     &::before

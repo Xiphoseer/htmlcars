@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueHighlightJS from 'vue-highlightjs'
+import resize from 'vue-resize-directive'
 import App from './App.vue'
 import router from './router'
 
@@ -15,6 +16,8 @@ Vue.component('lcars-radio', RadioButton);
 Vue.component('lcars-toggle', ToggleButton);
 Vue.component('lcars-check', CheckButton);
 Vue.component('lcars-grid-layout', GridLayout);
+
+Vue.directive('resize', resize);
 
 new Vue({
   router,
