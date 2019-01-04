@@ -30,6 +30,18 @@
     </div>
     <div id="right">
       <div id="right-test" data-label="Hello"></div>
+      <svg viewBox="0 0 100 50">
+        <path d="
+          M 0 25
+          A 25 25 0 0 1 25 0
+          L 100 0
+          L 100 10
+          L 60 10
+          A 10 10 0 0 0 50 20
+          L 50 25
+          Z
+        " fill="var(--lcars-theme-secondary)"/>
+      </svg>
     </div>
   </div>
 </template>
