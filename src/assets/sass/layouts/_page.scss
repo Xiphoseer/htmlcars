@@ -4,6 +4,7 @@ $lcars-knob-width: 2rem;
 
 $lcars-page-padding: $lcars-knob-width + $lcars-edge-width;
 $lcars-page-space: 0.5rem;
+$lcars-info-space: 1.1rem;
 
 .lcars-page
 {
@@ -13,7 +14,7 @@ $lcars-page-space: 0.5rem;
     [content-begin] auto [content-end]
     $lcars-page-padding [tail];
   grid-template-rows:
-    [head] min-content [bar-end] $lcars-page-space
+    [head] min-content [bar-end] $lcars-info-space
     [content-begin] auto [content-end]
     $lcars-page-space [bar-start] min-content [tail];
 

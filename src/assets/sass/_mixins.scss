@@ -1,41 +1,41 @@
 // Produce the CSS variables for chrome color
 @mixin lcars-chrome-def($bg, $fg)
 {
-  #{"--lcars-chrome-bg"}: $bg;
-  #{"--lcars-chrome-fg"}: $fg;
+  --lcars-chrome-bg: #{$bg};
+  --lcars-chrome-fg: #{$fg};
 }
 
 // Produce the CSS variables for light chrome color
 @mixin lcars-chrome-def-light($bg, $fg)
 {
-  #{"--lcars-chrome-bg-light"}: $bg;
-  #{"--lcars-chrome-fg-light"}: $fg;
+  --lcars-chrome-bg-light: #{$bg};
+  --lcars-chrome-fg-light: #{$fg};
 }
 
 // Produce the CSS variables for chrome color in alerts
 @mixin lcars-chrome-def-alert($bg, $fg)
 {
-  #{"--lcars-chrome-bg-alert"}: $bg;
-  #{"--lcars-chrome-fg-alert"}: $fg;
+  --lcars-chrome-bg-alert: #{$bg};
+  --lcars-chrome-fg-alert: #{$fg};
 }
 
 // Produce the CSS variables for screen color
 @mixin lcars-screen-def($bg, $fg)
 {
-  #{"--lcars-screen-bg"}: $bg;
-  #{"--lcars-screen-fg"}: $fg;
+  --lcars-screen-bg: #{$bg};
+  --lcars-screen-fg: #{$fg};
 }
 
 // Produce the CSS variables for text font
 @mixin lcars-basic-font-def($font-family)
 {
-  #{"--lcars-basic-font"}: $font-family;
+  --lcars-basic-font: #{$font-family};
 }
 
 // Produce the CSS variables for title font
 @mixin lcars-title-font-def($font-family)
 {
-  #{"--lcars-title-font"}: $font-family;
+  --lcars-title-font: #{$font-family};
 }
 
 // Use the CSS variables to set screen colors

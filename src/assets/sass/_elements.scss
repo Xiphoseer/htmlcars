@@ -9,6 +9,12 @@ hr
 @each $name, $color in $lcars-colors {
   hr.lcars-color-#{$name} { border-bottom-color: $color; }
   blockquote.lcars-color-#{$name} { border-color: $color; }
+  a.lcars-color-#{$name} {
+    color: $color;
+    &:hover {
+      color: lighten($color, 10%);
+    }
+  }
 }
 
 pre

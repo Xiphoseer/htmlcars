@@ -49,3 +49,14 @@
   > .lcars-sidebar.lcars-chrome-vertical { @extend %merge-v-top; }
   > .lcars-sidebar.lcars-chrome-vertical { @extend %merge-v-bottom; }
 }
+
+.lcars-grid-merged-top
+{
+  @extend .lcars-merged-top-left;
+  &::before { grid-area: head / head / content-begin / content-begin; }
+
+  > .lcars-topbar.lcars-chrome-horizontal
+  { @extend %merge-h-left; }
+
+  > .lcars-sidebar.lcars-chrome-vertical { @extend %merge-v-top; }
+}

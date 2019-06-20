@@ -21,7 +21,10 @@
 }
 
 @each $name, $color in $lcars-colors {
-  .lcars-chrome-#{$name} { #{"--lcars-chrome-bg"}: $color; }
+  .lcars-chrome-#{$name} {
+    --lcars-chrome-bg: #{$color};
+    --lcars-chrome-bg-light: #{lighten($color, 10%)};
+  }
 }
 
 .lcars-round-right
@@ -188,8 +191,8 @@
   #{"--lcars-chrome-btn-size"}: $btn-size;
 }
 
-.lcars-chrome-small   { @include lcars-chrome-size(1rem,   130%, -0.12rem, 0     0.2rem,        90%);     }
-.lcars-chrome-smaller { @include lcars-chrome-size(1.5rem, 185%, -0.12rem, 0     0.3rem,        inherit); }
+.lcars-chrome-small   { @include lcars-chrome-size(1rem,   130%, -0.12rem, 0     0.2rem,        90%);  }
+.lcars-chrome-smaller { @include lcars-chrome-size(1.5rem, 185%, -0.12rem, 0     0.3rem,        100%);  }
 .lcars-chrome-normal  { @include lcars-chrome-size(2rem,   260%, -0.25rem, 0.3em 0.6em 0 0.6em, 16pt); }
 .lcars-chrome-larger  { @include lcars-chrome-size(2.5rem, 330%, -0.3rem,  0.6rem,              16pt); }
 .lcars-chrome-large   { @include lcars-chrome-size(3rem,   400%, -0.4rem,  1.2rem 0.6rem,       16pt); }
