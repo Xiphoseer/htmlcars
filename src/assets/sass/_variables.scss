@@ -106,9 +106,10 @@ $lcars-title-font: LCARSGTJ3, Helvetica, sans-serif;
 $lcars-basic-font: Helvetica, sans-serif;
 
 // Global size definitions
-$lcars-border-width: 0.3rem;
+$lcars-gap: 0.3rem;
+$lcars-border-width: $lcars-gap;
 $lcars-edge-width: 0.4rem;
-$lcars-basic-border: $lcars-border-width solid var(--lcars-screen-bg);
+$lcars-basic-border: $lcars-gap solid var(--lcars-screen-bg);
 $lcars-edge-border: $lcars-edge-width solid var(--lcars-screen-bg);
 $lcars-border-radius: 1rem;
 $lcars-body-padding: 1rem;

@@ -49,7 +49,7 @@
   width: var(--lcars-chrome-height);
   height: var(--lcars-chrome-height);
   background-color: var(--lcars-chrome-bg);
-  @extend .lcars-chrome-component;
+  @extend %lcars-chrome-component;
 }
 
 .lcars-chrome-cap-right
@@ -64,58 +64,52 @@
   @extend .lcars-round-right;
 }
 
-.lcars-chrome-component + .lcars-chrome-component
+%lcars-chrome-component
 {
-  border-left: 0.3rem solid var(--lcars-screen-bg);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.lcars-chrome-set
+{
+  background-color: var(--lcars-chrome-bg);
+  color: var(--lcars-chrome-fg);
 }
 
 .lcars-chrome-base
 {
   display: flex;
 
-  .lcars-chrome-component
-  {
-    margin: 0;
-    display: inline-block;
-    flex: 0 0 auto;
+  :not(:first-child) {
+    border-left: $lcars-basic-border;
   }
 
   h1, h2, h3, h4, h5, h6
   {
     @extend .lcars-chrome-component;
-
-    color:            var(--lcars-theme-title);
-    background-color: var(--lcars-screen-bg);
-    font-size:        var(--lcars-chrome-caption-size);
-    margin-top:       var(--lcars-chrome-offset);
-    line-height:      calc(1.3 * var(--lcars-chrome-height));
-
-    margin-bottom: 0;
-    border-bottom: 0;
+    @extend %lcars-chrome-heading;
+    @extend %lcars-chrome-heading-reset;
     /*padding: 0 0.1em;*/
+  }
+
+  .lcars-chrome-component {
+    @extend %lcars-chrome-component;
   }
 
   .lcars-bar-space
   {
-    @extend .lcars-chrome-component;
+    display: inline-block;
     flex: 1 0 auto;
   }
 
   .lcars-btn
   {
-  	@extend .lcars-chrome-component;
+  	@extend %lcars-chrome-component;
   }
 
   .lcars-fill
   {
     flex: 1 0 auto;
-  }
-
-  .lcars-chrome-set
-  {
-    @extend .lcars-chrome-component;
-    background-color: var(--lcars-chrome-bg);
-    color: var(--lcars-chrome-fg);
   }
 }
 
@@ -170,9 +164,9 @@
   min-width: var(--lcars-chrome-height);
   flex-direction: column;
 
-  .lcars-chrome-component + .lcars-chrome-component
+  :not(:first-child)
   {
-    border-top: 0.3rem solid var(--lcars-screen-bg);
+    border-top: $lcars-basic-border;
     border-left: 0;
   }
 

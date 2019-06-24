@@ -29,8 +29,3 @@
     &:not(.p-absolute):last-child, &.lcars-chrome-last { border-bottom: 0.3rem solid var(--lcars-screen-bg); }
   }
 }
-
-@mixin border-radius-top($n)    { border-top-left-radius:    $n; border-top-right-radius:    $n; }
-@mixin border-radius-right($n)  { border-top-right-radius:   $n; border-bottom-right-radius: $n; }
-@mixin border-radius-bottom($n) { border-bottom-left-radius: $n; border-bottom-right-radius: $n; }
-@mixin border-radius-left($n)   { border-top-left-radius:    $n; border-bottom-left-radius:  $n; }

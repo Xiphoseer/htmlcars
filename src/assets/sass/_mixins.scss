@@ -38,6 +38,12 @@
   --lcars-title-font: #{$font-family};
 }
 
+// Border-Radius Helpers
+@mixin border-radius-top($n)    { border-top-left-radius:    $n; border-top-right-radius:    $n; }
+@mixin border-radius-right($n)  { border-top-right-radius:   $n; border-bottom-right-radius: $n; }
+@mixin border-radius-bottom($n) { border-bottom-left-radius: $n; border-bottom-right-radius: $n; }
+@mixin border-radius-left($n)   { border-top-left-radius:    $n; border-bottom-left-radius:  $n; }
+
 // Use the CSS variables to set screen colors
 %lcars-screen-ref
 {
@@ -70,4 +76,19 @@
   @extend %lcars-basic-font-ref;
   padding: $lcars-body-padding;
   margin: 0;
+}
+
+%lcars-chrome-heading
+{
+  color:            var(--lcars-theme-title);
+  background-color: var(--lcars-screen-bg);
+  font-size:        var(--lcars-chrome-caption-size);
+  margin-top:       var(--lcars-chrome-offset);
+  line-height:      calc(1.3 * var(--lcars-chrome-height));
+}
+
+%lcars-chrome-heading-reset
+{
+  margin-bottom: 0;
+  border-bottom: 0;
 }
