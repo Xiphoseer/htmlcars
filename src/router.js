@@ -22,6 +22,11 @@ export default new Router({
           component: () => import(/* webpackChunkName: "doc-imprint" */ './views/docs/Imprint.vue')
         },
         {
+          path: '/roadmap',
+          name: 'roadmap',
+          component: () => import(/* webpackChunkName: "doc-roadmap" */ './views/docs/Roadmap.vue')
+        },
+        {
           path: '/colors',
           name: 'colors',
           component: () => import(/* webpackChunkName: "doc-colors" */ './views/docs/Colors.vue')
@@ -77,6 +82,11 @@ export default new Router({
       path: "/examples/2048",
       name: 'game2048',
       component: () => import(/* webpackChunkName: "example-2048" */ './views/examples/Game2048.vue')
+    },
+    {
+      path: "/examples/gutter",
+      name: 'gutter',
+      component: () => import(/* webpackChunkName: "example-gutter" */ './views/examples/Gutter.vue')
     }
   ]
 })

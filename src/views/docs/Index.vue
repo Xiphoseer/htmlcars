@@ -35,6 +35,7 @@
       <li><router-link to="/examples/lcarscom">LCARScom Database</router-link></li>
       <li><router-link to="/examples/panel">Panel</router-link></li>
       <li><router-link to="/examples/access">Access Control Matrix</router-link></li>
+      <li><router-link to="/examples/gutter">Gutter</router-link></li>
     </ul>
   </div>
 </template>

@@ -87,7 +87,7 @@
   @extend %lcars-btn-base;
   @extend .lcars-font;
 
-  border-left: 0.5em solid #fff;
+  border-left: 0.5em solid var(--lcars-chrome-bg, $lcars-chrome-bg);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   text-align: left;
@@ -97,16 +97,17 @@
   width: 100%;
 
   /* Button colors */
-  @each $color, $name in $lcars-colors {
-    &.lcars-btn-#{$name} { @include lcars-btn-flat-color($color); }
-    &.lcars-hover-#{$name}:hover { @include lcars-btn-flat-color($color); }
+  // background-color: var(--lcars-chrome-bg-light, $lcars-chrome-bg);
+  &:hover {
+    background-color: initial;
+    //background-color: var(--lcars-chrome-bg-light, $lcars-chrome-bg);
   }
 
   &::after
   {
     display: inline-block;
     content: " ";
-    background-color: #fff;
+    background-color: var(--lcars-chrome-bg, $lcars-screen-bg);
     height: inherit;
     flex: 0 0 0.8em;
     border-top-right-radius: 1em;
@@ -119,6 +120,7 @@
     padding: 0 0.2em;
     line-height: 100%;
     font-size: 120%;
+    color: var(--lcars-theme-title);
   }
 
   &:hover
@@ -132,8 +134,6 @@
     {
       flex-grow: 0;
     }
-
-    background-color: initial;
   }
 }
 

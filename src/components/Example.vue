@@ -6,13 +6,21 @@
       <div class="lcars-container-example">
         <slot name="markup"/>
       </div>
-      <pre v-highlightjs="markup"><code class="html lcars-block lcars-h-scroll"></code></pre>
+      <pre class="lcars-h-scroll pb-1 pr-1" v-highlightjs="markup"><code class="html lcars-block"></code></pre>
     </div>
   </section>
 </template>
 
 <script>
 import base from 'js-beautify';
+
+function map(x) {
+  if (x.componentOptions) {
+    return "<" + x.componentOptions.tag + "></" + x.componentOptions.tag + ">";
+  } else {
+    return x.elm.outerHTML;
+  }
+}
 
 export default {
   name: 'Example',
@@ -23,7 +31,7 @@ export default {
     };
   },
   mounted: function() {
-    let ht = this.$slots.markup.map(x => x.elm.outerHTML).join("\n");
+    let ht = this.$slots.markup.map(x => map(x)).join("\n");
     let ba = base.html(ht, {'wrap-line-length': 100, 'inline': ['small']});
     this.markup = ba;
   }

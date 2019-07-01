@@ -17,7 +17,7 @@ $lcars-themes: (
   uss-na: (
     title: #ffffff,
     color: #000000,
-    link: #0000ff,
+    link: map-get($lcars-palette, pure-blue),
 
     primary: map-get($lcars-uss-na-colors, blue-4),
     primary-alt-1: map-get($lcars-uss-na-colors, blue-1),
@@ -28,6 +28,36 @@ $lcars-themes: (
     secondary-alt-1: map-get($lcars-uss-na-colors, green-1),
     secondary-alt-2: map-get($lcars-uss-na-colors, green-2),
     secondary-alt-3: map-get($lcars-uss-na-colors, green-3)
+  ),
+  crt-green: (
+    title:            map-get($lcars-palette, monochrome-green-1),
+    color:            map-get($lcars-palette, monochrome-black),
+    link:             map-get($lcars-palette, monochrome-green-1),
+
+    primary:          map-get($lcars-palette, monochrome-green-1),
+    primary-alt-1:    map-get($lcars-palette, monochrome-green-1),
+    primary-alt-2:    map-get($lcars-palette, monochrome-green-1),
+    primary-alt-3:    map-get($lcars-palette, monochrome-green-1),
+
+    secondary:        map-get($lcars-palette, monochrome-green-1),
+    secondary-alt-1:  map-get($lcars-palette, monochrome-green-1),
+    secondary-alt-2:  map-get($lcars-palette, monochrome-green-1),
+    secondary-alt-3:  map-get($lcars-palette, monochrome-green-1),
+  ),
+  crt-amber: (
+    title:            map-get($lcars-palette, amber),
+    color:            map-get($lcars-palette, monochrome-black),
+    link:             map-get($lcars-palette, amber),
+
+    primary:          map-get($lcars-palette, amber),
+    primary-alt-1:    map-get($lcars-palette, amber),
+    primary-alt-2:    map-get($lcars-palette, amber),
+    primary-alt-3:    map-get($lcars-palette, amber),
+
+    secondary:        map-get($lcars-palette, amber),
+    secondary-alt-1:  map-get($lcars-palette, amber),
+    secondary-alt-2:  map-get($lcars-palette, amber),
+    secondary-alt-3:  map-get($lcars-palette, amber),
   ),
   red-alert: (
     title: #ffffff,

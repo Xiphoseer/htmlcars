@@ -10,14 +10,14 @@
 }
 
 // Produce classes for the default colors
-$--lcars-def-keys: (
+$lcars-def-keys: (
   chrome-bg: $lcars-chrome-bg,
   chrome-fg: $lcars-chrome-fg,
   screen-bg: $lcars-screen-bg,
   screen-fg: $lcars-screen-fg
 );
 
-@each $key, $color in $--lcars-def-keys {
+@each $key, $color in $lcars-def-keys {
   .lcars-bg-default-#{$key} { background-color: $color; }
   .lcars-fg-default-#{$key} { color: $color; }
 }
@@ -32,19 +32,19 @@ $--lcars-def-keys: (
       lighten(map-get($theme, primary), 10%),
       map-get($theme, color))
     @each $key, $color in $theme {
-      #{"--lcars"}-theme-#{$key}: $color;
-      #{"--lcars"}-theme-#{$key}-light: lighten($color, 10%);
+      --lcars-theme-#{$key}: #{$color};
+      --lcars-theme-#{$key}-light: #{lighten($color, 10%)};
     }
   }
 }
 
-$--lcars-theme-keys: (
+$lcars-theme-keys: (
   "color", "title", "link",
   "primary", "primary-alt-1", "primary-alt-2", "primary-alt-3",
   "secondary", "secondary-alt-1", "secondary-alt-2", "secondary-alt-3"
 );
 
-@each $key in $--lcars-theme-keys {
+@each $key in $lcars-theme-keys {
   .lcars-bg-theme-#{$key} {
     background-color: var(--lcars-theme-#{$key});
   }
@@ -62,4 +62,7 @@ $--lcars-theme-keys: (
 :root
 {
   @extend .lcars-chrome-default;
+  @each $name, $color in $lcars-palette {
+    --lcars-color-#{$name}: #{$color};
+  }
 }

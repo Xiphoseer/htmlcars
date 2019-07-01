@@ -17,6 +17,7 @@
       <router-link class="lcars-btn lcars-chrome-secondary-alt-1" to="/layouts">Layouts</router-link>
 
       <span class="lcars-bar-space"></span>
+      <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/roadmap">Roadmap</router-link>
       <router-link class="lcars-btn lcars-chrome-secondary" to="/about">Imprint</router-link>
     </template>
     <router-view id="lcars-docs-content"/>
@@ -34,6 +35,8 @@
         var cls = {};
         cls["lcars-chrome-uss-na"] = (this.theme == "uss-na");
         cls["lcars-chrome-voyager"] = (this.theme == "voyager");
+        cls["lcars-chrome-crt-green"] = (this.theme == "crt-green");
+        cls["lcars-chrome-crt-amber"] = (this.theme == "crt-amber");
         cls["lcars-chrome-red-alert"] = this.alert;
         return cls;
       }
@@ -53,7 +56,9 @@
         var next = {};
         next["uss-na"] = "voyager";
         next["voyager"] = "default";
-        next["default"] = "uss-na";
+        next["default"] = "crt-green";
+        next["crt-green"] = "crt-amber";
+        next["crt-amber"] = "uss-na";
         this.theme = next[this.theme];
       },
       toggleAlert () {

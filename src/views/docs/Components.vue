@@ -5,6 +5,24 @@
       This is a library of components which can be used in a LCARS themed site. They are intended to be reusable in most cases. but it is not guaranteed that all components will work together seamlessly. Components are inspired from a variety of sources.
     </p>
 
+    <example title="Clock">
+      <template slot="description">
+        A simple digital clock, displaying the current time in 24h mode.
+      </template>
+      <template slot="markup">
+        <lcars-clock style="font-size: 5em"></lcars-clock>
+      </template>
+    </example>
+
+    <example title="Stardate">
+      <template slot="description">
+        A simple stardate display.
+      </template>
+      <template slot="markup">
+        <lcars-stardate style="font-size: 5em"></lcars-stardate>
+      </template>
+    </example>
+
     <example title="Message Titles">
       <template slot="description">
         When a system message appears in LCARS it tends not to be a toast or

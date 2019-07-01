@@ -1,55 +1,150 @@
+// Source: https://github.com/joernweissenborn/lcars/
+// https://superuser.com/questions/361297/
+
+$lcars-palette: (
+  black:              #000,
+  navy-blue:          #008,
+  pure-blue:          #00f,
+  blue:               #01e,
+  dark-midnight-blue: #036, // blue-4
+  very-dark-cyan:     #066, // green-4
+  baltic-blue:        #069, // blue-3
+  bahama-blue:        #069,
+  dark-cyan:          #099, // green-3
+  carribean-green:    #0c9, // green-2
+  pure-green:         #0f0,
+  monochrome-green-2: #0f3,
+  monochrome-green-3: #0f6,
+
+  gray:               rgba(34,51,85,0.467),
+  monochrome-black:   #282828,
+
+  very-dark-red:      #300,
+  azure-blue:         #369, // badge-blue
+  mariner:            #36c,
+  dodger-blue-alt:    #36f,
+  bavaria-blue:       #39c, // blue-2
+  monochrome-green-1: #3f0,
+  monochrome-apple:   #3f3,
+
+  indigo:             #45b,
+
+  dodger-blue:        #59f,
+
+  blood-red:          #600,
+  eggplant:           #646,
+  lead-gray:          #666, // gray-3
+  danub:              #68c,
+  monochrome-apple-c: #6f6,
+
+  cosmic:             #746,
+
+  tamarillo:          #821,
+
+  chelsea-gem:        #965032, // badge-brown
+  crimson-red:        #900, // red-3
+  lavender-purple:    #97a,
+  cold-gray:          #999,
+  anakiwa:            #9cf, // blue-1
+  blue-bell:          #99c, // blue-gray
+  melrose:            #99f, // light-blue
+
+  medium-carmine:     #a53,
+
+  rust:               #b41,
+  bourbon:            #b62,
+  husk:               #ba5,
+
+  free-speech-red:    #c80000, // badge-red
+  rangoon-red:        #c00, // red-2
+  chestnut-rose:      #c66, // russet,
+  hopbush:            #c69, // pink
+  desaturated-red:    #c99,
+  lilac:              #c9c,
+  chinese-silver:     #ccc, // gray-2
+  grayish-green:      #cdb, // green-1
+  periwinkle:         #cdf,
+
+  red-damask:         #d64,
+
+  very-light-gray:    #eee, // gray-1
+  sandy-brown:        #e95,
+
+  sunset-orange:      #f55,
+  pure-red:           #f00, //red-1
+  bittersweet:        #f66,
+  bright-coral:       #f77,
+  light-orange:       #f7c64a,
+  very-light-red:     #f88,
+  atomic-tangerine:   #f90, // orange
+  neon-carrot:        #f93,
+  orange-peel:        #f96, // apricot
+  pale-magenta:       #f9c, // light-pink
+  light-salmon-pink:  #f99,
+  patient-pink:       #faa,
+  amber:              #ffb000,
+  pale-red:           #fbb,
+  light-amber:        #fc0,
+  golden-tanoi:       #fc6,
+  peach-orange:       #fc9, // beige
+  light-red:          #fcc,
+  very-pale-red:      #fdd,
+  laser-lemon:        #ff6,
+  pale-canary:        #ff9,
+  white:              #fff
+);
 
 // Voyager LCARS colors (http://www.gtjlcars.de/LCARSindex/Colorindex1.htm)
 $lcars-voyager-colors: (
-  orange:       #ff9900,
-  lilac:        #cc99cc,
-  blue-gray:    #9999cc,
-  russet:       #cc6666,
-  beige:        #ffcc99,
-  light-blue:   #9999ff,
-  apricot:      #ff9966,
-  pink:         #cc6699,
-  light-pink:   #ff99cc,
-  light-orange: #f7c64a
+  orange:       map-get($lcars-palette, atomic-tangerine),
+  lilac:        map-get($lcars-palette, lilac),
+  blue-gray:    map-get($lcars-palette, blue-bell),
+  russet:       map-get($lcars-palette, chestnut-rose),
+  beige:        map-get($lcars-palette, peach-orange),
+  light-blue:   map-get($lcars-palette, melrose),
+  apricot:      map-get($lcars-palette, orange-peel),
+  pink:         map-get($lcars-palette, hopbush),
+  light-pink:   map-get($lcars-palette, pale-magenta),
+  light-orange: map-get($lcars-palette, light-orange)
 );
 
 // USS not affiliated (http://lcarssdk.org/ => Visual Guide => Colors)
 $lcars-uss-na-colors: (
-  blue-1: #99ccff,
-  blue-2: #3399cc,
-  blue-3: #006699,
-  blue-4: #003366,
+  blue-1:       map-get($lcars-palette, anakiwa),
+  blue-2:       map-get($lcars-palette, bavaria-blue),
+  blue-3:       map-get($lcars-palette, baltic-blue),
+  blue-4:       map-get($lcars-palette, dark-midnight-blue),
 
-  green-1: #ccddbb,
-  green-2: #00cc99,
-  green-3: #009999,
-  green-4: #006666
+  green-1:      map-get($lcars-palette, grayish-green),
+  green-2:      map-get($lcars-palette, carribean-green),
+  green-3:      map-get($lcars-palette, dark-cyan),
+  green-4:      map-get($lcars-palette, very-dark-cyan)
 );
 
 $lcars-uss-na-alert-colors: (
-  blue-1: #cccccc,
-  blue-2: #999999,
-  blue-3: #cc0000,
-  blue-4: #660000,
+  blue-1:       map-get($lcars-palette, chinese-silver),
+  blue-2:       map-get($lcars-palette, cold-gray),
+  blue-3:       map-get($lcars-palette, rangoon-red),
+  blue-4:       map-get($lcars-palette, blood-red),
 
-  green-1: #ffff66,
-  green-2: #ff0000,
-  green-3: #990000,
-  green-4: #330000
+  green-1:      map-get($lcars-palette, laser-lemon),
+  green-2:      map-get($lcars-palette, pure-red),
+  green-3:      map-get($lcars-palette, crimson-red),
+  green-4:      map-get($lcars-palette, very-dark-red)
 );
 
 // LCARS SDK colors
 $lcars-sdk-colors: (
-  chrome-bg: #999999,
-  chrome-fg: #000000,
+  chrome-bg:    map-get($lcars-palette, cold-gray),
+  chrome-fg:    map-get($lcars-palette, black),
 
-  red-1: #ff0000,
-  red-2: #cc0000,
-  red-3: #990000,
+  red-1:        map-get($lcars-palette, pure-red),
+  red-2:        map-get($lcars-palette, rangoon-red),
+  red-3:        map-get($lcars-palette, crimson-red),
 
-  gray-1: #eeeeee,
-  gray-2: #cccccc,
-  gray-3: #666666
+  gray-1:       map-get($lcars-palette, very-light-gray),
+  gray-2:       map-get($lcars-palette, chinese-silver),
+  gray-3:       map-get($lcars-palette, lead-gray)
 );
 
 // Full color palette
@@ -65,8 +160,8 @@ $lcars-colors: (
   lp: map-get($lcars-voyager-colors, light-pink),
   ho: map-get($lcars-voyager-colors, light-orange),
 
-  ck: #000000,
-  gr: #999999,
+  ck: map-get($lcars-palette, black),
+  gr: map-get($lcars-palette, cold-gray),
 
   b1: map-get($lcars-uss-na-colors, blue-1),
   b2: map-get($lcars-uss-na-colors, blue-2),
@@ -76,19 +171,26 @@ $lcars-colors: (
   g1: map-get($lcars-uss-na-colors, green-1),
   g2: map-get($lcars-uss-na-colors, green-2),
   g3: map-get($lcars-uss-na-colors, green-3),
-  g4: map-get($lcars-uss-na-colors, green-4)
+  g4: map-get($lcars-uss-na-colors, green-4),
+
+  p1: map-get($lcars-palette, golden-tanoi),
+  p2: map-get($lcars-palette, cold-gray),
+  p3: map-get($lcars-palette, chestnut-rose),
+  p4: map-get($lcars-palette, lilac),
+  p5: map-get($lcars-palette, anakiwa),
+  p6: map-get($lcars-palette, atomic-tangerine)
 );
 
 $lcars-alert-colors: (
-  or: #fdd,
-  fl: #fcc,
-  bg: #fbb,
-  rb: #faa,
-  be: #f99,
-  lb: #f88,
-  ap: #f77,
-  pi: #f66,
-  ho: #f55
+  or: map-get($lcars-palette, very-pale-red),
+  fl: map-get($lcars-palette, light-red),
+  bg: map-get($lcars-palette, pale-red),
+  rb: map-get($lcars-palette, patient-pink),
+  be: map-get($lcars-palette, light-salmon-pink),
+  lb: map-get($lcars-palette, very-light-red),
+  ap: map-get($lcars-palette, bright-coral),
+  pi: map-get($lcars-palette, bittersweet),
+  ho: map-get($lcars-palette, sunset-orange),
 );
 
 // Global color definitions
