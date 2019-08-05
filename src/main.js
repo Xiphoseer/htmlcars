@@ -11,6 +11,7 @@ import GridLayout from '@/components/layouts/GridLayout.vue';
 
 import Clock from '@/components/widgets/Clock.vue';
 import Stardate from '@/components/widgets/Stardate.vue';
+import Manifesto from '@/components/Manifesto.vue';
 
 import Calculator from '@/components/widgets/Calculator.vue';
 Vue.config.productionTip = false
@@ -24,6 +25,7 @@ Vue.component('lcars-grid-layout', GridLayout);
 Vue.component('lcars-clock', Clock);
 Vue.component('lcars-stardate', Stardate);
 Vue.component('lcars-calculator', Calculator);
+Vue.component('lcars-manifesto', Manifesto);
 
 Vue.directive('resize', resize);
 

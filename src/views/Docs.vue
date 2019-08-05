@@ -11,6 +11,7 @@
     <template slot="sidebar">
       <router-link class="lcars-btn lcars-chrome-primary-alt-1" to="/">Index</router-link>
       <router-link class="lcars-btn lcars-chrome-secondary-alt-2" to="/colors">Colors</router-link>
+      <router-link class="lcars-btn lcars-chrome-secondary-alt-3" to="/themes">Themes</router-link>
       <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/elements">Elements</router-link>
       <router-link class="lcars-btn lcars-chrome-secondary-alt-3" to="/chrome">Chrome</router-link>
       <router-link class="lcars-btn lcars-chrome-primary-alt-3" to="/components">Components</router-link>
@@ -37,6 +38,10 @@
         cls["lcars-chrome-voyager"] = (this.theme == "voyager");
         cls["lcars-chrome-crt-green"] = (this.theme == "crt-green");
         cls["lcars-chrome-crt-amber"] = (this.theme == "crt-amber");
+        cls["lcars-chrome-year-2357"] = (this.theme == "year 2357");
+        cls["lcars-chrome-year-2369"] = (this.theme == "year 2369");
+        cls["lcars-chrome-year-2375"] = (this.theme == "year 2375");
+        cls["lcars-chrome-year-2379"] = (this.theme == "year 2379");
         cls["lcars-chrome-red-alert"] = this.alert;
         return cls;
       }
@@ -55,7 +60,11 @@
       toggleTheme () {
         var next = {};
         next["uss-na"] = "voyager";
-        next["voyager"] = "default";
+        next["voyager"] = "year 2357";
+        next["year 2357"] = "year 2369";
+        next["year 2369"] = "year 2375";
+        next["year 2375"] = "year 2379";
+        next["year 2379"] = "default";
         next["default"] = "crt-green";
         next["crt-green"] = "crt-amber";
         next["crt-amber"] = "uss-na";

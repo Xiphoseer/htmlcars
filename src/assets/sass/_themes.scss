@@ -29,6 +29,66 @@ $lcars-themes: (
     secondary-alt-2: map-get($lcars-uss-na-colors, green-2),
     secondary-alt-3: map-get($lcars-uss-na-colors, green-3)
   ),
+  year-2357: (
+    title: #fff,
+    color: #000,
+    link: #fff,
+
+    primary:       map-get($year-2357-colors, a),
+    primary-alt-1: map-get($year-2357-colors, b),
+    primary-alt-2: map-get($year-2357-colors, c),
+    primary-alt-3: map-get($year-2357-colors, e),
+
+    secondary:       map-get($year-2357-colors, d),
+    secondary-alt-1: map-get($year-2357-colors, f),
+    secondary-alt-2: map-get($year-2357-colors, g),
+    secondary-alt-3: map-get($year-2357-colors, h)
+  ),
+  year-2369: (
+    title: #fff,
+    color: #000,
+    link: #fff,
+
+    primary:       map-get($year-2369-colors, h),
+    primary-alt-1: map-get($year-2369-colors, f),
+    primary-alt-2: map-get($year-2369-colors, g),
+    primary-alt-3: map-get($year-2369-colors, e),
+
+    secondary:       map-get($year-2369-colors, a),
+    secondary-alt-1: map-get($year-2369-colors, b),
+    secondary-alt-2: map-get($year-2369-colors, c),
+    secondary-alt-3: map-get($year-2369-colors, d)
+  ),
+  year-2375: (
+    title: #fff,
+    color: #000,
+    link: #fff,
+
+    primary:       map-get($year-2375-colors, a),
+    primary-alt-1: map-get($year-2375-colors, b),
+    primary-alt-2: map-get($year-2375-colors, c),
+    primary-alt-3: map-get($year-2375-colors, d),
+
+    secondary:       map-get($year-2375-colors, e),
+    secondary-alt-1: map-get($year-2375-colors, f),
+    secondary-alt-2: map-get($year-2375-colors, g),
+    secondary-alt-3: map-get($year-2375-colors, h)
+  ),
+  year-2379: (
+    title: #fff,
+    color: #000,
+    link: #fff,
+
+    primary:       map-get($year-2379-colors, a),
+    primary-alt-1: map-get($year-2379-colors, b),
+    primary-alt-2: map-get($year-2379-colors, c),
+    primary-alt-3: map-get($year-2379-colors, d),
+
+    secondary:       map-get($year-2379-colors, e),
+    secondary-alt-1: map-get($year-2379-colors, f),
+    secondary-alt-2: map-get($year-2379-colors, g),
+    secondary-alt-3: map-get($year-2379-colors, h)
+  ),
   crt-green: (
     title:            map-get($lcars-palette, monochrome-green-1),
     color:            map-get($lcars-palette, monochrome-black),

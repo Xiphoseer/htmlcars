@@ -1,0 +1,147 @@
+// Voyager LCARS colors (http://www.gtjlcars.de/LCARSindex/Colorindex1.htm)
+$lcars-voyager-colors: (
+  orange:       map-get($lcars-palette, atomic-tangerine),
+  lilac:        map-get($lcars-palette, lilac),
+  blue-gray:    map-get($lcars-palette, blue-bell),
+  russet:       map-get($lcars-palette, chestnut-rose),
+  beige:        map-get($lcars-palette, peach-orange),
+  light-blue:   map-get($lcars-palette, melrose),
+  apricot:      map-get($lcars-palette, orange-peel),
+  pink:         map-get($lcars-palette, hopbush),
+  light-pink:   map-get($lcars-palette, pale-magenta),
+  light-orange: map-get($lcars-palette, light-orange)
+);
+
+// USS not affiliated (http://lcarssdk.org/ => Visual Guide => Colors)
+$lcars-uss-na-colors: (
+  blue-1:       map-get($lcars-palette, anakiwa),
+  blue-2:       map-get($lcars-palette, bavaria-blue),
+  blue-3:       map-get($lcars-palette, baltic-blue),
+  blue-4:       map-get($lcars-palette, dark-midnight-blue),
+
+  green-1:      map-get($lcars-palette, grayish-green),
+  green-2:      map-get($lcars-palette, carribean-green),
+  green-3:      map-get($lcars-palette, dark-cyan),
+  green-4:      map-get($lcars-palette, very-dark-cyan)
+);
+
+$lcars-uss-na-alert-colors: (
+  blue-1:       map-get($lcars-palette, chinese-silver),
+  blue-2:       map-get($lcars-palette, cold-gray),
+  blue-3:       map-get($lcars-palette, rangoon-red),
+  blue-4:       map-get($lcars-palette, blood-red),
+
+  green-1:      map-get($lcars-palette, laser-lemon),
+  green-2:      map-get($lcars-palette, pure-red),
+  green-3:      map-get($lcars-palette, crimson-red),
+  green-4:      map-get($lcars-palette, very-dark-red)
+);
+
+// LCARS SDK colors
+$lcars-sdk-colors: (
+  chrome-bg:    map-get($lcars-palette, cold-gray),
+  chrome-fg:    map-get($lcars-palette, black),
+
+  red-1:        map-get($lcars-palette, pure-red),
+  red-2:        map-get($lcars-palette, rangoon-red),
+  red-3:        map-get($lcars-palette, crimson-red),
+
+  gray-1:       map-get($lcars-palette, very-light-gray),
+  gray-2:       map-get($lcars-palette, chinese-silver),
+  gray-3:       map-get($lcars-palette, lead-gray)
+);
+
+// https://codepen.io/Mokurunner/pen/eqtHl
+// TNG-Colors
+$year-2357-colors: (
+  a: map-get($lcars-palette, pale-canary),
+  b: map-get($lcars-palette, golden-tanoi),
+  c: map-get($lcars-palette, neon-carrot),
+  d: map-get($lcars-palette, eggplant),
+  e: map-get($lcars-palette, lilac),
+  f: map-get($lcars-palette, anakiwa),
+  g: map-get($lcars-palette, mariner),
+  h: map-get($lcars-palette, baltic-blue)
+);
+
+$year-2369-colors: (
+  a: map-get($lcars-palette, blue-bell),
+  b: map-get($lcars-palette, melrose),
+  c: map-get($lcars-palette, lilac),
+  d: map-get($lcars-palette, hopbush),
+  e: map-get($lcars-palette, chestnut-rose),
+  f: map-get($lcars-palette, orange-peel),
+  g: map-get($lcars-palette, atomic-tangerine),
+  h: map-get($lcars-palette, golden-tanoi)
+);
+
+$year-2375-colors: (
+  a: map-get($lcars-palette, danub),
+  b: map-get($lcars-palette, indigo),
+  c: map-get($lcars-palette, lavender-purple),
+  d: map-get($lcars-palette, cosmic),
+  e: map-get($lcars-palette, red-damask),
+  f: map-get($lcars-palette, medium-carmine),
+  g: map-get($lcars-palette, bourbon),
+  h: map-get($lcars-palette, sandy-brown)
+);
+
+$year-2379-colors: (
+  a: map-get($lcars-palette, periwinkle),
+  b: map-get($lcars-palette, dodger-blue),
+  c: map-get($lcars-palette, dodger-blue-alt),
+  d: map-get($lcars-palette, blue),
+  e: map-get($lcars-palette, navy-blue),
+  f: map-get($lcars-palette, husk),
+  g: map-get($lcars-palette, rust),
+  h: map-get($lcars-palette, tamarillo)
+);
+
+// https://www.deviantart.com/sumghai/art/25th-Century-Starfleet-LCARS-Color-Schemes-330137019
+$odyssey-normal-colors: (
+  offline:  map-get($lcars-palette, black-swan),
+  dark-1:   map-get($lcars-palette, cyan-blue),
+  frame:    map-get($lcars-palette, main-blue),
+  light-1:  map-get($lcars-palette, dark-moderate-blue),
+  light-2:  map-get($lcars-palette, moderate-blue),
+  active:   map-get($lcars-palette, very-soft-blue)
+);
+
+// Power / Resource conservation,
+$odyssey-gray-mode-colors: (
+  offline:  map-get($lcars-palette, black-swan),
+  dark-1:   map-get($lcars-palette, steel-gray),
+  frame:    map-get($lcars-palette, steel-gray),
+  light-1:  map-get($lcars-palette, steel-gray),
+  light-2:  map-get($lcars-palette, steel-gray),
+  active:   map-get($lcars-palette, chinese-silver)
+);
+
+// Landing, Docking, Separation, Environmental
+$odyssey-blue-alert-colors: (
+  offline:  map-get($lcars-palette, black-swan),
+  dark-1:   map-get($lcars-palette, strong-blue),
+  frame:    map-get($lcars-palette, nearly-pure-blue),
+  light-1:  map-get($lcars-palette, mostly-pure-blue),
+  light-2:  map-get($lcars-palette, saturated-blue),
+  active:   map-get($lcars-palette, very-light-blue)
+);
+
+// Elevated Awareness, Shields online
+$odyssey-yellow-alert-colors: (
+  offline:  map-get($lcars-palette, black-swan),
+  dark-1:   map-get($lcars-palette, dark-brown),
+  frame:    map-get($lcars-palette, orange-brown),
+  light-1:  map-get($lcars-palette, strong-orange),
+  light-2:  map-get($lcars-palette, all-gold),
+  active:   map-get($lcars-palette, medium-yellow)
+);
+
+$odyssey-red-alert-colors: (
+  offline:  map-get($lcars-palette, black-swan),
+  dark-1:   map-get($lcars-palette, blood-red),
+  frame:    map-get($lcars-palette, crimson-red),
+  light-1:  map-get($lcars-palette, rangoon-red),
+  light-2:  map-get($lcars-palette, pure-red),
+  active:   map-get($lcars-palette, very-light-pink)
+);

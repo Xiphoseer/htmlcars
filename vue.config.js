@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: '/htmlcars/',
+  publicPath: '/htmlcars/',
   outputDir: 'docs',
   assetsDir: 'assets',
   css: {

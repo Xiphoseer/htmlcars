@@ -9,7 +9,7 @@
     </div>
     <div class="calculator-wrapper lcars-grid-content">
       <div id="calculator">
-        <lcars-calculator ref="calc" class="lcars-bg-be text-bottom-right lcars-chrome-field result">
+        <lcars-calculator @computed="store" ref="calc" class="lcars-bg-be text-bottom-right lcars-chrome-field result">
         </lcars-calculator>
 
         <button @click="calc.input('7')" class="lcars-btn-center top-left-round" style="grid-area: 2 / 1 / 3 / 2">7</button>
@@ -50,11 +50,16 @@
     },
     mounted() {
       this.calc = this.$refs.calc;
+    },
+    methods: {
+      store: function(data) {
+        this.log.push(data);
+      }
     }
   }
 </script>
 
-<style type="text/css">
+<style lang="scss">
   .calculator-wrapper
   {
     box-sizing: border-box;
@@ -136,9 +141,9 @@
 
   .lcars-btn-center
   {
-    color: #000;
-    font-family: LCARSGTJ3;
-    text-align: right;
-    font-size: 30pt;
+    //color: #000;
+    //font-family: LCARSGTJ3;
+    //text-align: right;
+    //font-size: 30pt;
   }
 </style>

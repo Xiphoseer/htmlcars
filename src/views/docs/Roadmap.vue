@@ -5,6 +5,7 @@
       HTMLCARS is continually evolving. This page lists some of the ideas and
       planned features for this library.
     </p>
+    <lcars-manifesto></lcars-manifesto>
     <h2>High-Level Goals</h2>
     <ul>
       <li>Implement a comprehensive library of components/widgets</li>

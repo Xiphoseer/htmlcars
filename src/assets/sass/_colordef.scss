@@ -1,0 +1,114 @@
+// Source: https://github.com/joernweissenborn/lcars/
+// https://superuser.com/questions/361297/
+
+$lcars-palette: (
+  black:              #000,
+  navy-blue:          #008,
+  strong-blue:        #00c,
+  pure-blue:          #00f,
+  blue:               #01e,
+  dark-midnight-blue: #036, // blue-4
+  nearly-pure-blue:   #03f,
+  very-dark-cyan:     #066, // green-4
+  baltic-blue:        #069, // blue-3
+  mostly-pure-blue:   #06f,
+  dark-cyan:          #099, // green-3
+  carribean-green:    #0c9, // green-2
+  pure-green:         #0f0,
+  monochrome-green-2: #0f3,
+  monochrome-green-3: #0f6,
+
+  cyan-blue:          #133d87,
+
+  gray:               rgba(34,51,85,0.467),
+  main-blue:          #2350b5,
+  monochrome-black:   #282828,
+
+  very-dark-red:      #300,
+  dark-moderate-blue: #335da7,
+  azure-blue:         #369, // badge-blue
+  mariner:            #36c,
+  dodger-blue-alt:    #36f,
+  bavaria-blue:       #39c, // blue-2
+  monochrome-green-1: #3f0,
+  monochrome-apple:   #3f3,
+
+  saturated-blue:     #4159ff,
+  indigo:             #45b,
+  moderate-blue:      #4a72ca,
+  black-swan:         #4d4d4d,
+
+  dodger-blue:        #59f,
+
+  blood-red:          #600,
+  dark-brown:         #664406,
+  eggplant:           #646,
+  lead-gray:          #666, // gray-3
+  danub:              #68c,
+  monochrome-apple-c: #6f6,
+
+  cosmic:             #746,
+
+  steel-gray:         #808080,
+  tamarillo:          #821,
+  very-light-blue:    #8d9bff,
+
+  chelsea-gem:        #965032, // badge-brown
+  very-soft-blue:     #97c3e1,
+  crimson-red:        #900, // red-3
+  orange-brown:       #996509,
+  lavender-purple:    #97a,
+  cold-gray:          #999,
+  anakiwa:            #9cf, // blue-1
+  blue-bell:          #99c, // blue-gray
+  melrose:            #99f, // light-blue
+
+
+  medium-carmine:     #a53,
+
+  rust:               #b41,
+  bourbon:            #b62,
+  husk:               #ba5,
+
+  free-speech-red:    #c80000, // badge-red
+  rangoon-red:        #c00, // red-2
+  chestnut-rose:      #c66, // russet,
+  hopbush:            #c69, // pink
+  strong-orange:      #cc870c,
+  desaturated-red:    #c99,
+  lilac:              #c9c,
+  chinese-silver:     #ccc, // gray-2
+  grayish-green:      #cdb, // green-1
+  periwinkle:         #cdf,
+
+  red-damask:         #d64,
+
+  very-light-gray:    #eee, // gray-1
+  sandy-brown:        #e95,
+
+  sunset-orange:      #f55,
+  pure-red:           #f00, //red-1
+  bittersweet:        #f66,
+  bright-coral:       #f77,
+  light-orange:       #f7c64a,
+  very-light-red:     #f88,
+  atomic-tangerine:   #f90, // orange
+  neon-carrot:        #f93,
+  orange-peel:        #f96, // apricot
+  pale-magenta:       #f9c, // light-pink
+  very-light-pink:    #ff9191,
+  light-salmon-pink:  #f99,
+  all-gold:           #ffa90f,
+  patient-pink:       #faa,
+  amber:              #ffb000,
+  pale-red:           #fbb,
+  light-amber:        #fc0,
+  golden-tanoi:       #fc6,
+  peach-orange:       #fc9, // beige
+  light-red:          #fcc,
+  medium-yellow:      #ffd966,
+  very-pale-red:      #fdd,
+  laser-lemon:        #ff6,
+  pale-canary:        #ff9,
+  white:              #fff
+);

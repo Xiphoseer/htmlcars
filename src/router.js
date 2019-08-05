@@ -32,6 +32,11 @@ export default new Router({
           component: () => import(/* webpackChunkName: "doc-colors" */ './views/docs/Colors.vue')
         },
         {
+          path: '/themes',
+          name: 'themes',
+          component: () => import(/* webpackChunkName: "doc-themes" */ './views/docs/Themes.vue')
+        },
+        {
           path: '/elements',
           name: 'elements',
           component: () => import(/* webpackChunkName: "doc-elements" */ './views/docs/Elements.vue')
