@@ -69,15 +69,20 @@
         next["crt-green"] = "crt-amber";
         next["crt-amber"] = "uss-na";
         this.theme = next[this.theme];
+        if (window && window.localStorage) {
+          window.localStorage.setItem('htmlcars-docs-theme', this.theme);
+        }
       },
       toggleAlert () {
         this.alert = !this.alert;
       }
     },
     data() {
+      const defaultTheme = "uss-na";
+      var theme = window.localStorage.getItem('htmlcars-docs-theme') || defaultTheme;
       return {
         fullscreen: false,
-        theme: "uss-na",
+        theme: theme,
         alert: false
       }
     }

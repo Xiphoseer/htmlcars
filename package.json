@@ -7,7 +7,12 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "src/assets/",
+    "src/components/"
+  ],
   "dependencies": {
+    "core-js": "^3.6.5",
     "js-beautify": "^1.8.9",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
@@ -18,12 +23,12 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
+    "@vue/cli-plugin-babel": "~4.5.9",
+    "@vue/cli-plugin-eslint": "~4.5.9",
+    "@vue/cli-service": "~4.5.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
@@ -49,9 +54,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "files": [
-    "src/assets/",
-    "src/components/"
   ]
 }
