@@ -23,3 +23,7 @@
 $lcars-large-size: 4em;
 $lcars-normal-size: 2em;
 $lcars-small-size: 1em;
+
+.lcars-body {
+  @extend %lcars-body-ref;
+}

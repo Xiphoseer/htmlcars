@@ -21,9 +21,26 @@
       <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/roadmap">Roadmap</router-link>
       <router-link class="lcars-btn lcars-chrome-secondary" to="/about">Imprint</router-link>
     </template>
-    <router-view id="lcars-docs-content"/>
+    <div id="lcars-docs-content">
+      <Content/>
+    </div>
   </lcars-grid-layout>
 </template>
+
+<style lang="scss">
+  body, html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  body {
+    @extend %lcars-body-ref;
+  }
+
+  #app {
+    height: 100%;
+  }
+</style>
 
 <script>
   import fullscreen from 'vue-fullscreen'
@@ -122,5 +139,8 @@
     background-color: var(--lcars-chrome-bg-light);
   }
 
-
+  .header-anchor {
+    color: red;
+    text-decoration: none;
+  }
 </style>
