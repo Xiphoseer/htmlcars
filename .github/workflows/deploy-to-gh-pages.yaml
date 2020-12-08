@@ -18,7 +18,7 @@ jobs:
 
     - name: Init new repo in dist folder and commit generated files
       run: |
-        cd docs
+        cd docs/.vuepress/dist
         git init
         git add -A
         git config --local user.email "xiphoseer@mailbox.org"
