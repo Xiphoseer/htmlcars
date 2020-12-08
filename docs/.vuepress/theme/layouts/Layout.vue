@@ -1,6 +1,6 @@
 <template>
   <lcars-grid-layout class="lcars-fixed" :class="themeClass" title="HTMLCARS" sidebar-title="DOCS">
-    <template slot="topbar" class="lcars-chrome-larger"> <!---->
+    <template slot="topbar" class="lcars-chrome-larger">
       <span @click="toggleFullscreen" class="lcars-btn lcars-chrome-primary-alt-1">Fullscreen</span>
       <span @click="toggleTheme" class="lcars-btn lcars-chrome-primary-alt-2">{{theme}}</span>
       <span @click="toggleAlert" class="lcars-btn lcars-chrome-primary-alt-3">Alert</span>
@@ -10,16 +10,16 @@
     </template>
     <template slot="sidebar">
       <router-link class="lcars-btn lcars-chrome-primary-alt-1" to="/">Index</router-link>
-      <router-link class="lcars-btn lcars-chrome-secondary-alt-2" to="/colors">Colors</router-link>
-      <router-link class="lcars-btn lcars-chrome-secondary-alt-3" to="/themes">Themes</router-link>
-      <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/elements">Elements</router-link>
-      <router-link class="lcars-btn lcars-chrome-secondary-alt-3" to="/chrome">Chrome</router-link>
+      <router-link class="lcars-btn lcars-chrome-secondary-alt-2" to="/colors.html">Colors</router-link>
+      <router-link class="lcars-btn lcars-chrome-secondary-alt-3" to="/themes.html">Themes</router-link>
+      <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/elements.html">Elements</router-link>
+      <router-link class="lcars-btn lcars-chrome-secondary-alt-3" to="/chrome.html">Chrome</router-link>
       <router-link class="lcars-btn lcars-chrome-primary-alt-3" to="/components">Components</router-link>
-      <router-link class="lcars-btn lcars-chrome-secondary-alt-1" to="/layouts">Layouts</router-link>
+      <router-link class="lcars-btn lcars-chrome-secondary-alt-1" to="/layouts.html">Layouts</router-link>
 
       <span class="lcars-bar-space"></span>
-      <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/roadmap">Roadmap</router-link>
-      <router-link class="lcars-btn lcars-chrome-secondary" to="/about">Imprint</router-link>
+      <router-link class="lcars-btn lcars-chrome-primary-alt-2" to="/roadmap.html">Roadmap</router-link>
+      <router-link class="lcars-btn lcars-chrome-secondary" to="/about.html">Imprint</router-link>
     </template>
     <div id="lcars-docs-content">
       <Content/>
@@ -28,7 +28,7 @@
 </template>
 
 <style lang="scss">
-  body, html {
+  body, html, #app {
     height: 100%;
     box-sizing: border-box;
   }
@@ -36,17 +36,9 @@
   body {
     @extend %lcars-body-ref;
   }
-
-  #app {
-    height: 100%;
-  }
 </style>
 
 <script>
-  import fullscreen from 'vue-fullscreen'
-  import Vue from 'vue'
-  Vue.use(fullscreen)
-
   export default {
     computed: {
       themeClass: function() {
@@ -64,16 +56,6 @@
       }
     },
     methods: {
-      toggleFullscreen () {
-        let el = document.body;
-        this.$fullscreen.toggle(el, {
-          wrap: false,
-          callback: this.fullscreenChange
-        })
-      },
-      fullscreenChange (fullscreen) {
-        this.fullscreen = fullscreen
-      },
       toggleTheme () {
         var next = {};
         next["uss-na"] = "voyager";
@@ -86,20 +68,41 @@
         next["crt-green"] = "crt-amber";
         next["crt-amber"] = "uss-na";
         this.theme = next[this.theme];
-        if (window && window.localStorage) {
-          window.localStorage.setItem('htmlcars-docs-theme', this.theme);
-        }
+        this.$theme.set(this.theme);
       },
       toggleAlert () {
         this.alert = !this.alert;
+      },
+      toggleFullscreen() {
+        this.$fullscreen.toggle.call(this);
       }
     },
-    data() {
+    mounted() {
       const defaultTheme = "uss-na";
-      var theme = window.localStorage.getItem('htmlcars-docs-theme') || defaultTheme;
+      this.$theme = {
+        set: function(theme) {
+          window.localStorage.setItem('htmlcars-docs-theme', theme)
+        }
+      };
+      this.$fullscreen = {
+        set: false,
+        available: window && window.document && window.document.fullscreenEnabled,
+        toggle() {
+          if (this.$fullscreen.available) {
+            if (this.$fullscreen.set) {
+              window.document.exitFullscreen().then(() => this.$fullscreen.set = false);
+            } else {
+              window.document.body.requestFullscreen().then(() => this.$fullscreen.set = true);
+            }
+          }
+        }
+      };
+      this.theme = window.localStorage.getItem('htmlcars-docs-theme') || defaultTheme;
+    },
+    data() {
       return {
         fullscreen: false,
-        theme: theme,
+        theme: "uss-na",
         alert: false
       }
     }

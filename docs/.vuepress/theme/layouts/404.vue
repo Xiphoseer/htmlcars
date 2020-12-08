@@ -1,5 +1,5 @@
 <template>
-  <div class="lcars-body lcars-page lcars-chrome-voyager lcars-fixed">
+  <div class="lcars-page lcars-chrome-voyager lcars-fixed">
     <div class="lcars-chrome-horizontal lcars-topbar">
       <h1>LCARS</h1>
       <router-link to="/" class="lcars-btn">Home</router-link>
@@ -8,8 +8,8 @@
     </div>
     <div id="error" class="lcars-grid-content">
       <div id="text" class="lcars-message">
-        <h1>Error 403</h1>
-        <h3>Not Authorized</h3>
+        <h1>Error 404</h1>
+        <h3>Not Found</h3>
       </div>
     </div>
     <div class="lcars-chrome-horizontal lcars-bottombar">
@@ -21,7 +21,16 @@
   </div>
 </template>
 
-<style type="text/css">
+<style lang="scss">
+  body {
+    @extend %lcars-body-ref;
+  }
+
+  body, html, #app {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
   #error { display: flex; }
   #text { margin: auto; }
 </style>

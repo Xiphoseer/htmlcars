@@ -9,6 +9,8 @@ The font used for text is `Helvetica`, as this is the regular version of the LCA
 
 <!-- HR -->
 
+<Demo componentName="examples-hr-element-doc" />
+
 <example title="Preformatted Text" element="pre">
   <template slot="description">
     A preformatted text block has a slightly lighter background than the usual page and displays the text in a monospace font.

@@ -1,4 +1,6 @@
 import * as components from './components'
+import colors from './color'
+import themes from './themes';
 
 const ComponentLibrary = {
   install(Vue) {
@@ -8,7 +10,9 @@ const ComponentLibrary = {
 
       Vue.component(component.name, component)
     }
-  }
+  },
+  colors: colors,
+  themes: themes,
 }
 
 export default ComponentLibrary

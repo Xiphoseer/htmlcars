@@ -65,3 +65,19 @@ agressive language) specifies this:
 1. Use no more main colors than are required to present the semantics of the interface.
 2. Use up to five shades or tints of these colors when necessary.
 3. Use no more than five colors in total
+
+<color-display title="Colorindex Voyager" source="gtjlcars.de" colors="voyagerColors" />
+<color-display title="Colorindex USS" source="lcarssdk.org" colors="ussColors" />
+<color-display title="PADDs Template" source="lcars.padd.online.fr" colors="paddColors" />
+<color-display title="Year 2357" source="@Mokurunner / lcars47.com" colors="year2357Colors" />
+<color-display title="Year 2369" source="@Mokurunner / lcars47.com" colors="year2369Colors" />
+<color-display title="Year 2375" source="@Mokurunner / lcars47.com" colors="year2375Colors" />
+<color-display title="Year 2379" source="@Mokurunner / lcars47.com" colors="year2379Colors" />
+
+<color-display title="Odyssey Normal"       source="@sumghai" colors="odysseyNormalColors" />
+<color-display title="Odyssey Gray Mode"    source="@sumghai" colors="odysseyGrayModeColors" />
+<color-display title="Odyssey Blue Alert"   source="@sumghai" colors="odysseyBlueAlertColors" />
+<color-display title="Odyssey Yellow Alert" source="@sumghai" colors="odysseyYellowAlertColors" />
+<color-display title="Odyssey Red Alert"    source="@sumghai" colors="odysseyRedAlertColors" />
+
+<color-palette title="Full Palette" source="Something" colors="allColors" />

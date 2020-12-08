@@ -14,13 +14,7 @@
 </template>
 
 <script>
-import Example from '@/components/Example.vue'
-
 export default {
-  name: 'elements',
-  components: {
-    Example
-  },
   data: function () {
     return {
       colors: ['or', 'fl', 'bg', 'rb', 'be', 'lb', 'ap', 'pi', 'ho', 'ck']

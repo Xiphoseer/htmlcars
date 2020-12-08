@@ -5,9 +5,9 @@
       <span class="lcars-bar-space"></span>
     </div>
     <table class="lcars-color-table lcars-table lcars-fg-ck lcars-font lcars-grid-content">
-      <tr v-for="color in colors" :key="color.key" :style="colorStyle(color)">
-        <td style="text-align: right;">{{color.key}}</td>
-        <td><code style="font-size: 13pt;">--lcars-color-{{color.key.toLowerCase()}}</code></td>
+      <tr v-for="color in colorList" :key="color.key" :class="colorClass(color)">
+        <td style="text-align: right;">{{color.name}} ({{color.key}})</td>
+        <td><code style="font-size: 13pt;">.lcars-chrome-{{color.key.toLowerCase()}}</code></td>
         <td>{{color.code}}</td>
       </tr>
     </table>
@@ -19,16 +19,22 @@
 </template>
 
 <script>
+  import ComponentLibrary from './../../../src/index.js'
+
   export default {
-    name: 'color-palette',
+    name: 'color-display',
     props: ['colors', 'title', 'source'],
     methods: {
-      colorStyle: function(color) {
+      colorClass: function(color) {
         var cls = {};
-        let key = "background-color";
-        cls[key] = "var(--lcars-color-" + color.key.toLowerCase() + ")";
-        cls['color'] = color.font;
+        let key = "lcars-bg-" + color.key.toLowerCase();
+        cls[key] = true;
         return cls;
+      }
+    },
+    computed: {
+      colorList: function() {
+        return ComponentLibrary.colors[this.colors];
       }
     }
   }
