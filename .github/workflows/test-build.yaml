@@ -1,0 +1,17 @@
+name: Deploy to GitHub pages
+on:
+  push:
+    branches-ignore: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Generate static files
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - run: yarn install
+    - run: yarn run docs:build
