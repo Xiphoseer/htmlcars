@@ -1,13 +1,19 @@
 .lcars-slide
 {
   display: grid;
-  grid-template-rows: [head side-begin] min-content [topbar-end] 1em [content-begin] auto [side-end] 1em [end-begin] min-content [content-end tail];
+  grid-template-rows: /*[head side-begin] min-content [topbar-end] 1em [content-begin] auto [side-end] 1em [end-begin] min-content [content-end tail];*/
+    /*[head side-begin] auto [topbar-end] 1em [content-begin] 1fr [side-end] 1em [end-begin] auto [content-end tail];*/
+    [start] 1fr [end];
   grid-template-columns: [head side-begin] min-content [side-end] 1em [bar-begin] 1em [bar-end] 1em [content-begin] auto [content-end tail];
-  grid-template-areas: "side       midleftline top-middle    topbar       topbar"
-                       "side       midleftline midline       midrightline topline"
+  grid-template-areas: /*"side       midleftline top-middle    topbar       topbar"*/
+                       /*"side       midleftline midline       midrightline topline"*/
+                       /*"side       midleftline midline       midrightline content"
                        "side       midleftline midline       midrightline content"
-                       "bottomline midleftline midline       midrightline content-bottom"
-                       "bottombar  bottombar   bottom-middle midrightline content-bottom";
+                       "side       midleftline midline       midrightline content"
+                       "side       midleftline midline       midrightline content"*/
+                       "side       midleftline midline       midrightline content"
+                       /*"bottomline midleftline midline       midrightline content-bottom"*/
+                       /*"bottombar  bottombar   bottom-middle midrightline content-bottom"*/;
 
   & > .lcars-side
   {

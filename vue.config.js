@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: '/htmlcars/',
-  outputDir: 'docs',
+  outputDir: 'dist',
   assetsDir: 'assets',
   css: {
     loaderOptions: {

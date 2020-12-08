@@ -41,12 +41,12 @@
     </div>
   </div>
   <div v-else-if="state == 'tiled'" class="lcars-slide lcars-chrome-small">
-    <div class="lcars-chrome-horizontal lcars-topbar">
+    <!--<div class="lcars-chrome-horizontal lcars-topbar">
 
-    </div>
-    <div class="lcars-chrome-horizontal lcars-bottombar">
+    </div>-->
+    <!--<div class="lcars-chrome-horizontal lcars-bottombar">
 
-    </div>
+    </div>-->
     <div class="lcars-chrome-vertical lcars-midline">
 
     </div>
