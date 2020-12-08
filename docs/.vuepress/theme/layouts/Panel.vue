@@ -6,13 +6,7 @@
       <a class="lcars-btn lcars-btn-pi">Reset</a>
       <span class="lcars-bar-space"></span>
     </div>
-    <div id="error" class="lcars-grid-content">
-      <div id="text" class="lcars-message">
-        <h1>Error 404</h1>
-        <h3>Not Found</h3>
-      </div>
-      <Content/>
-    </div>
+    <Content id="panel-content" class="lcars-grid-content" />
     <div class="lcars-chrome-horizontal lcars-bottombar">
       <a class="lcars-btn">123</a>
       <a class="lcars-btn">ABC</a>
@@ -31,7 +25,4 @@
     height: 100%;
     box-sizing: border-box;
   }
-
-  #error { display: flex; }
-  #text { margin: auto; }
 </style>

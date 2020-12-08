@@ -25,7 +25,8 @@ module.exports = {
     }
   },
 
-  theme: 'local',
+  theme: "local",
+  base: "/htmlcars/",
 
   themeConfig: {
     repoLabel: 'Contribute!',

@@ -2,6 +2,8 @@ import * as components from './components'
 import colors from './color'
 import themes from './themes';
 
+import './assets/sass/lcars.scss';
+
 const ComponentLibrary = {
   install(Vue) {
     // components
