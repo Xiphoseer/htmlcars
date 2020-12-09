@@ -48,7 +48,7 @@ or add the following line to `dependencies` in your `package.json`:
 ### Font setup
 
 The (S)CSS assumes that a `font-family` called `LCARSGTJ3` is present
-which corresponds to the file mentioned in <#license>. Assuming you
+which corresponds to the file mentioned in [License](#license). Assuming you
 want to use that font in your project, you need to add something like
 the following to your project:
 
@@ -65,14 +65,19 @@ the following to your project:
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads docs app for development
 ```
 yarn run docs:dev
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies docs app for production
 ```
 yarn run docs:build
+```
+
+### Compiles and minifies library for production
+```
+yarn run build
 ```
 
 ### Lints and fixes files
