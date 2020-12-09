@@ -1,13 +1,26 @@
 {
-  "name": "htmlcars",
+  "name": "@xiphoseer/htmlcars",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MPL-2.0",
+  "homepage": "https://xiphoseer.github.io/htmlcars",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiphoseer/htmlcars.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiphoseer/htmlcars/issues"
+  },
   "scripts": {
     "build": "vue-cli-service build --target lib --name htmlcars src/index.js",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "prepublishOnly": "$npm_execpath build"
   },
+  "main": "dist/htmlcars.umd.min.js",
+  "unpkg": "dist/htmlcars.umd.min.js",
+  "jsdelivr": "dist/htmlcars.umd.min.js",
   "files": [
     "src/assets/",
     "src/components/",
