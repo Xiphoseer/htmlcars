@@ -16,7 +16,7 @@
 
   span
   {
-  	font-family: LCARSGTJ3, Helvetica;
+  	font-family: LCARSGTJ3, Helvetica, sans-serif;
   }
 
   &::before
@@ -24,7 +24,7 @@
   	content: attr(key);
   	float: left;
   	font-size: 400%;
-  	font-family: LCARSGTJ3, Helvetica;
+  	font-family: LCARSGTJ3, Helvetica, sans-serif;
   	padding-right: 1rem;
   	border-right: 0.3rem solid #fff;
   	margin-right: 1rem;
@@ -60,7 +60,7 @@
 
   span
   {
-    font-family: LCARSGTJ3, Helvetica;
+    font-family: LCARSGTJ3, Helvetica, sans-serif;
     grid-area: mid / from / tail / tail;
     display: inline-block;
     line-height: 1.1em;
@@ -71,7 +71,7 @@
     content: attr(data-key);
     grid-area: head / head / tail / bar;
     font-size: 400%;
-    font-family: LCARSGTJ3, Helvetica;
+    font-family: LCARSGTJ3, Helvetica, sans-serif;
     padding-right: 1rem;
   }
 

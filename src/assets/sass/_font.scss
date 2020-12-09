@@ -1,20 +1,13 @@
-/* http://www.gtjlcars.de/LCARSindex/LCARSFONTS.htm */
-
-@font-face {
-  font-family: LCARSGTJ3;
-  src: url(~../fonts/LCARSGTJ3.ttf);
-}
-
 .lcars-font
 {
-  font-family: LCARSGTJ3;
+  font-family: LCARSGTJ3, Helvetica, sans-serif;
   font-size: 12pt;
 }
 
 h1, h2, h3, h4, h5, h6
 {
   border-bottom: 1px dotted #eee;
-  font-family: LCARSGTJ3;
+  font-family: LCARSGTJ3, Helvetica, sans-serif;
 }
 
 p, ul, ol
