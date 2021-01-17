@@ -4,7 +4,7 @@ This Webpage and HTML LCARS Library are created by
 [@Xiphoseer](https://twitter.com/Xiphoseer"), based on the
 original design by Michael Okuda from Star Trek. It is heavily influenced
 in theme by sites such as [GTJLCARS](https://gtjlcars.de) or
-[lcarscom.net](http://www.lcarscom.net/), but completely
+[lcarscom.net](http://web.archive.org/web/20190718150043/http://www.lcarscom.net/databank.htm), but completely
 independent in terms of source code.
 
 The commercial rights to the LCARS system are (as far as I know) held by
