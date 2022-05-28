@@ -25,7 +25,10 @@ jobs:
         git config --local user.name "GitHub Actions (Xiphoseer)"
         git commit -m 'deploy'
 
-    - name: Upload to GH pages
-      uses: actions/upload-pages-artifact@v0.1.0
+    - name: Upload github-pages Artifact
+      uses: actions/upload-pages-artifact@latest
       with:
         path: ./docs/.vuepress/dist
+
+    - name: Deploy to Pages
+      uses: actions/deploy-pages@latest
