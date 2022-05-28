@@ -21,15 +21,6 @@ jobs:
     - run: yarn install
     - run: yarn run docs:build
 
-    - name: Init new repo in dist folder and commit generated files
-      run: |
-        cd docs/.vuepress/dist
-        git init
-        git add -A
-        git config --local user.email "xiphoseer@mailbox.org"
-        git config --local user.name "GitHub Actions (Xiphoseer)"
-        git commit -m 'deploy'
-
     - name: Upload github-pages Artifact
       uses: actions/upload-pages-artifact@v0.1.0
       with:
