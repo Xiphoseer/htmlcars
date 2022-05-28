@@ -26,9 +26,9 @@ jobs:
         git commit -m 'deploy'
 
     - name: Upload github-pages Artifact
-      uses: actions/upload-pages-artifact@latest
+      uses: actions/upload-pages-artifact@v0.1.0
       with:
         path: ./docs/.vuepress/dist
 
     - name: Deploy to Pages
-      uses: actions/deploy-pages@latest
+      uses: actions/deploy-pages@v1.0.4
