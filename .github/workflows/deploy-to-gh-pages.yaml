@@ -1,3 +1,8 @@
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 name: Deploy to GitHub pages
 on:
   push:
@@ -30,5 +35,13 @@ jobs:
       with:
         path: ./docs/.vuepress/dist
 
-    - name: Deploy to Pages
-      uses: actions/deploy-pages@v1.0.4
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 'Deploy to GitHub Pages'
+        id: deployment
+        uses: actions/deploy-pages@v1.0.4
