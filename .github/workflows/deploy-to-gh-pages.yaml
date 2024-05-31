@@ -22,7 +22,7 @@ jobs:
     - run: yarn run docs:build
 
     - name: Upload github-pages Artifact
-      uses: actions/upload-pages-artifact@v0.1.0
+      uses: actions/upload-pages-artifact@v3
       with:
         path: ./docs/.vuepress/dist
 
@@ -35,4 +35,4 @@ jobs:
     steps:
       - name: 'Deploy to GitHub Pages'
         id: deployment
-        uses: actions/deploy-pages@v1.0.4
+        uses: actions/deploy-pages@v4
